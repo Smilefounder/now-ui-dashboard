@@ -1,0 +1,60 @@
+<div class="sidebar" data-color="purple" data-image="{{ path-assets }}/assets/img/sidebar-1.jpg">
+    <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+
+    <div class="logo">
+        <a href="http://www.creative-tim.com" class="simple-text">
+            Creative Tim
+        </a>
+    </div>
+
+    <div class="sidebar-wrapper">
+        <ul class="nav">
+            <li {% if page.brand == "Dashboard" %} class="active" {% endif %}>
+                <a href="dashboard.html">
+                    <i class="now-ui-icons design_app"></i>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li {% if page.brand == "User" %} class="active" {% endif %}>
+                <a href="{{ path-pages }}/user.html">
+                    <i class="now-ui-icons users_single-02"></i>
+                    <p>User Profile</p>
+                </a>
+            </li>
+            <li {% if page.brand == "Table List" %} class="active" {% endif %}>
+                <a href="{{ path-pages }}/table.html">
+                    <i class="now-ui-icons text_align-center"></i>
+                    <p>Table List</p>
+                </a>
+            </li>
+            <li {% if page.brand == "Typography" %} class="active" {% endif %}>
+                <a href="{{ path-pages }}/typography.html">
+                    <i class="now-ui-icons files_paper"></i>
+                    <p>Typography</p>
+                </a>
+            </li>
+            <li {% if page.brand == "Icons" %} class="active" {% endif %}>
+                <a href="{{ path-pages }}/icons.html">
+                    <i class="now-ui-icons objects_diamond"></i>
+                    <p>Icons</p>
+                </a>
+            </li>
+            <li {% if page.brand == "Maps" %} class="active" {% endif %}>
+                <a href="{{ path-pages }}/maps.html">
+                    <i class="now-ui-icons location_pin"></i>
+                    <p>Maps</p>
+                </a>
+            </li>
+            <li {% if page.brand == "Notifications" %} class="active" {% endif %}>
+                <a href="{{ path-pages }}/notifications.html">
+                    <i class="now-ui-icons ui-1_bell-53"></i>
+                    <p>Notifications</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

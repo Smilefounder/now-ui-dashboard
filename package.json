@@ -1,0 +1,15 @@
+{
+  "name": "jekyll-now-ui-dashboard",
+  "description": "My new Jekyll site.",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-jsbeautifier": "^0.2.13",
+    "grunt-shell": "^1.1.2",
+    "gulp-clean": "^0.3.2",
+    "load-grunt-tasks": "^0.6.0",
+    "time-grunt": "^0.4.0"
+  }
+}
