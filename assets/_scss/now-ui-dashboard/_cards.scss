@@ -49,6 +49,12 @@
         border-radius: 50%;
         margin-bottom: 15px;
     }
+
+    label{
+        font-size: $font-size-small;
+        margin-bottom: 5px;
+        color: $dark-gray;
+    }
 }
 
 .card-user{
@@ -59,7 +65,7 @@
     .author{
         text-align: center;
         text-transform: none;
-        margin-top: -70px;
+        margin-top: -77px;
 
         a +  p.description{
             margin-top: -7px;
@@ -75,6 +81,10 @@
 
     .card-block{
         min-height: 240px;
+    }
+
+    hr{
+        margin: 5px 15px;
     }
 }
 

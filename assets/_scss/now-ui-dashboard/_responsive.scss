@@ -167,9 +167,14 @@
         margin-left: 1rem;
     }
 
+    body{
+        position: relative;
+        overflow-x: hidden;
+    }
+
     .nav-open{
         .main-panel{
-            left: 0;
+            right: 0;
             @include transform-translate-x(260px);
         }
 
@@ -456,6 +461,14 @@
 
         .nav-item > .nav-link{
             margin-bottom: 5px;
+        }
+    }
+
+    .footer{
+        nav{
+            display: block;
+            margin-bottom: 5px;
+            float: none;
         }
     }
 
