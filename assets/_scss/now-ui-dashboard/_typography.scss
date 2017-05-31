@@ -65,6 +65,8 @@ p{
 
 i.fa{
     font-size: 18px;
+    position: relative;
+    top: 1px;
 }
 
 .title{
@@ -85,7 +87,8 @@ i.fa{
 
 .description,
 .card-description,
-.footer-big p{
+.footer-big p,
+.card .footer .stats{
     color: $dark-gray;
     font-weight: $font-weight-light;
 }
@@ -109,6 +112,10 @@ i.fa{
 }
 .text-danger {
   color: $brand-danger !important;
+}
+
+.text-gray{
+    color: $light-gray !important;
 }
 
 .blockquote{

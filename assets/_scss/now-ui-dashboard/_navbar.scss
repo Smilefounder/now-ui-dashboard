@@ -16,6 +16,19 @@
         line-height: 21px;
     }
 
+    &.fixed-top{
+        & + .content{
+            margin-top: 97px;
+        }
+    }
+
+    .documentation &{
+        &.fixed-top{
+            left: 0;
+            width: initial;
+        }
+    }
+
     .navbar-minimize{
         margin-right: 15px;
         float: left;

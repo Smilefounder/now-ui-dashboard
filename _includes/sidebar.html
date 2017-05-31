@@ -12,6 +12,7 @@
     </div>
 
     <div class="sidebar-wrapper">
+        {% if page.brand != "template-page" %}
         <ul class="nav">
             <li {% if page.brand == "Dashboard" %} class="active" {% endif %}>
                 <a href="dashboard.html">
@@ -56,5 +57,23 @@
                 </a>
             </li>
         </ul>
+        {% else %}
+
+        <ul class="nav">
+            <li {% if page.brand == "Example1" %} class="active" {% endif %}>
+                <a href="#pablo">
+                    <i class="now-ui-icons design_app"></i>
+                    <p>Example 1</p>
+                </a>
+            </li>
+            <li {% if page.brand == "Example2" %} class="active" {% endif %}>
+                <a href="#pablo">
+                    <i class="now-ui-icons users_single-02"></i>
+                    <p>Example 2</p>
+                </a>
+            </li>
+        </ul>
+
+        {% endif %}
     </div>
 </div>

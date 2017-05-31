@@ -421,6 +421,10 @@
         background: none !important;
     }
 
+    .table-responsive {
+        overflow: visible;
+    }
+
     .navbar.fixed-top{
         width: $sidebar-width;
         right: 0;

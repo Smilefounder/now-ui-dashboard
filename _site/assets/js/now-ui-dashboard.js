@@ -43,8 +43,8 @@ $(document).ready(function(){
     // Check if we have the class "navbar-color-on-scroll" then add the function to remove the class "navbar-transparent" so it will transform to a plain color.
 
     if($('.navbar[color-on-scroll]').length != 0){
-        nowuiKit.checkScrollForTransparentNavbar();
-        $(window).on('scroll', nowuiKit.checkScrollForTransparentNavbar)
+        nowuiDashboard.checkScrollForTransparentNavbar();
+        $(window).on('scroll', nowuiDashboard.checkScrollForTransparentNavbar)
     }
 
     $('.form-control').on("focus", function(){
@@ -66,48 +66,23 @@ $(document).ready(function(){
     });
 
     if( $(window).width() < 992 ){
-        nowuiKit.initRightMenu();
+        nowuiDashboard.initRightMenu();
     }
 
     if ($(window).width() >= 992){
         big_image = $('.page-header-image[data-parallax="true"]');
 
-        $(window).on('scroll', nowuiKitDemo.checkScrollForParallax);
+        $(window).on('scroll', nowuiDashboardDemo.checkScrollForParallax);
     }
-
-    // Activate Carousel
-	$('.carousel').carousel({
-        interval: 4000
-    });
-
-    $('.date-picker').each(function(){
-        $(this).datepicker({
-            templates:{
-                leftArrow: '<i class="now-ui-icons arrows-1_minimal-left"></i>',
-                rightArrow: '<i class="now-ui-icons arrows-1_minimal-right"></i>'
-            }
-        }).on('show', function() {
-                $('.datepicker').addClass('open');
-
-                datepicker_color = $(this).data('datepicker-color');
-                if( datepicker_color.length != 0){
-                    $('.datepicker').addClass('datepicker-'+ datepicker_color +'');
-                }
-            }).on('hide', function() {
-                $('.datepicker').removeClass('open');
-            });
-    });
-
-
 });
 
 $(window).resize(function(){
     if( $(window).width() < 992 ){
-        nowuiKit.initRightMenu();
+        nowuiDashboard.initRightMenu();
     }
 });
 
-nowuiKit = {
+nowuiDashboard = {
     misc:{
         navbar_menu_visible: 0
     },
@@ -131,9 +106,9 @@ nowuiKit = {
             $toggle = $('#sidebar-collapse');
 
             $toggle.click(function (){
-                if(nowuiKit.misc.navbar_menu_visible == 1) {
+                if(nowuiDashboard.misc.navbar_menu_visible == 1) {
                     $('html').removeClass('nav-open');
-                   nowuiKit.misc.navbar_menu_visible = 0;
+                   nowuiDashboard.misc.navbar_menu_visible = 0;
                     setTimeout(function(){
                        $toggle.removeClass('toggled');
                        $('#bodyClick').remove();
@@ -157,7 +132,7 @@ nowuiKit = {
                    div = '<div id="bodyClick"></div>';
                    $(div).appendTo('body').click(function() {
                        $('html').removeClass('nav-open');
-                       nowuiKit.misc.navbar_menu_visible = 0;
+                       nowuiDashboard.misc.navbar_menu_visible = 0;
                         setTimeout(function(){
                            $toggle.removeClass('toggled');
                            $('#bodyClick').remove();
@@ -165,37 +140,61 @@ nowuiKit = {
                    });
 
                   $('html').addClass('nav-open');
-                   nowuiKit.misc.navbar_menu_visible = 1;
+                   nowuiDashboard.misc.navbar_menu_visible = 1;
 
                 }
             });
             toggle_initialized = true;
         }
     },
+    
+    startAnimationForLineChart: function(chart){
 
-    initSliders: function(){
-        // Sliders for demo purpose in refine cards section
-        var slider = document.getElementById('sliderRegular');
-
-        noUiSlider.create(slider, {
-            start: 40,
-            connect: [true,false],
-            range: {
-                min: 0,
-                max: 100
+        chart.on('draw', function(data) {
+          if(data.type === 'line' || data.type === 'area') {
+            data.element.animate({
+              d: {
+                begin: 600,
+                dur: 700,
+                from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
+                to: data.path.clone().stringify(),
+                easing: Chartist.Svg.Easing.easeOutQuint
+              }
+            });
+          } else if(data.type === 'point') {
+                seq++;
+                data.element.animate({
+                  opacity: {
+                    begin: seq * delays,
+                    dur: durations,
+                    from: 0,
+                    to: 1,
+                    easing: 'ease'
+                  }
+                });
             }
         });
 
-        var slider2 = document.getElementById('sliderDouble');
+        seq = 0;
+    },
+    startAnimationForBarChart: function(chart){
 
-        noUiSlider.create(slider2, {
-            start: [ 20, 60 ],
-            connect: true,
-            range: {
-                min:  0,
-                max:  100
-            }
+        chart.on('draw', function(data) {
+          if(data.type === 'bar'){
+              seq2++;
+              data.element.animate({
+                opacity: {
+                  begin: seq2 * delays2,
+                  dur: durations2,
+                  from: 0,
+                  to: 1,
+                  easing: 'ease'
+                }
+              });
+          }
         });
+
+        seq2 = 0;
     }
 }
 
@@ -203,7 +202,7 @@ nowuiKit = {
 var big_image;
 
 // Javascript just for Demo purpose, remove it from your project
-nowuiKitDemo = {
+nowuiDashboardDemo = {
     checkScrollForParallax: debounce(function(){
         var current_scroll = $(this).scrollTop();
 

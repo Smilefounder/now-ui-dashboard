@@ -6,6 +6,9 @@
 <!--  Google Maps Plugin    -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
+<!--  Chartist Plugin  -->
+<script src="{{ path-assets }}/assets/js/plugins/chartist.min.js"></script>
+
 <!--  Notifications Plugin    -->
 <script src="{{ path-assets }}/assets/js/plugins/bootstrap-notify.js"></script>
 
@@ -27,6 +30,15 @@
         });
     </script>
 
+{% elsif page.brand == "Dashboard" %}
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // Javascript method's body can be found in assets/js/demos.js
+            demo.initDashboardPageCharts();
+
+        });
+    </script>
+
 {% elsif page.brand == "documentation" %}
 <script>
     var header_height;
@@ -37,17 +49,14 @@
         suggestions_distance = $("#suggestions").offset();
         pay_height = $('.fixed-section').outerHeight();
 
-        $(window).on('scroll', nowuiKit.checkScrollForTransparentNavbar);
+        $(window).on('scroll', nowuiDashboard.checkScrollForTransparentNavbar);
 
         if ($(window).width() >= 768){
             big_image = $('.header[data-parallax="true"]');
             if(big_image.length != 0){
-               $(window).on('scroll', nowuiKitDemo.checkScrollForParallax);
+               $(window).on('scroll', nowuiDashboardDemo.checkScrollForParallax);
             }
         }
-
-        // the body of this function is in assets/js/now-ui-dashboard.js
-        nowuiKit.initSliders();
     });
 </script>
 
