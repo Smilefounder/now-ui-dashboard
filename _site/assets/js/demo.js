@@ -102,7 +102,9 @@ demo = {
           }]
         ];
 
-        Chartist.Line('#chartHours', dataSales, optionsSales, responsiveSales);
+        var chartHours = Chartist.Line('#chartHours', dataSales, optionsSales, responsiveSales);
+
+        nowuiDashboard.startAnimationForLineChart(chartHours);
 
         var data = {
           labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
@@ -131,7 +133,9 @@ demo = {
           }]
         ];
 
-        Chartist.Bar('#chartActivity', data, options, responsiveOptions);
+        var chartActivity = Chartist.Bar('#chartActivity', data, options, responsiveOptions);
+
+        nowuiDashboard.startAnimationForBarChart(chartActivity);
 
         // /* ----------==========     Daily Sales Chart initialization    ==========---------- */
         //

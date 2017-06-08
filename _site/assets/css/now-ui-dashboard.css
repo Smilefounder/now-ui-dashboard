@@ -2658,13 +2658,17 @@ body {
   margin: 0;
   line-height: 21px; }
 .navbar.fixed-top + .content {
-  margin-top: 97px; }
+  margin-top: 62px; }
 .documentation .navbar.fixed-top {
   left: 0;
   width: initial; }
 .navbar .navbar-minimize {
-  margin-right: 15px;
-  float: left; }
+  display: inline-block;
+  vertical-align: middle; }
+.navbar .navbar-minimize .navbar-toggler {
+  padding-left: 0; }
+.navbar .navbar-minimize:hover .navbar-toggler-bar.bar2 {
+  width: 22px; }
 .navbar .navbar-nav.navbar-logo {
   position: absolute;
   left: 0;
@@ -2726,8 +2730,11 @@ body {
 .navbar .navbar-toggler.navbar-toggler-right {
   padding-right: 0;
   top: 8px; }
-.navbar .navbar-toggler:hover .navbar-toggler-bar.bar2 {
-  width: 22px; }
+.navbar .navbar-toggler .navbar-toggler-bar.navbar-kebab {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  margin: 0 auto; }
 .navbar .button-dropdown .navbar-toggler-bar:nth-child(2) {
   width: 17px; }
 .navbar.navbar-transparent {
@@ -2917,15 +2924,15 @@ body {
   padding-bottom: .9rem;
   position: relative; }
 .alert.alert-success {
-  background-color: rgba(24, 206, 15, 0.8); }
+  background-color: #1be611; }
 .alert.alert-danger {
-  background-color: rgba(255, 54, 54, 0.8); }
+  background-color: #ff5050; }
 .alert.alert-warning {
-  background-color: rgba(255, 178, 54, 0.8); }
+  background-color: #ffbc50; }
 .alert.alert-info {
-  background-color: rgba(44, 168, 255, 0.8); }
+  background-color: #46b3ff; }
 .alert.alert-primary {
-  background-color: rgba(249, 99, 50, 0.8); }
+  background-color: #fa764b; }
 .alert i.fa, .alert i.now-ui-icons {
   font-size: 20px; }
 .alert .close {
@@ -3607,6 +3614,8 @@ Created using IcoMoon - icomoon.io
   font-weight: 400;
   padding-bottom: 5px;
   border-top: 0; }
+.table > thead > tr > th:first-child {
+  padding-left: 15px; }
 .table .td-actions .btn {
   opacity: 0.36;
   filter: alpha(opacity=36); }
@@ -3620,6 +3629,8 @@ Created using IcoMoon - icomoon.io
 .table > tbody > tr:hover .td-actions .btn {
   opacity: 1;
   filter: alpha(opacity=100); }
+.table > tbody > tr td:first-child {
+  padding-left: 15px; }
 
 @media screen and (min-width: 992px) {
   .table-full-width {
@@ -3637,7 +3648,12 @@ Created using IcoMoon - icomoon.io
   height: 100%;
   bottom: 0;
   left: 0;
-  z-index: 10; }
+  z-index: 10;
+  -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1); }
 .sidebar .sidebar-wrapper, .off-canvas-sidebar .sidebar-wrapper {
   position: relative;
   height: calc(100vh - 75px);
@@ -3677,7 +3693,7 @@ Created using IcoMoon - icomoon.io
   text-transform: uppercase;
   cursor: pointer;
   font-size: 0.7142em;
-  padding: 0.75rem 0.7rem;
+  padding: 0.6rem 0.5rem;
   line-height: 1.625rem; }
 .sidebar .nav li:first-child > a, .off-canvas-sidebar .nav li:first-child > a {
   margin: 0 15px; }
@@ -3693,7 +3709,7 @@ Created using IcoMoon - icomoon.io
 .sidebar .nav p, .off-canvas-sidebar .nav p {
   margin: 0; }
 .sidebar .nav i, .off-canvas-sidebar .nav i {
-  font-size: 24px;
+  font-size: 18px;
   float: left;
   margin-right: 15px;
   line-height: 30px;
@@ -3720,7 +3736,7 @@ Created using IcoMoon - icomoon.io
   content: "";
   display: block;
   background: #FFFFFF;
-  opacity: .93; }
+  opacity: .63; }
 .sidebar .logo, .off-canvas-sidebar .logo {
   position: relative;
   padding: 0.5rem 0.7rem;
@@ -3761,12 +3777,7 @@ Created using IcoMoon - icomoon.io
 .sidebar .logo-tim img, .off-canvas-sidebar .logo-tim img {
   width: 60px;
   height: 60px; }
-.sidebar:before, .off-canvas-sidebar:before {
-  background: #f96332;
-  background: -webkit-linear-gradient(#f96332 0%, #000 80%);
-  background: -o-linear-gradient(#f96332 0%, #000 80%);
-  background: -moz-linear-gradient(#f96332 0%, #000 80%);
-  background: linear-gradient(#f96332 0%, #000 80%);
+.sidebar:before, .sidebar:after, .off-canvas-sidebar:before, .off-canvas-sidebar:after {
   display: block;
   content: "";
   opacity: .76;
@@ -3775,6 +3786,43 @@ Created using IcoMoon - icomoon.io
   height: 100%;
   top: 0;
   left: 0; }
+.sidebar:after, .off-canvas-sidebar:after {
+  background: #B8B8B8;
+  background: -webkit-linear-gradient(#B8B8B8 0%, #000 80%);
+  background: -o-linear-gradient(#B8B8B8 0%, #000 80%);
+  background: -moz-linear-gradient(#B8B8B8 0%, #000 80%);
+  background: linear-gradient(#B8B8B8 0%, #000 80%);
+  z-index: 3; }
+.sidebar[data-color="blue"]:after, .off-canvas-sidebar[data-color="blue"]:after {
+  background: #2CA8FF;
+  background: -webkit-linear-gradient(#2CA8FF 0%, #000 80%);
+  background: -o-linear-gradient(#2CA8FF 0%, #000 80%);
+  background: -moz-linear-gradient(#2CA8FF 0%, #000 80%);
+  background: linear-gradient(#2CA8FF 0%, #000 80%); }
+.sidebar[data-color="green"]:after, .off-canvas-sidebar[data-color="green"]:after {
+  background: #18ce0f;
+  background: -webkit-linear-gradient(#18ce0f 0%, #000 80%);
+  background: -o-linear-gradient(#18ce0f 0%, #000 80%);
+  background: -moz-linear-gradient(#18ce0f 0%, #000 80%);
+  background: linear-gradient(#18ce0f 0%, #000 80%); }
+.sidebar[data-color="orange"]:after, .off-canvas-sidebar[data-color="orange"]:after {
+  background: #f96332;
+  background: -webkit-linear-gradient(#f96332 0%, #000 80%);
+  background: -o-linear-gradient(#f96332 0%, #000 80%);
+  background: -moz-linear-gradient(#f96332 0%, #000 80%);
+  background: linear-gradient(#f96332 0%, #000 80%); }
+.sidebar[data-color="red"]:after, .off-canvas-sidebar[data-color="red"]:after {
+  background: #FF3636;
+  background: -webkit-linear-gradient(#FF3636 0%, #000 80%);
+  background: -o-linear-gradient(#FF3636 0%, #000 80%);
+  background: -moz-linear-gradient(#FF3636 0%, #000 80%);
+  background: linear-gradient(#FF3636 0%, #000 80%); }
+.sidebar[data-color="yellow"]:after, .off-canvas-sidebar[data-color="yellow"]:after {
+  background: #FFB236;
+  background: -webkit-linear-gradient(#FFB236 0%, #000 80%);
+  background: -o-linear-gradient(#FFB236 0%, #000 80%);
+  background: -moz-linear-gradient(#FFB236 0%, #000 80%);
+  background: linear-gradient(#FFB236 0%, #000 80%); }
 
 .off-canvas-sidebar .nav > li > a, .off-canvas-sidebar .nav > li > a:hover {
   color: #FFFFFF; }
@@ -3783,16 +3831,15 @@ Created using IcoMoon - icomoon.io
 
 .main-panel {
   position: relative;
-  z-index: 2;
   float: right;
   width: calc(100% - 260px);
+  background-color: #fafafa;
   -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1); }
 .main-panel > .content {
-  margin-top: 35px;
   padding: 30px 15px;
   min-height: calc(100% - 123px); }
 .main-panel > .footer {
@@ -4401,11 +4448,13 @@ Created using IcoMoon - icomoon.io
     background: #FFFFFF; }
   .navbar .navbar-toggler-bar + .navbar-toggler-bar {
     margin-top: 7px; }
+  .navbar .navbar-toggler-bar + .navbar-toggler-bar.navbar-kebab {
+    margin-top: 3px; }
   .navbar .navbar-toggler-bar.bar2 {
     width: 17px;
     transition: width .2s linear; }
   .navbar.bg-white:not(.navbar-transparent) .navbar-toggler-bar {
-    background: #B8B8B8; }
+    background-color: #B8B8B8; }
   .navbar .toggled .navbar-toggler-bar {
     width: 24px; }
   .navbar .toggled .navbar-toggler-bar + .navbar-toggler-bar {
@@ -4423,10 +4472,6 @@ Created using IcoMoon - icomoon.io
     margin-right: 0;
     margin-left: 1rem; }
 
-  body {
-    position: relative;
-    overflow-x: hidden; }
-
   .nav-open .main-panel {
     right: 0;
     -webkit-transform: translate3d(260px, 0, 0);
@@ -4440,6 +4485,9 @@ Created using IcoMoon - icomoon.io
     -o-transform: translate3d(0px, 0, 0);
     -ms-transform: translate3d(0px, 0, 0);
     transform: translate3d(0px, 0, 0); }
+  .nav-open body {
+    position: relative;
+    overflow-x: hidden; }
   .nav-open .menu-on-left .navbar-collapse {
     -webkit-transform: translate3d(0px, 0, 0);
     -moz-transform: translate3d(0px, 0, 0);
@@ -4697,12 +4745,7 @@ Created using IcoMoon - icomoon.io
     -moz-transform: translate3d(-260px, 0, 0);
     -o-transform: translate3d(-260px, 0, 0);
     -ms-transform: translate3d(-260px, 0, 0);
-    transform: translate3d(-260px, 0, 0);
-    -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-    -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-    -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-    -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-    transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1); }
+    transform: translate3d(-260px, 0, 0); }
   .sidebar .user .photo, .bootstrap-navbar .user .photo {
     width: 50px;
     height: 50px;

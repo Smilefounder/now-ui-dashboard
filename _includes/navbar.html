@@ -2,15 +2,20 @@
 <nav class="navbar navbar-toggleable-md {% if page.brand != "documentation" %}bg-white{% endif %}{% if page.brand == "documentation" %} bg-primary navbar-transparent fixed-top{% endif %}"{% if page.brand == "documentation"%}color-on-scroll="500"{% endif %}>
 	<div class="container">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-bar bar1"></span>
-			<span class="navbar-toggler-bar bar2"></span>
-			<span class="navbar-toggler-bar bar3"></span>
+			<span class="navbar-toggler-bar navbar-kebab"></span>
+			<span class="navbar-toggler-bar navbar-kebab"></span>
+			<span class="navbar-toggler-bar navbar-kebab"></span>
 		</button>
 
 		{% if page.brand != "documentation" %}
 		<div class="navbar-minimize">
-			<button type="button" class="btn btn-neutral btn-icon btn-icon-mini btn-round" id="sidebar-collapse">
+			<!-- <button type="button" class="btn btn-neutral btn-icon btn-icon-mini btn-round" id="sidebar-collapse">
 				<i class="now-ui-icons gestures_tap-01"></i>
+			</button> -->
+			<button type="button" class="navbar-toggler">
+				<span class="navbar-toggler-bar bar1"></span>
+				<span class="navbar-toggler-bar bar2"></span>
+				<span class="navbar-toggler-bar bar3"></span>
 			</button>
 		</div>
 
@@ -18,7 +23,7 @@
 
 		{% else %}
 
-		<a class="navbar-brand" href="http://demos.creative-tim.com/now-ui-kit/index.html" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
+		<a class="navbar-brand" href="http://demos.creative-tim.com/now-ui-dashboard/index.html" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
 			Now Ui Dashboard - Docs
 		</a>
 

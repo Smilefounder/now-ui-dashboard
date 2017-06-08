@@ -90,28 +90,59 @@ brand: Notifications
                     </h5>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-2 offset-md-3">
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-lg-3">
                     <button class="btn btn-default btn-block" onclick="demo.showNotification('top','left')">Top Left</button>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3 col-lg-3">
                     <button class="btn btn-default btn-block" onclick="demo.showNotification('top','center')">Top Center</button>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3 col-lg-3">
                     <button class="btn btn-default btn-block" onclick="demo.showNotification('top','right')">Top Right</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-2 offset-md-3">
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-lg-3">
                     <button class="btn btn-default btn-block" onclick="demo.showNotification('bottom','left')">Bottom Left</button>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3 col-lg-3">
                     <button class="btn btn-default btn-block" onclick="demo.showNotification('bottom','center')">Bottom Center</button>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3 col-lg-3">
                     <button class="btn btn-default btn-block" onclick="demo.showNotification('bottom','right')">Bottom Right</button>
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h4>Modal</h4>
+
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+                 Launch Modal Mini
+               </button>
+            </div>
+        </div>
     </div>
 </div>
+
+<!-- Mini Modal -->
+<div class="modal fade modal-mini modal-primary" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <div class="modal-profile">
+                    <i class="now-ui-icons users_circle-08"></i>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>Always have an access to your profile</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link btn-neutral">Back</button>
+                <button type="button" class="btn btn-link btn-neutral" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  End Modal -->

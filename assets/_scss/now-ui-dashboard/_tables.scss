@@ -28,6 +28,10 @@
         font-weight: $font-weight-normal;
         padding-bottom: 5px;
         border-top: 0;
+
+        &:first-child{
+            padding-left: 15px;
+        }
     }
 
    .td-actions .btn{
@@ -49,6 +53,10 @@
             .td-actions .btn{
                 @include opacity(1);
             }
+        }
+
+        td:first-child{
+            padding-left: 15px;
         }
     }
 }

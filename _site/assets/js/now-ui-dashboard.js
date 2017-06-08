@@ -25,6 +25,9 @@ var navbar_initialized,
     backgroundOrange = false,
     toggle_initialized = false;
 
+var seq = 0, delays = 80, durations = 500;
+var seq2 = 0, delays2 = 80, durations2 = 500;
+
 $(document).ready(function(){
     //  Activate the Tooltips
     $('[data-toggle="tooltip"], [rel="tooltip"]').tooltip();
@@ -36,6 +39,9 @@ $(document).ready(function(){
             template: '<div class="popover '+ color_class +' " role="tooltip"><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
         });
     });
+
+    // check if there is an image set for the sidebar's background
+    nowuiDashboard.checkSidebarImage();
 
     $navbar = $('.navbar[color-on-scroll]');
     scroll_distance = $navbar.attr('color-on-scroll') || 500;
@@ -80,6 +86,9 @@ $(window).resize(function(){
     if( $(window).width() < 992 ){
         nowuiDashboard.initRightMenu();
     }
+
+    // reset the seq for charts drawing animations
+    seq = seq2 = 0;
 });
 
 nowuiDashboard = {
@@ -101,9 +110,19 @@ nowuiDashboard = {
             }
     }, 17),
 
+    checkSidebarImage: function(){
+        $sidebar = $('.sidebar');
+        image_src = $sidebar.data('image');
+
+        if(image_src !== undefined){
+            sidebar_container = '<div class="sidebar-background" style="background-image: url(' + image_src + ') "/>'
+            $sidebar.append(sidebar_container);
+        }
+    },
+
     initRightMenu: function(){
         if(!toggle_initialized){
-            $toggle = $('#sidebar-collapse');
+            $toggle = $('.navbar-minimize');
 
             $toggle.click(function (){
                 if(nowuiDashboard.misc.navbar_menu_visible == 1) {
@@ -147,7 +166,7 @@ nowuiDashboard = {
             toggle_initialized = true;
         }
     },
-    
+
     startAnimationForLineChart: function(chart){
 
         chart.on('draw', function(data) {

@@ -12,6 +12,7 @@
     bottom: 0;
     left: 0;
     z-index: 10;
+    @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 
     .sidebar-wrapper{
         position: relative;
@@ -73,7 +74,7 @@
                 text-transform: uppercase;
                 cursor: pointer;
                 font-size: $font-size-mini;
-                padding: 0.75rem $padding-base-horizontal;
+                padding: 0.6rem $padding-base-vertical;
                 line-height: $line-height-nav-link;
             }
 
@@ -108,7 +109,7 @@
         }
 
         i{
-            font-size: 24px;
+            font-size: 18px;
             float: left;
             margin-right: 15px;
             line-height: 30px;
@@ -139,7 +140,7 @@
             content: "";
             display: block;
             background: #FFFFFF;
-            opacity: .93;
+            opacity: .63;
         }
     }
 
@@ -196,12 +197,8 @@
         }
     }
 
-    &:before{
-        background: #f96332;
-        background: -webkit-linear-gradient(#f96332 0%, #000 80%);
-        background: -o-linear-gradient(#f96332 0%, #000 80%);
-        background: -moz-linear-gradient(#f96332 0%, #000 80%);
-        background: linear-gradient(#f96332 0%, #000 80%);
+    &:before,
+    &:after{
         display: block;
         content: "";
         opacity: .76;
@@ -212,21 +209,26 @@
         left: 0;
     }
 
-    // &[data-color="blue"]{
-    //     @include set-background-color-button($brand-info);
-    // }
-    // &[data-color="green"]{
-    //     @include set-background-color-button($brand-success);
-    // }
-    // &[data-color="orange"]{
-    //     @include set-background-color-button($brand-warning);
-    // }
-    // &[data-color="red"]{
-    //     @include set-background-color-button($brand-danger);
-    // }
-    // &[data-color="purple"]{
-    //     @include set-background-color-button($brand-primary);
-    // }
+    &:after{
+        @include icon-gradient($default-color);
+        z-index: 3;
+    }
+
+    &[data-color="blue"]:after{
+        @include icon-gradient($info-color);
+    }
+    &[data-color="green"]:after{
+        @include icon-gradient($success-color);
+    }
+    &[data-color="orange"]:after{
+        @include icon-gradient($primary-color);
+    }
+    &[data-color="red"]:after{
+        @include icon-gradient($danger-color);
+    }
+    &[data-color="yellow"]:after{
+        @include icon-gradient($warning-color);
+    }
 }
 
 .off-canvas-sidebar{
@@ -245,14 +247,12 @@
 
 .main-panel{
     position: relative;
-    z-index: 2;
     float: right;
     width: $sidebar-width;
-    // @include transform-translate-x(0px);
+    background-color: lighten(#f2f2f2, 3%);
     @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 
     > .content{
-        margin-top: 35px;
         padding: 30px 15px;
         min-height: calc(100% - 123px);
     }
