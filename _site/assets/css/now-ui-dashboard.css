@@ -4275,6 +4275,10 @@ Created using IcoMoon - icomoon.io
   max-width: 880px; }
 .page-header .category, .page-header .description {
   color: rgba(255, 255, 255, 0.5); }
+.documentation .page-header .category {
+  font-size: 2em; }
+.documentation .page-header .title + .category {
+  margin-top: -25px; }
 .page-header.page-header-small {
   height: 60vh;
   max-height: 440px; }

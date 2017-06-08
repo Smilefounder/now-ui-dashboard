@@ -67,6 +67,16 @@
         color: $opacity-5;
     }
 
+    .documentation &{
+        .category{
+            font-size: $font-size-h3;
+        }
+
+        .title + .category{
+            margin-top: -25px;
+        }
+    }
+
     &.page-header-small{
         height: 60vh;
         max-height: 440px;
