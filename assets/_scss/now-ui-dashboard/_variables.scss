@@ -133,10 +133,14 @@ $btn-round-radius:             30px         !default;
 
 $height-base:                  55px         !default;
 
-$btn-icon-font-size:            24px        !default;
-$btn-icon-size:                 56px        !default;
-$btn-icon-size-mini:            36px        !default;
-$btn-icon-font-size-mini:       14px        !default;
+$btn-icon-font-size:            1.5rem       !default;
+$btn-icon-size:                 3.5rem       !default;
+$btn-icon-size-regular:         2.25rem      !default;
+$btn-icon-font-size-regular:    0.875rem     !default;
+$btn-icon-font-size-small:      0.75rem      !default;
+$btn-icon-size-small:           1.875rem     !default;
+$btn-icon-font-size-lg:         1.125rem     !default;
+$btn-icon-size-lg:              3rem         !default;
 
 $font-size-h1:                 3.5em        !default; // ~ 49px
 $font-size-h2:                 2.5em        !default; // ~ 35px
