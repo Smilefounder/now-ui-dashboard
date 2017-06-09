@@ -24,12 +24,12 @@
 
     &.btn-icon {
         // see above for color variations
+        height: $btn-icon-size-regular;
+        min-width: $btn-icon-size-regular;
+        width: $btn-icon-size-regular;
         border-radius: 50%;
         font-size: $btn-icon-font-size;
-        height: $btn-icon-size;
         margin: auto;
-        min-width: $btn-icon-size;
-        width: $btn-icon-size;
         padding: 0;
         overflow: hidden;
         position: relative;
@@ -51,17 +51,17 @@
             }
         }
 
-        &.btn-icon-mini{
-            height: $btn-icon-size-mini;
-            min-width: $btn-icon-size-mini;
-            width: $btn-icon-size-mini;
-
-            .fa,
-            .now-ui-icons{
-                font-size: $btn-icon-font-size-mini;
-                line-height: $btn-icon-line-height - 0.2;
-            }
-        }
+        // &.btn-icon-mini{
+        //     height: $btn-icon-size-mini;
+        //     min-width: $btn-icon-size-mini;
+        //     width: $btn-icon-size-mini;
+        //
+        //     .fa,
+        //     .now-ui-icons{
+        //         font-size: $btn-icon-font-size-mini;
+        //         line-height: $btn-icon-line-height - 0.2;
+        //     }
+        // }
 
         i.fa,
         i.now-ui-icons{

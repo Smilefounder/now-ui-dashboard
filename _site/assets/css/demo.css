@@ -261,7 +261,7 @@
     margin-right: 2%;
 }
 
-.fixed-plugin .dropdown .dropdown-menu{
+/*.fixed-plugin .dropdown .dropdown-menu{
      -webkit-transform: translateY(-15%);
      -moz-transform: translateY(-15%);
      -o-transform: translateY(-15%);
@@ -324,7 +324,7 @@
     -o-transform: translateY(-19%);
     -ms-transform: translateY(-19%);
     transform: translateY(-19%);
-}
+}*/
 
 .fixed-plugin{
     top: 120px;
