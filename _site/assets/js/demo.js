@@ -12,7 +12,7 @@ $().ready(function(){
 
     if( window_width > 767 && fixed_plugin_open == 'Dashboard' ){
         if($('.fixed-plugin .dropdown').hasClass('show-dropdown')){
-            $('.fixed-plugin .dropdown').addClass('open');
+            $('.fixed-plugin .dropdown').addClass('show');
         }
 
     }
@@ -116,6 +116,35 @@ $().ready(function(){
 
             background_image = false;
         }
+    });
+
+    $('#twitter').sharrre({
+      share: {
+        twitter: true
+      },
+      enableHover: false,
+      enableTracking: false,
+      buttons: { twitter: {via: 'CreativeTim'}},
+      click: function(api, options){
+        api.simulateClick();
+        api.openPopup('twitter');
+      },
+      template: '<i class="fa fa-twitter"></i> &middot; 45',
+      url: 'http://demos.creative-tim.com/now-ui-dashboard/examples/dashboard.html'
+    });
+
+    $('#facebook').sharrre({
+      share: {
+        facebook: true
+      },
+      enableHover: false,
+      enableTracking: false,
+      click: function(api, options){
+        api.simulateClick();
+        api.openPopup('facebook');
+      },
+      template: '<i class="fa fa-facebook-square"></i> &middot; 50',
+      url: 'http://demos.creative-tim.com/now-ui-dashboard/examples/dashboard.html'
     });
 });
 
