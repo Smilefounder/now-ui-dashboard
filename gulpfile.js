@@ -23,7 +23,7 @@ const
   concat        = require('gulp-concat'),
   stripdebug    = require('gulp-strip-debug'),
   uglify        = require('gulp-uglify'),
-  prettify      = require('gulp-jsbeautifier');
+  prettify      = require('gulp-jsbeautifier'),
   clean         = require('gulp-clean'),
   zip           = require('gulp-zip');
 ;
@@ -145,11 +145,11 @@ gulp.task('zip', function () {
   .pipe(gulp.dest('.'));
 });
 
-gulp.task('prettify', function() {
-  gulp.src('dist/**/*.html')
-    .pipe(prettify({indent_char: ' ', indent_size: 2}))
-    .pipe(gulp.dest('dist/'))
-});
+// gulp.task('prettify', function() {
+//   gulp.src('dist/**/*.html')
+//     .pipe(prettify({indent_char: ' ', indent_size: 2}))
+//     .pipe(gulp.dest('dist/'))
+// });
 
 gulp.task('prettify', function() {
   gulp.src(['_site/assets/css/**/*'])
