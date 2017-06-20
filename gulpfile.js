@@ -9,7 +9,7 @@ const
   // source and build folders
   dir = {
     src         : '_site/',
-    build       : 'build-product/'
+    build       : 'dist/'
   },
 
   // Gulp and plugins
@@ -23,7 +23,7 @@ const
   concat        = require('gulp-concat'),
   stripdebug    = require('gulp-strip-debug'),
   uglify        = require('gulp-uglify'),
-  prettify      = require('gulp-html-prettify'),
+  prettify      = require('gulp-jsbeautifier');
   clean         = require('gulp-clean'),
   zip           = require('gulp-zip');
 ;
@@ -140,16 +140,23 @@ gulp.task('css', ['images'], () => {
 
 // Zip files up
 gulp.task('zip', function () {
- return gulp.src('build-product/**/*')
+ return gulp.src('dist/**/*')
   .pipe(zip(productname + '-' + version + '.zip'))
   .pipe(gulp.dest('.'));
 });
 
 gulp.task('prettify', function() {
-  gulp.src('build-product/**/*.html')
+  gulp.src('dist/**/*.html')
     .pipe(prettify({indent_char: ' ', indent_size: 2}))
-    .pipe(gulp.dest('build-product/'))
+    .pipe(gulp.dest('dist/'))
 });
+
+gulp.task('prettify', function() {
+  gulp.src(['_site/assets/css/**/*'])
+    .pipe(prettify())
+    .pipe(gulp.dest('dist'));
+});
+
 
 // run all tasks
 gulp.task('build', ['move_html', 'move_css','move_js','move_sass_parent','move_sass', 'images', 'move_fonts','clean_scss']);
