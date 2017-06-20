@@ -152,7 +152,7 @@ gulp.task('zip', function () {
 // });
 
 gulp.task('prettify', function() {
-  gulp.src(['_site/**/*.html'])
+  gulp.src(['_site/**/*.html', '_site/assets/css/*.css', '_site/assets/js/**/*'])
     .pipe(prettify({
         "html": {
             "allowed_file_extensions": ["htm", "html", "xhtml", "shtml", "xml", "svg"],
