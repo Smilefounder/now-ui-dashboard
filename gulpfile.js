@@ -152,7 +152,7 @@ gulp.task('zip', function () {
 // });
 
 gulp.task('prettify', function() {
-  gulp.src(['_site/assets/css/**/*'])
+  gulp.src(['_site/**/*.html'])
     .pipe(prettify())
     .pipe(gulp.dest('dist'));
 });
