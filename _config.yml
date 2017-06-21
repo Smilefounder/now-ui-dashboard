@@ -42,3 +42,4 @@ exclude:
     - feed.xslt.xml
     - build-product
     - gulpfile.js
+    - backstop_data
