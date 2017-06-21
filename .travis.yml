@@ -1,0 +1,24 @@
+language: ruby
+rvm:
+  - 2.2
+before_install:
+  - npm install
+  - pip install --user pillow
+install: gem install jekyll
+#install: gem install html-proofer
+script: npm run travis
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+#
+# deploy:
+#   provider: s3
+#   access_key_id: $AWS_ACCESS_KEY
+#   secret_access_key: $AWS_SECRET_KEY
+#   bucket: $BUCKET_NAME
+#   skip_cleanup: true
+#   local_dir: build
+#   upload-dir: cesium-website/$TRAVIS_BRANCH
+#   on:
+#     all_branches: true

@@ -204,5 +204,50 @@ gulp.task('prettify', function() {
 });
 
 
+// compiles less files and outputs them to css
+// gulp.task('compile-less', function() {
+//     return gulp.src(path.join(cssPath, '*.less'))
+//         .pipe(less())
+//         .pipe(gulp.dest(cssPath));
+// });
+
+// Builds the static website with Jekyll
+// gulp.task('jekyll', ['compile-less'], function(done) {
+//     execute('jekyll build --future --destination '
+//         + path.join('..', websiteOutputDirectory), {
+//         cwd: websiteInputDirectory
+//     }, done);
+// });
+//
+// function execute (cmd, opts, done) {
+//     util.log(util.colors.cyan(cmd));
+//     exec(cmd, opts,
+//         function (error, stdout, stderr) {
+//             util.log(util.colors.cyan(stdout));
+//             util.log(util.colors.red(stderr));
+//             done(error);
+//         }
+//     );
+// }
+
+// // Validates html and links
+// gulp.task('html-proofer', function(done) {
+//     execute('htmlproof ' +
+//         buildOutputDirectory +
+//         // html-proofer options
+//     , done());
+// });
+//
+// function execute (cmd, opts, done) {
+//     util.log(util.colors.cyan(cmd));
+//     exec(cmd, opts,
+//         function (error, stdout, stderr) {
+//             util.log(util.colors.cyan(stdout));
+//             util.log(util.colors.red(stderr));
+//             done(error);
+//         }
+//     );
+// }
+
 // run all tasks
 gulp.task('build', ['move_html', 'move_css','move_js','move_sass_parent','move_sass', 'images', 'move_fonts','clean_scss']);
