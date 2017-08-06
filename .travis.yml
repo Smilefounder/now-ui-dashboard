@@ -4,8 +4,8 @@ node_js:
     - "stable"
 
 env:
-    - NODE_ENV: "development"
-    - NODE_ENV: "production"; SECRET="something"
+    - NODE_ENV="development"
+    - NODE_ENV="production"; SECRET="something"
 
 script: gulp travis
 
