@@ -261,7 +261,7 @@ gulp.task('move_live_demo', () => {
     .pipe(gulp.dest(live_demo.build));
 });
 
-gulp.task('travis',['build'], function() => {
+gulp.task('travis',['build'], () => {
     process.exit(0);
 });
 

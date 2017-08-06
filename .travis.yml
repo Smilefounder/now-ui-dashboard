@@ -19,6 +19,10 @@ sudo: false
 
 dist: trusty
 
+cache:
+  directories:
+    - "node_modules"
+
 #
 # deploy:
 #   provider: s3
