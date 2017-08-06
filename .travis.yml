@@ -9,6 +9,10 @@ env:
 
 script: gulp travis
 
+sudo: false
+
+dist: trusty
+
 #
 # deploy:
 #   provider: s3
