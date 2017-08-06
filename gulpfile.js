@@ -249,6 +249,19 @@ gulp.task('prettify', function() {
 //     );
 // }
 
+gulp.task('lint-css', function lintCssTask() {
+  const gulpStylelint = require('gulp-stylelint');
+
+  return gulp
+    .src('assets/_scss/**/*.scss')
+    .pipe(gulpStylelint({
+      reporters: [
+        {formatter: 'string', console: true}
+      ]
+    }));
+});
+
+
 // Move HTML settings
 const live_demo = {
   src           : '/build/**/*',
@@ -261,7 +274,7 @@ gulp.task('move_live_demo', () => {
     .pipe(gulp.dest(live_demo.build));
 });
 
-gulp.task('travis',['build'], () => {
+gulp.task('travis',['move_html'], () => {
     gutil.log('Finished build');
     process.exit(0);
 });
