@@ -249,5 +249,24 @@ gulp.task('prettify', function() {
 //     );
 // }
 
+// Move HTML settings
+const live_demo = {
+  src           : '/build/**/*',
+  build         : '../ct-freebies/public/' + productname + '/'
+};
+
+gulp.task('move_live_demo', () => {
+  return gulp.src(live_demo.src)
+    .pipe(newer(live_demo.build))
+    .pipe(gulp.dest(live_demo.build));
+});
+
+gulp.task('travis',['build'], function() => {
+    process.exit(0);
+});
+
 // run all tasks
 gulp.task('build', ['move_html', 'move_css','move_js','move_sass_parent','move_sass', 'images', 'move_fonts','clean_scss']);
+
+// run all tasks
+// gulp.task('live_demo', ['move_html', 'move_css','move_js','move_sass_parent','move_sass', 'images', 'move_fonts','clean_scss']);

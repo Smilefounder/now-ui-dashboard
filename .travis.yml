@@ -1,15 +1,13 @@
-language: ruby
-rvm:
-  - 2.2
-before_install:
-  - npm install
-  - pip install --user pillow
-install: gem install jekyll
-#install: gem install html-proofer
-script: npm run travis
+language: node_js
+
+node_js:
+    - "stable"
+
 env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+    - NODE_ENV: "development"
+    - NODE_ENV: "production"; SECRET="something"
+
+script: gulp travis
 
 #
 # deploy:
