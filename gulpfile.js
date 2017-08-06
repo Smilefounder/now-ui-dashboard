@@ -262,6 +262,7 @@ gulp.task('move_live_demo', () => {
 });
 
 gulp.task('travis',['build'], () => {
+    gutil.log('Finished build');
     process.exit(0);
 });
 
