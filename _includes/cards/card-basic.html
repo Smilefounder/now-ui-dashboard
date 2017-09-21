@@ -19,6 +19,10 @@
         <p class="card-text">{{ cardContent }}</p>
         {% endif %}
 
+        {% if cardOtherContent %}
+            {{ cardOtherContent }}
+        {% endif %}
+
         {% if cardChart %}
             {{ cardChart }}
         {% endif %}
