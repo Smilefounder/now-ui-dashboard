@@ -4,117 +4,17 @@ brand: Dashboard
 ---
 <div class="row">
     <div class="col-md-4">
-        <div class="card">
-            <div class="card-header">
-                <h5 class="title">Email Statistics</h5>
-                <p class="category">Last Campaign Performance</p>
-            </div>
-            <div class="card-block">
-                <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
-
-                <div class="footer">
-                    <div class="legend">
-                        <i class="fa fa-circle text-gray"></i> Open
-                        <i class="fa fa-circle text-primary"></i> Bounce
-                        <i class="fa fa-circle text-warning"></i> Unsubscribe
-                    </div>
-                    <hr>
-                    <div class="stats">
-                        <i class="now-ui-icons ui-2_time-alarm"></i> Campaign sent 2 days ago
-                    </div>
-                </div>
-            </div>
-        </div>
+		{% include cards/content-cards/chart/card-chart-statistics.html chartId="chartPreferences" %}
     </div>
 
     <div class="col-md-8">
-        <div class="card">
-            <div class="card-header">
-                <h5 class="title">Users Behavior</h5>
-                <p class="category">24 Hours performance</p>
-            </div>
-            <div class="card-block">
-                <div class="statistics-container">
-                    <!-- <i class="fa fa-circle text-primary"></i> Open
-                    <i class="fa fa-circle text-warning"></i> Click
-                    <i class="fa fa-circle text-gray"></i> Click Second Time -->
-                    <div class="statistics">
-                        <p class="description">NASDAQ: AAPL</p>
-                        <h3>127.33</h3>
-                        <h6>OCT 2:16 PM EDT</h6>
-                    </div>
-
-                    <!-- <ul>
-                        <li>
-                            Low
-                            <span class="stats-value">126.88</span>
-                        </li>
-                        <li>
-                            High
-                            <span class="stats-value">127.61</span>
-                        </li>
-                        <li>
-                            Open
-                            <span class="stats-value">127.48</span>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li>
-                            Market cap
-                            <span class="stats-value">735.34B</span>
-                        </li>
-                        <li>
-                            Devident yield
-                            <span class="stats-value">1.63%</span>
-                        </li>
-                        <li>
-                            P/E ratio(ttm)
-                            <span class="stats-value">15.73</span>
-                        </li>
-                    </ul> -->
-                    <div class="statistics-badge">
-                        <span class="badge badge-primary">
-                            <i class="now-ui-icons media-2_sound-wave"></i>
-                            1 Year
-                        </span>
-                    </div>
-                </div>
-                <div id="chartHours" class="ct-chart"></div>
-                <div class="footer">
-
-                    <hr>
-                    <div class="stats">
-                        <i class="now-ui-icons loader_refresh spin"></i> Updated 3 minutes ago
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% include cards/content-cards/chart/card-chart-behavior.html chartId="chartHours" %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-md-6">
-        <div class="card">
-            <div class="card-header">
-                <h5 class="title">2014 Sales</h5>
-                <p class="category">All products including Taxes</p>
-            </div>
-            <div class="card-block">
-                <div id="chartActivity" class="ct-chart"></div>
-
-                <div class="footer">
-                    <div class="legend">
-                        <i class="fa fa-circle text-gray"></i> Tesla Model S
-                        <i class="fa fa-circle text-primary"></i> BMW 5 Series
-                    </div>
-                    <hr>
-                    <div class="stats">
-                        <i class="now-ui-icons ui-1_check"></i> Data information certified
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% include cards/content-cards/chart/card-chart-sales.html chartId="chartActivity" %}
     </div>
 
     <div class="col-md-6">
@@ -123,7 +23,7 @@ brand: Dashboard
                 <h5 class="title">Tasks</h5>
                 <p class="category">Backend development</p>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="table-full-width table-responsive">
                     <table class="table">
                         <tbody>

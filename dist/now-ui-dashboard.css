@@ -6256,7 +6256,7 @@ Created using IcoMoon - icomoon.io
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
-.card .card-block {
+.card .card-body {
     padding: 15px 15px 10px 15px;
 }
 
@@ -6402,7 +6402,7 @@ Created using IcoMoon - icomoon.io
     position: relative;
 }
 
-.card-user .card-block {
+.card-user .card-body {
     min-height: 240px;
 }
 

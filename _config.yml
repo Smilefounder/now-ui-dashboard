@@ -43,3 +43,4 @@ exclude:
     - build-product
     - gulpfile.js
     - backstop_data
+    - dist/

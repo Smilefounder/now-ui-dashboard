@@ -1,0 +1,34 @@
+<div class="card{{ cardClasses }}">
+    {% if cardHeader %}
+    <div class="card-header{{ headerClasses }}">
+    {{ cardHeader }}
+    </div>
+    {% elsif cardImage and cardImageTop %}
+    <img class="card-img-top" src="{{ cardImage }}" alt="Alt Image">
+    {% endif %}
+    <div class="card-body{{ bodyClasses }}">
+        {% if cardTitle %}
+        <h4 class="card-title">{{ cardTitle }}</h4>
+        {% endif %}
+
+        {% if cardSubtitle %}
+        <h6 class="card-subtitle">{{ cardSubtitle }}</h6>
+        {% endif %}
+
+        {% if cardContent %}
+        <p class="card-text">{{ cardContent }}</p>
+        {% endif %}
+
+        {% if cardChart %}
+            {{ cardChart }}
+        {% endif %}
+    </div>
+    {% if cardImage and cardImageBottom %}
+    <img class="card-img-bottom" src="{{ cardImage }}" alt="Alt Image">
+    {% endif %}
+    {% if cardFooter %}
+    <div class="card-footer{{ footerClasses }}">
+        {{ cardFooter }}
+    </div>
+    {% endif %}
+</div>

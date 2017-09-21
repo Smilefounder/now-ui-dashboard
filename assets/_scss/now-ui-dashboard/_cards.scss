@@ -8,7 +8,7 @@
     margin-bottom: 20px;
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
 
-    .card-block{
+    .card-body{
         padding: 15px 15px 10px 15px;
     }
 
@@ -78,7 +78,7 @@
             background-color: $primary-color;
         }
 
-        .footer{
+        .card-footer{
             .stats{
                 color: $white-color;
             }
@@ -125,8 +125,9 @@
         margin: 30px 0 30px;
     }
 
-    .footer{
-        padding: 0;
+    .card-footer{
+        background-color: $white-color;
+        border: 0;
 
         .stats{
             i{
@@ -161,7 +162,7 @@
         position: relative;
     }
 
-    .card-block{
+    .card-body{
         min-height: 240px;
     }
 
@@ -209,14 +210,14 @@
         text-align: center;
 
         .btn.btn-icon ,
-        .btn.btn-icon .btn-icon -mini{
+        .btn.btn-icon .btn-icon{
             margin-left: 5px;
             margin-right: 5px;
             box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.2);
         }
     }
 
-    .footer{
+    .card-footer{
         margin-bottom: 10px;
         margin-top: 24px;
     }
@@ -226,12 +227,13 @@
     background: transparent;
     box-shadow: none;
 
-    .header{
+    .card-header{
         margin-left: 0;
         margin-right: 0;
+        background-color: transparent;
     }
 
-    .content{
+    .card-body{
         padding-left: 0;
         padding-right: 0;
     }

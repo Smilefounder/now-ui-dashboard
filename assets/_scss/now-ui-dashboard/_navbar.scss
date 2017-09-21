@@ -59,6 +59,7 @@
             font-size: $font-size-mini;
             padding: $padding-base-vertical $padding-base-horizontal;
             line-height: $line-height-nav-link;
+            margin-right: 5px;
 
             i.fa + p,
             i.now-ui-icons + p{
@@ -98,11 +99,6 @@
         }
     }
 
-    &[class*='navbar-toggleable-'] .container{
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
     .logo-container{
         width: 27px;
         height: 27px;
@@ -126,17 +122,6 @@
         vertical-align: middle;
         outline: 0;
         cursor: pointer;
-
-        &.navbar-toggler-left{
-            position: relative;
-            left: 0;
-            padding-left: 0;
-        }
-
-        &.navbar-toggler-right{
-            padding-right: 0;
-            top: 8px;
-        }
 
         & .navbar-toggler-bar.navbar-kebab{
             width: 3px;
@@ -173,7 +158,10 @@
             background: $default-color;
         }
 
-        .nav-item.active .nav-link{
+        .nav-item.active .nav-link:not(.btn),
+        .nav-item .nav-link:not(.btn):focus,
+        .nav-item .nav-link:not(.btn):hover,
+        .nav-item .nav-link:not(.btn):active{
             background-color: $opacity-gray-3;
         }
 

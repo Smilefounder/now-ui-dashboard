@@ -1,2 +1,13 @@
+Gemfile.lock
+node_modules/
+_site/feed.xml
+_site/feed.xslt.xml
+_site/assets/main.css
+.sass-cache/
+*.zip
+build-product/
+
+dist/
+
 /node_modules
 /backstop_data
