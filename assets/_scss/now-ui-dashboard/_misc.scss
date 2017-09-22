@@ -16,17 +16,20 @@ body{
 .nav-tabs .nav-link,
 .sidebar .nav a,
 .sidebar .nav a i,
-.navbar-collapse .navbar-nav .nav-link{
+.navbar-collapse .navbar-nav .nav-link,
+.animation-transition-general{
     @include transition($general-transition-time, $transition-ease);
 }
 
 //transition for dropdown caret
 .dropdown-toggle:after,
-.bootstrap-switch-label:before{
+.bootstrap-switch-label:before,
+.caret{
     @include transition($fast-transition-time, $transition-ease);
 }
 
-.dropdown-toggle[aria-expanded="true"]:after{
+.dropdown-toggle[aria-expanded="true"]:after,
+a[data-toggle="collapse"][aria-expanded="true"] .caret{
     @include rotate-180();
 }
 
@@ -47,10 +50,16 @@ body{
     }
 }
 
-.open{
-    @include transform-translate-y(0);
-    @include opacity(1);
-    visibility: visible;
+.caret{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
 }
 
 .separator{
