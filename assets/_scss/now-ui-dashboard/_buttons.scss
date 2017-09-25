@@ -6,6 +6,7 @@
     line-height: $line-height;
     margin: 5px 1px;
     border: none;
+    margin:10px 1px;
     border-radius: $border-radius-small;
     padding: $padding-btn-vertical $padding-btn-horizontal;
     cursor: pointer;
@@ -77,6 +78,44 @@
         position: relative;
         top: 1px;
     }
+
+    // social buttons
+    &.btn-facebook {
+    	@include social-buttons-color($social-facebook, $social-facebook-state-color);
+    }
+    &.btn-twitter {
+    	@include social-buttons-color($social-twitter, $social-twitter-state-color);
+    }
+    &.btn-pinterest {
+    	@include social-buttons-color($social-pinterest, $social-pinterest-state-color);
+    }
+    &.btn-google {
+    	@include social-buttons-color($social-google, $social-google-state-color);
+    }
+    &.btn-linkedin {
+    	@include social-buttons-color($social-linkedin, $social-linkedin-state-color);
+    }
+    &.btn-dribbble {
+    	@include social-buttons-color($social-dribbble, $social-dribbble-state-color);
+    }
+    &.btn-github {
+    	@include social-buttons-color($social-github, $social-github-state-color);
+    }
+    &.btn-youtube {
+    	@include social-buttons-color($social-youtube, $social-youtube-state-color);
+    }
+    &.btn-instagram {
+    	@include social-buttons-color($social-instagram, $social-instagram-state-color);
+    }
+    &.btn-reddit {
+    	@include social-buttons-color($social-reddit, $social-reddit-state-color);
+    }
+    &.btn-tumblr {
+    	@include social-buttons-color($social-tumblr, $social-tumblr-state-color);
+    }
+    &.btn-behance {
+    	@include social-buttons-color($social-behance, $social-behance-state-color);
+    }
 }
 
 // Apply the mixin to the buttons
@@ -97,7 +136,7 @@
 }
 .btn-round{
     border-width: $border-thin;
-    border-radius: $btn-round-radius !important;
+    border-radius: $btn-round-radius;
     padding: $padding-btn-vertical  $padding-round-horizontal;
 
     &.btn-simple{

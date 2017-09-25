@@ -7,25 +7,19 @@
         display: none;
     }
 
+    #minimizeSidebar{
+        display: none;
+    }
+
     .navbar{
-        .navbar-brand{
-            padding-top: .5rem;
-            padding-bottom: .5rem;
+        .container-fluid{
+            padding-right: 15px;
+            padding-left: 15px;
         }
 
         .navbar-nav{
-            // .nav-link{
-            //     padding-top: 0.75rem;
-            //     padding-bottom: .75rem;
-            // }
-
             .nav-item:not(:last-child){
                 margin-bottom: 10px;
-            }
-
-            &.navbar-logo{
-                top: 0;
-                height: 53px;
             }
         }
 
@@ -103,12 +97,6 @@
         @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
     }
 
-    .menu-on-left .navbar-brand{
-        float: right;
-        margin-right: 0;
-        margin-left: 1rem;
-    }
-
     .nav-open{
         .main-panel{
             right: 0;
@@ -124,23 +112,32 @@
             overflow-x: hidden;
         }
 
-        .menu-on-left{
-            .navbar-collapse{
+        .menu-on-right{
+            .main-panel{
+                @include transform-translate-x(-260px);
+            }
+
+            .navbar-collapse,
+            .sidebar{
                 @include transform-translate-x(0px);
             }
 
             .navbar-translate{
-                @include transform-translate-x(300px);
-            }
-
-            .wrapper{
-                @include transform-translate-x(150px);
+                @include transform-translate-x(-300px);
             }
 
             #bodyClick{
-                right: auto;
-                left: 300px;
+                right: 260px;
+                left: auto;
             }
+        }
+    }
+
+    .menu-on-right{
+        .sidebar{
+            left: auto;
+            right:0;
+            @include transform-translate-x(260px);
         }
     }
 
@@ -197,7 +194,7 @@
         opacity: 1;
         top: 0;
         right: 0;
-        left: 300px;
+        left: 260px;
         content: "";
         z-index: 9999;
         overflow-x: hidden;
@@ -237,22 +234,9 @@
         visibility: visible;
         overflow-y: visible;
         padding: 0;
+        @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 
         @include transform-translate-x(-260px);
-
-        .user{
-            .photo{
-                width: 50px;
-                height: 50px;
-                border-width: 2px;
-            }
-        }
-
-        .dropdown-menu:after,
-        .dropdown-menu:before{
-            display: none;
-        }
-
     }
 
     .main-panel{

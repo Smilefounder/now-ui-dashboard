@@ -95,7 +95,7 @@ $(document).ready(function(){
     }
 });
 
-$(document).on('click', '.navbar-toggler', function(){
+$(document).on('click', '.navbar-toggle', function(){
     $toggle = $(this);
 
     if(nowuiDashboard.misc.navbar_menu_visible == 1) {
