@@ -29,20 +29,28 @@
         }
     }
 
-    .navbar-minimize{
-        display: inline-block;
-        vertical-align: middle;
+    .navbar-wrapper{
+        display: inline-flex;
+        align-items: center;
 
-        .navbar-toggler{
-            padding-left: 0;
+        .navbar-minimize{
+            padding-right: 10px;
         }
 
-        &:hover{
-            & .navbar-toggler-bar.bar2{
-                width: 22px;
+        .navbar-toggle{
+            .navbar-toggler{
+                padding-left: 0;
+            }
+
+            &:hover{
+                & .navbar-toggler-bar.bar2{
+                    width: 22px;
+                }
             }
         }
     }
+
+
 
     .navbar-nav{
         &.navbar-logo{

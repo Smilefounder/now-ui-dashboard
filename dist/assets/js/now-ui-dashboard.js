@@ -122,7 +122,7 @@ nowuiDashboard = {
 
     initRightMenu: function(){
         if(!toggle_initialized){
-            $toggle = $('.navbar-minimize');
+            $toggle = $('.navbar-toggle');
 
             $toggle.click(function (){
                 if(nowuiDashboard.misc.navbar_menu_visible == 1) {

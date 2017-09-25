@@ -1,16 +1,22 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg {% if page.brand != "documentation" %}bg-white{% endif %}{% if page.brand == "documentation" %} bg-primary navbar-transparent fixed-top{% endif %}"{% if page.brand == "documentation"%}color-on-scroll="500"{% endif %}>
-	<div class="container">
+	<div class="container-fluid">
 		{% if page.brand != "documentation" %}
 
 		<div class="navbar-wrapper">
-			<div class="navbar-minimize">
+			<div class="navbar-toggle">
 				<button type="button" class="navbar-toggler">
 					<span class="navbar-toggler-bar bar1"></span>
 					<span class="navbar-toggler-bar bar2"></span>
 					<span class="navbar-toggler-bar bar3"></span>
 				</button>
 			</div>
+			<div class="navbar-minimize">
+	            <button id="minimizeSidebar" class="btn btn-round btn-primary btn-icon">
+	                <i class="now-ui-icons media-1_button-play visible-on-sidebar-regular"></i>
+	                <i class="now-ui-icons media-1_button-pause visible-on-sidebar-mini"></i>
+	            </button>
+	        </div>
 			<a class="navbar-brand" href="#pablo">{{ page.brand }}</a>
 		</div>
 		{% else %}

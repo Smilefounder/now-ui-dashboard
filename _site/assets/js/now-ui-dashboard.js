@@ -23,10 +23,25 @@ var fixedTop = false;
 
 var navbar_initialized,
     backgroundOrange = false,
+    sidebar_mini_active = false,
     toggle_initialized = false;
 
 var seq = 0, delays = 80, durations = 500;
 var seq2 = 0, delays2 = 80, durations2 = 500;
+
+(function(){
+    isWindows = navigator.platform.indexOf('Win') > -1 ? true : false;
+
+    if (isWindows && !$('body').hasClass('sidebar-mini')){
+       // if we are on windows OS we activate the perfectScrollbar function
+       $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
+
+       $('html').addClass('perfect-scrollbar-on');
+   } else {
+       $('html').addClass('perfect-scrollbar-off');
+   }
+})();
+
 
 $(document).ready(function(){
     //  Activate the Tooltips
@@ -42,6 +57,8 @@ $(document).ready(function(){
 
     // check if there is an image set for the sidebar's background
     nowuiDashboard.checkSidebarImage();
+
+    nowuiDashboard.initMinimizeSidebar();
 
     $navbar = $('.navbar[color-on-scroll]');
     scroll_distance = $navbar.attr('color-on-scroll') || 500;
@@ -78,7 +95,7 @@ $(document).ready(function(){
     }
 });
 
-$(document).on('click', '.navbar-minimize .navbar-toggler', function(){
+$(document).on('click', '.navbar-toggler', function(){
     $toggle = $(this);
 
     if(nowuiDashboard.misc.navbar_menu_visible == 1) {
@@ -141,6 +158,32 @@ nowuiDashboard = {
             sidebar_container = '<div class="sidebar-background" style="background-image: url(' + image_src + ') "/>'
             $sidebar.append(sidebar_container);
         }
+    },
+
+    initMinimizeSidebar:function(){
+        $('#minimizeSidebar').click(function(){
+            var $btn = $(this);
+
+
+
+            if(sidebar_mini_active == true){
+                $('body').removeClass('sidebar-mini');
+                sidebar_mini_active = false;
+            }else{
+                $('body').addClass('sidebar-mini');
+                sidebar_mini_active = true;
+            }
+
+            // we simulate the window Resize so the charts will get updated in realtime.
+            var simulateWindowResize = setInterval(function(){
+                window.dispatchEvent(new Event('resize'));
+            },180);
+
+            // we stop the simulation of Window Resize after the animations are completed
+            setTimeout(function(){
+                clearInterval(simulateWindowResize);
+            },1000);
+        });
     },
 
     startAnimationForLineChart: function(chart){
