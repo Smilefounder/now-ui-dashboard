@@ -399,7 +399,360 @@
 
                     <div class="content">
                         <div class="container-fluid">
-                            
+                            <div class="header text-center">
+    <h3 class="title">Sweet Alert 2</h3>
+    <p class="category">A beautiful plugin, that replace the classic alert, Handcrafted by our friend <a target="_blank" href="https://twitter.com/t4t5">Tristan Edwards</a>. Please check out the <a href="http://limonte.github.io/sweetalert2/" target="_blank">full documentation.</a></p>
+</div>
+
+<div class="places-sweet-alerts">
+    <div class="row">
+        <div class="col-md-3">
+            
+
+
+<div class="card ">
+    
+    <div class="card-body text-center">
+        
+
+        
+
+        
+        <p class="card-text">Basic example</p>
+        
+
+        
+            <button class="btn btn-primary btn-fill" onclick=demo.showSwal('basic')>Try me!</button>
+        
+
+        
+    </div>
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col-md-3">
+            
+
+
+<div class="card ">
+    
+    <div class="card-body text-center">
+        
+
+        
+
+        
+        <p class="card-text">A title with a text under</p>
+        
+
+        
+            <button class="btn btn-primary btn-fill" onclick=demo.showSwal('title-and-text')>Try me!</button>
+        
+
+        
+    </div>
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col-md-3">
+            
+
+
+<div class="card ">
+    
+    <div class="card-body text-center">
+        
+
+        
+
+        
+        <p class="card-text">A success message</p>
+        
+
+        
+            <button class="btn btn-primary btn-fill" onclick=demo.showSwal('success-message')>Try me!</button>
+        
+
+        
+    </div>
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col-md-3">
+            
+
+
+<div class="card ">
+    
+    <div class="card-body text-center">
+        
+
+        
+
+        
+        <p class="card-text">Custom HTML description</p>
+        
+
+        
+            <button class="btn btn-primary btn-fill" onclick=demo.showSwal('custom-html')>Try me!</button>
+        
+
+        
+    </div>
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col-md-3">
+            
+
+
+<div class="card ">
+    
+    <div class="card-body text-center">
+        
+
+        
+
+        
+        <p class="card-text">A warning message, with a function attached to the "Confirm" Button...</p>
+        
+
+        
+            <button class="btn btn-primary btn-fill" onclick=demo.showSwal('warning-message-and-confirmation')>Try me!</button>
+        
+
+        
+    </div>
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col-md-3">
+            
+
+
+<div class="card ">
+    
+    <div class="card-body text-center">
+        
+
+        
+
+        
+        <p class="card-text">...and by passing a parameter, you can execute something else for "Cancel"</p>
+        
+
+        
+            <button class="btn btn-primary btn-fill" onclick=demo.showSwal('warning-message-and-cancel')>Try me!</button>
+        
+
+        
+    </div>
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col-md-3">
+            
+
+
+<div class="card ">
+    
+    <div class="card-body text-center">
+        
+
+        
+
+        
+        <p class="card-text">A message with auto close timer set to 2 seconds</p>
+        
+
+        
+            <button class="btn btn-primary btn-fill" onclick=demo.showSwal('auto-close')>Try me!</button>
+        
+
+        
+    </div>
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col-md-3">
+            
+
+
+<div class="card ">
+    
+    <div class="card-body text-center">
+        
+
+        
+
+        
+        <p class="card-text">Modal window with input field</p>
+        
+
+        
+            <button class="btn btn-primary btn-fill" onclick=demo.showSwal('input-field')>Try me!</button>
+        
+
+        
+    </div>
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
 
@@ -448,6 +801,9 @@
 <script src="../../assets/js/plugins/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
 
 
+<!--  Plugin for Sweet Alert -->
+<script src="../../assets/js/plugins/sweetalert2.min.js"></script>
+
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
 <script src="../../assets/js/plugins/bootstrap-switch.js"></script>
 
@@ -468,6 +824,17 @@
 
 
 
+
+
+    <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // Initialise Sweet Alert library
+            demo.showSwal();
+        });
+    </script>
 
 
 

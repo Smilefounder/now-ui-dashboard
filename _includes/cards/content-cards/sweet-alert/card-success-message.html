@@ -1,0 +1,4 @@
+{% assign cardContent = 'A success message' %}
+{% assign bodyClasses = 'text-center' %}
+{% assign cardOtherContent = '<button class="btn btn-primary btn-fill" onclick='| append: include.showSwalSuccess | append:'>Try me!</button>' %}
+{% include cards/card-basic.html %}

@@ -1,0 +1,4 @@
+{% assign cardContent = 'A warning message, with a function attached to the "Confirm" Button...' %}
+{% assign bodyClasses = 'text-center' %}
+{% assign cardOtherContent = '<button class="btn btn-primary btn-fill" onclick='| append: include.showSwalWarning | append:'>Try me!</button>' %}
+{% include cards/card-basic.html %}

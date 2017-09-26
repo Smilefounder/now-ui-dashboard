@@ -1,0 +1,4 @@
+{% assign cardContent = 'Custom HTML description' %}
+{% assign bodyClasses = 'text-center' %}
+{% assign cardOtherContent = '<button class="btn btn-primary btn-fill" onclick='| append: include.showSwalHtml | append:'>Try me!</button>' %}
+{% include cards/card-basic.html %}

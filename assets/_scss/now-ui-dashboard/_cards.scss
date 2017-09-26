@@ -6,7 +6,7 @@
     overflow: hidden;
     width: 100%;
     margin-bottom: 20px;
-    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: $box-shadow;
 
     .card-body{
         padding: 15px 15px 10px 15px;
@@ -16,6 +16,10 @@
         padding: 15px 15px 0;
         background-color: $white-color;
         border: 0;
+
+        .card-title{
+            margin-top: 10px;
+        }
     }
 
     .statistics-container{
@@ -140,6 +144,10 @@
 
 }
 
+.card-subcategories .card-body{
+    padding-bottom: 30px;
+}
+
 .card-user{
     .image{
         height: 120px;
@@ -233,7 +241,7 @@
         background-color: transparent;
     }
 
-    .card-body{
+    &:not(.card-subcategories).card-body{
         padding-left: 0;
         padding-right: 0;
     }

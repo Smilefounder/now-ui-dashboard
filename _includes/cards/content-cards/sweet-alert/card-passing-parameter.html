@@ -1,0 +1,4 @@
+{% assign cardContent = '...and by passing a parameter, you can execute something else for "Cancel"' %}
+{% assign bodyClasses = 'text-center' %}
+{% assign cardOtherContent = '<button class="btn btn-primary btn-fill" onclick='| append: include.showSwalParameter | append:'>Try me!</button>' %}
+{% include cards/card-basic.html %}

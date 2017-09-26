@@ -1,0 +1,4 @@
+{% assign cardContent = 'A message with auto close timer set to 2 seconds' %}
+{% assign bodyClasses = 'text-center' %}
+{% assign cardOtherContent = '<button class="btn btn-primary btn-fill" onclick='| append: include.showSwalAutoCloser | append:'>Try me!</button>' %}
+{% include cards/card-basic.html %}

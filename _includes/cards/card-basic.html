@@ -1,12 +1,12 @@
-<div class="card{{ cardClasses }}">
+<div class="card {{ cardClasses }}">
     {% if cardHeader %}
-    <div class="card-header{{ headerClasses }}">
+    <div class="card-header {{ headerClasses }}">
     {{ cardHeader }}
     </div>
     {% elsif cardImage and cardImageTop %}
     <img class="card-img-top" src="{{ cardImage }}" alt="Alt Image">
     {% endif %}
-    <div class="card-body{{ bodyClasses }}">
+    <div class="card-body {{ bodyClasses }}">
         {% if cardTitle %}
         <h4 class="card-title">{{ cardTitle }}</h4>
         {% endif %}
@@ -31,7 +31,7 @@
     <img class="card-img-bottom" src="{{ cardImage }}" alt="Alt Image">
     {% endif %}
     {% if cardFooter %}
-    <div class="card-footer{{ footerClasses }}">
+    <div class="card-footer {{ footerClasses }}">
         {{ cardFooter }}
     </div>
     {% endif %}
