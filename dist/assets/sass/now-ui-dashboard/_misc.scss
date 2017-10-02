@@ -51,14 +51,3 @@ body{
     @include opacity(1);
     visibility: visible;
 }
-
-.separator{
-    height: 2px;
-    width: 44px;
-    background-color: $default-color;
-    margin: 20px auto;
-
-    &.separator-primary{
-        background-color: $primary-color;
-    }
-}

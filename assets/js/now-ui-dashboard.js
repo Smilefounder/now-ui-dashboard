@@ -55,6 +55,14 @@ $(document).ready(function(){
         });
     });
 
+    //    Activate bootstrap-select
+    if($(".selectpicker").length != 0){
+        $(".selectpicker").selectpicker({
+            iconBase: "now-ui-icons",
+            tickIcon: "ui-1_check"
+        });
+    };
+
     // check if there is an image set for the sidebar's background
     nowuiDashboard.checkSidebarImage();
 

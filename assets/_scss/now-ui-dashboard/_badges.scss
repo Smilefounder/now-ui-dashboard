@@ -36,4 +36,5 @@
 }
 .badge-neutral{
     @include badge-color($white-color);
+    color: inherit;
 }

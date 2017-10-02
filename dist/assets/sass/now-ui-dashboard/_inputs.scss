@@ -86,7 +86,7 @@
         font-size: 11px;
     }
 
-    &.input-lg{
+    &.form-control-lg{
         &:after{
             font-size: 13px;
             top: 13px;
@@ -101,7 +101,7 @@
     }
 }
 
-@include input-lg-padding($padding-large-vertical, $padding-input-horizontal);
+@include form-control-lg-padding($padding-large-vertical, $padding-input-horizontal);
 @include input-base-padding($padding-input-vertical, $padding-input-horizontal);
 
 .form-group.form-group-no-border,

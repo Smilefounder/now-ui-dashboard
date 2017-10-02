@@ -17,7 +17,9 @@ body{
 .sidebar .nav a,
 .sidebar .nav a i,
 .navbar-collapse .navbar-nav .nav-link,
-.animation-transition-general{
+.animation-transition-general,
+.tag,
+.tag [data-role="remove"]{
     @include transition($general-transition-time, $transition-ease);
 }
 
@@ -60,15 +62,4 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret{
     border-top: 4px solid\9;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
-}
-
-.separator{
-    height: 2px;
-    width: 44px;
-    background-color: $default-color;
-    margin: 20px auto;
-
-    &.separator-primary{
-        background-color: $primary-color;
-    }
 }

@@ -1,6 +1,6 @@
 //
 // Modals
-// Now Ui Dashboard  Design element Dialogs
+// Now Ui Kit Design element Dialogs
 // --------------------------------------------------
 .modal-content {
 
@@ -36,7 +36,7 @@
     padding-left:   24px;
     line-height: 1.9;
   }
-  // footer (for actions)
+  // Footer (for actions)
   .modal-footer {
     border-top: none;
     padding-right: 24px;
@@ -69,6 +69,18 @@
 
 .modal{
 
+    .modal-login{
+        max-width: 320px;
+
+        .card-login{
+            .logo-container{
+                width: 65px;
+                margin-bottom: 38px;
+                margin-top: 27px;
+            }
+        }
+    }
+
     &.modal-mini{
         p{
             text-align: center;
@@ -77,6 +89,14 @@
         .modal-dialog{
             max-width: 255px;
             margin: 0 auto;
+
+
+        }
+
+        &.show .modal-dialog{
+            -webkit-transform: translate(0,30%);
+            -o-transform: translate(0,30%);
+            transform: translate(0,30%);
         }
 
         .modal-profile{
@@ -153,12 +173,6 @@
 
     &.modal-info{
         @include modal-colors($info-color, $white-color);
-    }
-
-    &.show .modal-dialog{
-        -webkit-transform: translate(0,30%);
-        -o-transform: translate(0,30%);
-        transform: translate(0,30%);
     }
 
     .modal-header .close{

@@ -30,9 +30,9 @@
 }
 
 
-@mixin input-lg-padding($padding-vertical, $padding-horizontal) {
-    .form-group.form-group-no-border.input-lg,
-    .input-group.form-group-no-border.input-lg{
+@mixin form-control-lg-padding($padding-vertical, $padding-horizontal) {
+    .form-group.form-group-no-border.form-control-lg,
+    .input-group.form-group-no-border.form-control-lg{
         .input-group-addon{
             padding: $padding-vertical 0 $padding-vertical $padding-horizontal;
         }
@@ -46,8 +46,8 @@
         }
     }
 
-    .form-group.input-lg,
-    .input-group.input-lg{
+    .form-group.form-control-lg,
+    .input-group.form-control-lg{
         .form-control{
             padding: $padding-vertical - 1 $padding-horizontal - 1;
 

@@ -1921,7 +1921,7 @@ Copyright (c) 2015 Daniel Eden
   top: 12px;
   color: #18ce0f;
   font-size: 11px; }
-.has-success.input-lg:after, .has-danger.input-lg:after {
+.has-success.form-control-lg:after, .has-danger.form-control-lg:after {
   font-size: 13px;
   top: 13px; }
 
@@ -1929,20 +1929,20 @@ Copyright (c) 2015 Daniel Eden
   content: "\ed2b";
   color: #FF3636; }
 
-.form-group.form-group-no-border.input-lg .input-group-addon, .input-group.form-group-no-border.input-lg .input-group-addon {
+.form-group.form-group-no-border.form-control-lg .input-group-addon, .input-group.form-group-no-border.form-control-lg .input-group-addon {
   padding: 15px 0 15px 19px; }
-.form-group.form-group-no-border.input-lg .form-control, .input-group.form-group-no-border.input-lg .form-control {
+.form-group.form-group-no-border.form-control-lg .form-control, .input-group.form-group-no-border.form-control-lg .form-control {
   padding: 15px 19px; }
-.form-group.form-group-no-border.input-lg .form-control + .input-group-addon, .input-group.form-group-no-border.input-lg .form-control + .input-group-addon {
+.form-group.form-group-no-border.form-control-lg .form-control + .input-group-addon, .input-group.form-group-no-border.form-control-lg .form-control + .input-group-addon {
   padding: 15px 19px 15px 0; }
 
-.form-group.input-lg .form-control, .input-group.input-lg .form-control {
+.form-group.form-control-lg .form-control, .input-group.form-control-lg .form-control {
   padding: 14px 18px; }
-.form-group.input-lg .form-control + .input-group-addon, .input-group.input-lg .form-control + .input-group-addon {
+.form-group.form-control-lg .form-control + .input-group-addon, .input-group.form-control-lg .form-control + .input-group-addon {
   padding: 14px 18px 14px 0; }
-.form-group.input-lg .input-group-addon, .input-group.input-lg .input-group-addon {
+.form-group.form-control-lg .input-group-addon, .input-group.form-control-lg .input-group-addon {
   padding: 14px 0 15px 18px; }
-.form-group.input-lg .input-group-addon + .form-control, .input-group.input-lg .input-group-addon + .form-control {
+.form-group.form-control-lg .input-group-addon + .form-control, .input-group.form-control-lg .input-group-addon + .form-control {
   padding: 15px 18px 15px 16px; }
 
 .form-group.form-group-no-border .form-control, .input-group.form-group-no-border .form-control {
