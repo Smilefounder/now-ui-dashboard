@@ -254,3 +254,31 @@
         text-decoration: none;
     }
 }
+
+.full-page{
+    .content{
+        min-height: calc(100vh - 80px);
+
+        .title{
+            padding-top: 20vh;
+        }
+    }
+
+    & > .content,
+    & > .footer{
+        position: relative;
+        z-index: 4;
+    }
+
+    .full-page-background{
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        display: block;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center center;
+    }
+}

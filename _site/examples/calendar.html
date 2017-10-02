@@ -319,7 +319,7 @@
                 </a>
             </li>
 
-            <li>
+            <li class="active">
                 <a href="./calendar.html">
                     <i class="now-ui-icons media-1_album"></i>
                     <p>Calendar</p>
@@ -351,7 +351,7 @@
 	                <i class="now-ui-icons media-1_button-pause visible-on-sidebar-mini"></i>
 	            </button>
 	        </div>
-			<a class="navbar-brand" href="#pablo">Maps</a>
+			<a class="navbar-brand" href="#pablo">Calendar</a>
 		</div>
 		
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -396,13 +396,28 @@
 
 
                 
-                    <div class="map-container">
-    <div id="map"></div>
+
+                    <div class="content">
+                        <div class="container-fluid">
+                            <div class="header text-center">
+    <h3 class="title">FullCalendar.io</h3>
+    <p class="category">Handcrafted by our friends from <a target="_blank" href="https://fullcalendar.io/">FullCalendar.io</a>. Please checkout their <a href="https://fullcalendar.io/docs/" target="_blank">full documentation.</a></p>
 </div>
 
-                
+<div class="row">
+    <div class="col-md-10 ml-auto mr-auto">
+        <div class="card card-calendar">
+            <div class="card-body" class="ps-child">
+                <div id="fullCalendar"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                <footer class="footer" >
+                        </div>
+                    </div>
+
+                    <footer class="footer" >
     <div class="container">
         <nav>
             <ul>
@@ -434,6 +449,7 @@
     </div>
 </footer>
 
+                 
             </div>
         </div>
     </body>
@@ -474,6 +490,12 @@
 <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
 <script src="../assets/js/plugins/jasny-bootstrap.min.js"></script>
 
+<!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
+<script src="../assets/js/plugins/fullcalendar.min.js"></script>
+
+<!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+<script src="../assets/js/plugins/jquery-jvectormap.js"></script>
+
 <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
 <script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
 
@@ -497,12 +519,10 @@
 
 
     <script type="text/javascript">
-        $(document).ready(function(){
-            // Javascript method's body can be found in assets/js/demos.js
-            demo.initGoogleMaps();
-
-        });
-    </script>
+    	$(document).ready(function(){
+           demo.initFullCalendar();
+    	});
+	</script>
 
 
 
