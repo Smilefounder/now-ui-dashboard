@@ -1,0 +1,42 @@
+{% for item in include.tableJson %}
+    {% if item != include.tableJson[0] %}
+        {% if item == include.tableJson.last and include.hasTotalRow != nill  %}
+            <tr>
+                <td colspan="5"></td>
+                <td class="td-total">{{item['Total']}}</td>
+                <td class="td-price">{{item['Price']}}</td>
+            </tr>
+
+        {% else %}
+            <tr {% if include.colorClasses != nill %} class="{{ item.colorClass }}" {% endif %}>
+                {% for td in item %}
+                    {% if td[0] != "colorClass" %}
+                        {% assign tdVal = td[0] %}
+                        {% assign tdClass = include.tableJson[0][tdVal] %}
+                        <td {% if tdClass != nill %} class="{{ tdClass }}" {% endif %}>
+                            {% if td[0] == "Checkbox" and td[1] != nill %}
+                                {% assign tdVal = td[1] %}
+                                {% include elements/checkbox.html
+                                    checkTrue = tdVal
+                                %}
+                            {% else %}
+                                {{ td[1] }}
+                            {% endif %}
+                        </td>
+                    {% endif %}
+                {% endfor %}
+
+                {% if include.colActions != nill %}
+                    <td class="text-right">
+                    {% for btn in site.data.extendedTablesActionButton %}
+                        {% if item["#"] >= 4 %}
+                            {% assign btnExtendClass = 'btn-neutral' %}
+                        {% endif %}
+                        {% include elements/button.html btn = btn btnExtendClass = btnExtendClass %}
+                    {% endfor %}
+                    </td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endif %}
+{% endfor %}

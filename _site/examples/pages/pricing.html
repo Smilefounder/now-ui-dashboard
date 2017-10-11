@@ -34,38 +34,49 @@
 <body>
     <!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-primary navbar-transparent navbar-absolute" color-on-scroll="500">
-	<div class="container-fluid">
-        <div class="navbar-toggle">
-            <button type="button" class="navbar-toggler">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-            </button>
-        </div>
-        <a class="navbar-brand" href="#pablo"></a>
-        <div class="collapse navbar-collapse justify-content-end">
+	<div class="container">
+		<div class="navbar-wrapper">
+			<div class="navbar-toggle">
+	            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	                <span class="navbar-toggler-bar bar1"></span>
+	                <span class="navbar-toggler-bar bar2"></span>
+	                <span class="navbar-toggler-bar bar3"></span>
+	            </button>
+	        </div>
+	        <a class="navbar-brand" href="#pablo">Now UI Dashboard Pro</a>
+		</div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a href="../dashboard.html" class="nav-link">
-                        <i class="material-icons">dashboard</i>
+                        <i class="now-ui-icons design_app"></i>
                         Dashboard
                     </a>
                 </li>
                 <li class= "nav-item ">
                     <a href="register.html" class="nav-link">
-                        <i class="material-icons">person_add</i>
+                        <i class="now-ui-icons tech_mobile"></i>
                         Register
                     </a>
                 </li>
                 <li class= "nav-item ">
                     <a href="login.html" class="nav-link">
-                        <i class="material-icons">fingerprint</i>
+                        <i class="now-ui-icons users_circle-08"></i>
                         Login
                     </a>
                 </li>
+
+				<li class= "nav-item  active ">
+                    <a href="pricing.html" class="nav-link">
+                        <i class="now-ui-icons now-ui-icons business_money-coins"></i>
+                        Pricing
+                    </a>
+                </li>
+
                 <li class= "nav-item ">
                     <a href="lock.html" class="nav-link">
-                        <i class="material-icons">lock_open</i>
+                        <i class="now-ui-icons ui-1_lock-circle-open"></i>
                         Lock
                     </a>
                 </li>
@@ -77,7 +88,7 @@
 
 
     <div class="wrapper wrapper-full-page">
-            <div class="full-page pricing-page" data-image="../../assets/img/bg5.jpg">
+            <div class="full-page pricing-page section-image" data-image="../../assets/img/bg5.jpg">
 
         <div class="content">
             <div class="container">
@@ -88,72 +99,281 @@
         			</div>
         		</div>
 
-        		<div class="row">
+                <div class="row">
 
-        			<div class="col-md-3">
-        				<div class="card card-pricing card-plain">
-        					<div class="card-content">
-        						<h6 class="category">Freelancer</h6>
-        						<div class="icon">
-        							<i class="material-icons">weekend</i>
-        						</div>
-        						<h3 class="card-title">FREE</h3>
-        						<p class="card-description">
-        							This is good if your company size is between 2 and 10 Persons.
-        						</p>
-        						<a href="#pablo" class="btn btn-white btn-round">Choose Plan</a>
-        					</div>
-        				</div>
-        			</div>
+                    <div class="col-md-3">
+                        
 
-        			<div class="col-md-3">
-        				<div class="card card-pricing card-raised">
-        					<div class="card-content">
-        						<h6 class="category">Small Company</h6>
-        						<div class="icon icon-rose">
-        							<i class="material-icons">home</i>
-        						</div>
-        						<h3 class="card-title">$29</h3>
-        						<p class="card-description">
-        							This is good if your company size is between 2 and 10 Persons.
-        						</p>
-        						<a href="#pablo" class="btn btn-rose btn-round">Choose Plan</a>
-        					</div>
-        				</div>
-        			</div>
 
-        			<div class="col-md-3">
-        				<div class="card card-pricing card-plain">
-        					<div class="card-content">
-        						<h6 class="category">Medium Company</h6>
-        						<div class="icon">
-        							<i class="material-icons">business</i>
-        						</div>
-        						<h3 class="card-title">$69</h3>
-        						<p class="card-description">
-        							This is good if your company size is between 11 and 99 Persons.
-        						</p>
-        						<a href="#pablo" class="btn btn-white btn-round">Choose Plan</a>
-        					</div>
-        				</div>
-        			</div>
 
-        			<div class="col-md-3">
-        				<div class="card card-pricing card-plain">
-        					<div class="card-content">
-        						<h6 class="category">Enterprise</h6>
-        						<div class="icon">
-        							<i class="material-icons">account_balance</i>
-        						</div>
-        						<h3 class="card-title">$159</h3>
-        						<p class="card-description">
-        							This is good if your company size is 99+ persons.
-        						</p>
-        						<a href="#pablo" class="btn btn-white btn-round">Choose Plan</a>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
+
+
+
+<div class="card card-pricing card-plain">
+    
+    <h6 class="card-category"> Bravo Pack</h6>
+    
+
+    
+
+    <div class="card-body">
+        
+        <div class="card-icon icon-warning ">
+            <i class="now-ui-icons media-1_button-power"></i>
+        </div>
+        <h3 class="card-title">10$</h3>
+        
+
+        
+
+        
+
+        
+
+        
+            <ul>
+                                    <li>Complete documentation</li>
+                                    <li>Working materials in Sketch</li>
+                                </ul>
+        
+    </div>
+
+    
+    <div class="card-footer">
+        <a href="#pablo" class="btn btn-round btn-neutral btn-warning">Add to Cart</a>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <div class="col-md-3">
+                        
+
+
+
+
+
+
+<div class="card card-pricing ">
+    
+    <h6 class="card-category"> Alpha Pack</h6>
+    
+
+    
+
+    <div class="card-body">
+        
+        <div class="card-icon icon-primary ">
+            <i class="now-ui-icons objects_diamond"></i>
+        </div>
+        <h3 class="card-title">69$</h3>
+        
+
+        
+
+        
+
+        
+
+        
+            <ul>
+                                    <li>Working materials in EPS</li>
+                                    <li>6 months access to the library</li>
+                                </ul>
+        
+    </div>
+
+    
+    <div class="card-footer">
+        <a href="#pablo" class="btn btn-round btn-primary">Add to Cart</a>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <div class="col-md-3">
+                        
+
+
+
+
+
+
+<div class="card card-pricing card-plain">
+    
+    <h6 class="card-category"> Charlie Pack</h6>
+    
+
+    
+
+    <div class="card-body">
+        
+        <div class="card-icon icon-success ">
+            <i class="now-ui-icons media-2_sound-wave"></i>
+        </div>
+        <h3 class="card-title">69$</h3>
+        
+
+        
+
+        
+
+        
+
+        
+            <ul>
+                                    <li>Working materials in PSD</li>
+                                    <li>1 year access to the library</li>
+                                </ul>
+        
+    </div>
+
+    
+    <div class="card-footer">
+        <a href="#pablo" class="btn btn-round btn-neutral btn-success">Add to Cart</a>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <div class="col-md-3">
+                        
+
+
+
+
+
+
+<div class="card card-pricing card-plain">
+    
+    <h6 class="card-category"> Extra Pack</h6>
+    
+
+    
+
+    <div class="card-body">
+        
+        <div class="card-icon icon-danger ">
+            <i class="now-ui-icons education_atom"></i>
+        </div>
+        <h3 class="card-title">159$</h3>
+        
+
+        
+
+        
+
+        
+
+        
+            <ul>
+                                    <li>Complete documentation</li>
+                                    <li>2GB cloud storage</li>
+                                </ul>
+        
+    </div>
+
+    
+    <div class="card-footer">
+        <a href="#pablo" class="btn btn-round btn-neutral btn-danger">Add to Cart</a>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                </div>
         	</div>
         </div>
         <footer class="footer" >

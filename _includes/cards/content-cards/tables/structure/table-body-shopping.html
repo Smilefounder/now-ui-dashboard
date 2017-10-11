@@ -1,0 +1,23 @@
+{% for item in include.tableJson %}
+    {% if item != include.tableJson[0] %}
+        {% if item != include.tableJson.last %}
+            {% include cards/content-cards/tables/structure/partials/table-row-shopping.html productRow = item %}
+
+        {% else %}
+            <tr>
+                <td colspan="3">
+                </td>
+                <td class="td-total">
+                    {{item['Total']}}
+                </td>
+                <td class="td-price">
+                    <small>{{item['Currency']}}</small>{{item['Price']}}
+                </td>
+                <td colspan="3" class="text-right">
+                    {% assign btn = item['Button'] %}
+                    {% include elements/button.html btn = btn %}
+                </td>
+            </tr>
+        {% endif %}
+    {% endif %}
+{% endfor %}

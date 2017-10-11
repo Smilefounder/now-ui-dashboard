@@ -9,6 +9,11 @@
 
     .card-body{
         padding: 15px 15px 10px 15px;
+
+        &.table-full-width{
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 
     .card-header{
@@ -24,7 +29,6 @@
     .map{
         height: 280px;
         border-radius: 3px;
-        margin-top: 15px;
     }
 
     .statistics-container{
@@ -145,38 +149,164 @@
                 top: 1px;
             }
         }
-    }
 
-    .form-horizontal{
-        .col-form-label,
-        .label-on-right{
-            padding: 10px 5px 0 15px;
-            text-align: right;
-            max-width: 180px;
-        }
-
-        .checkbox-radios{
-            margin-bottom: 15px;
-
-            .form-check:first-child{
-               margin-top: 8px;
-           }
-        }
-
-        .label-on-right{
-            text-align: left;
-            padding: 10px 15px 0 5px;
-        }
-
-        .form-check-inline{
-            margin-top: 6px;
+        .btn{
+            margin: 0;
         }
     }
+}
 
+.card-collapse{
+    .card{
+        margin-bottom: 25px;
+
+        .card-header{
+            position: relative;
+            padding: .75rem 1.25rem;
+            padding-left: 0;
+            padding-right: 0;
+
+            a[data-toggle="collapse"]{
+                display: block;
+                color: $light-black;
+
+                i{
+                    float: right;
+                    position: relative;
+                    color: #f96332;
+                    top: 1px;
+                    @extend .animation-transition-general;
+                }
+            }
+
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $light-gray;
+            }
+        }
+
+        .card-body{
+            padding-left: .5rem;
+            padding-right: .5rem;
+        }
+    }
 }
 
 .card-subcategories .card-body{
     padding-bottom: 30px;
+}
+
+.card-pricing{
+    text-align: center;
+
+    .card-category{
+        padding-top: 1.25em;
+    }
+
+    .card-title{
+        margin-top: 30px;
+    }
+
+    .card-icon{
+        padding: 10px 0 0px;
+
+        i{
+            font-size: 30px;
+            line-height: 2.7;
+            max-width: 80px;
+            color: $default-color;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            border-radius: 50%;
+            box-shadow: 0px 9px 35px -6px rgba(0, 0, 0, 0.3);
+            background-color: $white-color;
+            position: relative;
+        }
+
+        &.icon-primary i{
+            @include icon-color($primary-color);
+        }
+        &.icon-info i{
+            @include icon-color($info-color);
+        }
+        &.icon-success i{
+            color: $success-color;
+            box-shadow:  0px 9px 30px -6px rgba(22, 199, 13, 0.85);
+        }
+        &.icon-warning i{
+            @include icon-color($warning-color);
+        }
+        &.icon-danger i{
+            @include icon-color($danger-color);
+        }
+    }
+    h1{
+        small{
+            font-size: 18px;
+
+            &:first-child{
+                position: relative;
+                top: -17px;
+                font-size: 26px;
+            }
+        }
+    }
+
+    ul{
+        list-style: none;
+        padding: 0;
+        max-width: 240px;
+        margin: 10px auto;
+
+        li{
+            color: $default-color;
+            text-align: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba($default-color,.3);
+
+            &:last-child{
+                border: 0;
+            }
+            b{
+                color: $black-color;
+            }
+            i{
+                top: 3px;
+                right: 3px;
+                position: relative;
+                font-size: 20px;
+            }
+        }
+    }
+
+    &.card-background{
+        ul{
+            li{
+                color: $white-color;
+                border-color: rgba($white-color,.3);
+
+                b{
+                    color: $white-color;
+                }
+            }
+        }
+        [class*="text-"]{
+            color: $white-color !important;
+        }
+        .card-body{
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+        }
+    }
+    &.card-background:after{
+        background-color: rgba(0, 0, 0, 0.65);
+    }
 }
 
 .card-user{
@@ -215,10 +345,21 @@
     }
 }
 
-.card-signup{
-    max-width: 350px;
-    margin: 0 auto;
+.card-lock{
+    .card-header{
+        img{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-top: -60px;
+            box-shadow: $box-shadow;
+        }
+    }
 
+}
+
+
+.card-signup{
     .header{
         margin-left: 20px;
         margin-right: 20px;
@@ -233,14 +374,11 @@
         padding: 0px 30px;
     }
 
-    .checkbox{
+    .form-check{
         margin-top: 20px;
 
         label{
             margin-left: 17px;
-        }
-        .checkbox-material{
-            padding-right: 12px;
         }
     }
 
@@ -266,7 +404,8 @@
     background: transparent;
     box-shadow: none;
 
-    .card-header{
+    .card-header,
+    .card-footer{
         margin-left: 0;
         margin-right: 0;
         background-color: transparent;

@@ -294,10 +294,8 @@
     background-color: $light-gray;
 }
 
+.bootstrap-switch-on .bootstrap-switch-handle-off,
 .bootstrap-switch-off .bootstrap-switch-handle-on{
     opacity: 0;
-}
-
-.bootstrap-switch-on .bootstrap-switch-handle-off{
-    opacity: 0;
+    visibility: hidden;
 }

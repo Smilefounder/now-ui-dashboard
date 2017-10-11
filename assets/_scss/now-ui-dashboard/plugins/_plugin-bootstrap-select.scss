@@ -150,6 +150,7 @@ select.selectpicker {
   display: block;
   max-height: 245px !important;
 overflow-y: scroll;
+ -ms-overflow-style: auto;
   -webkit-box-shadow: none;
           box-shadow: none;
 }

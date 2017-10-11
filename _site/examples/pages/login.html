@@ -34,38 +34,49 @@
 <body>
     <!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-primary navbar-transparent navbar-absolute" color-on-scroll="500">
-	<div class="container-fluid">
-        <div class="navbar-toggle">
-            <button type="button" class="navbar-toggler">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-            </button>
-        </div>
-        <a class="navbar-brand" href="#pablo"></a>
-        <div class="collapse navbar-collapse justify-content-end">
+	<div class="container">
+		<div class="navbar-wrapper">
+			<div class="navbar-toggle">
+	            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	                <span class="navbar-toggler-bar bar1"></span>
+	                <span class="navbar-toggler-bar bar2"></span>
+	                <span class="navbar-toggler-bar bar3"></span>
+	            </button>
+	        </div>
+	        <a class="navbar-brand" href="#pablo">Now UI Dashboard Pro</a>
+		</div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a href="../dashboard.html" class="nav-link">
-                        <i class="material-icons">dashboard</i>
+                        <i class="now-ui-icons design_app"></i>
                         Dashboard
                     </a>
                 </li>
                 <li class= "nav-item ">
                     <a href="register.html" class="nav-link">
-                        <i class="material-icons">person_add</i>
+                        <i class="now-ui-icons tech_mobile"></i>
                         Register
                     </a>
                 </li>
                 <li class= "nav-item  active ">
                     <a href="login.html" class="nav-link">
-                        <i class="material-icons">fingerprint</i>
+                        <i class="now-ui-icons users_circle-08"></i>
                         Login
                     </a>
                 </li>
+
+				<li class= "nav-item ">
+                    <a href="pricing.html" class="nav-link">
+                        <i class="now-ui-icons now-ui-icons business_money-coins"></i>
+                        Pricing
+                    </a>
+                </li>
+
                 <li class= "nav-item ">
                     <a href="lock.html" class="nav-link">
-                        <i class="material-icons">lock_open</i>
+                        <i class="now-ui-icons ui-1_lock-circle-open"></i>
                         Lock
                     </a>
                 </li>
@@ -77,70 +88,83 @@
 
 
     <div class="wrapper wrapper-full-page">
-            <div class="full-page login-page" filter-color="black" data-image="../../assets/img/login.jpeg">
+            <div class="full-page login-page section-image" filter-color="black" data-image="../../assets/img/bg5.jpg">
         <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
         <div class="content">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                        <form method="#" action="#">
-                            <div class="card card-login card-hidden">
-                                <div class="card-header text-center" data-background-color="rose">
-                                    <h4 class="card-title">Login</h4>
-                                    <div class="social-line">
-                                        <a href="#btn" class="btn btn-just-icon btn-simple">
-                                            <i class="fa fa-facebook-square"></i>
-                                        </a>
-                                        <a href="#pablo" class="btn btn-just-icon btn-simple">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                        <a href="#eugen" class="btn btn-just-icon btn-simple">
-                                            <i class="fa fa-google-plus"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <p class="category text-center">
-                                    Or Be Classical
-                                </p>
-                                <div class="card-content">
-                                    <div class="input-group">
-                                        <span class="input-group-addon">
-                                            <i class="material-icons">face</i>
-                                        </span>
+                <div class="col-md-4 ml-auto mr-auto">
+                    <form class="form" method="" action="">
+                        
 
-                                        <div class="form-group label-floating">
-                                            <label class="control-label">First Name</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="input-group-addon">
-                                            <i class="material-icons">email</i>
-                                        </span>
 
-                                        <div class="form-group label-floating">
-                                            <label class="control-label">Email address</label>
-                                            <input type="email" class="form-control">
-                                        </div>
-                                    </div>
 
-                                    <div class="input-group">
-                                        <span class="input-group-addon">
-                                            <i class="material-icons">lock_outline</i>
-                                        </span>
-                                        <div class="form-group label-floating">
-                                            <label class="control-label">Password</label>
-                                            <input type="password" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="footer text-center">
-                                    <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg">Let's go</button>
 
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+<div class="card card-login card-plain">
+    
+    <div class="card-header ">
+    <div class="logo-container">
+                            <img src="../../assets/img/now-logo.png" alt="">
+                        </div>
+    </div>
+    
+    <div class="card-body ">
+        
+
+        
+
+        
+
+        
+            <div class="input-group form-group-no-border form-control-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons users_circle-08"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="First Name...">
+                              </div>
+
+                              <div class="input-group form-group-no-border form-control-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons text_caps-small"></i>
+                                </span>
+                                <input type="text" placeholder="Last Name..." class="form-control">
+                              </div>
+        
+
+        
+    </div>
+    
+    
+    <div class="card-footer ">
+        <a href="#pablo" class="btn btn-primary btn-round btn-lg btn-block">Get Started</a>
+                        <div class="pull-left">
+                            <h6><a href="#pablo" class="link footer-link">Create Account</a></h6>
+                        </div>
+
+                        <div class="pull-right">
+                           <h6><a href="#pablo" class="link footer-link">Need Help?</a></h6>
+                        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </form>
                 </div>
             </div>
         </div>

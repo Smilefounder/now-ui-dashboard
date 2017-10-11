@@ -1,0 +1,19 @@
+[
+    {
+        "buttonClasses":"btn btn-info btn-icon btn-sm",
+        "buttonIcon":"<i class=\"now-ui-icons users_single-02\"></i>",
+        "butttonText": null
+    },
+
+    {
+        "buttonClasses":"btn btn-success btn-icon btn-sm",
+        "buttonIcon":"<i class=\"now-ui-icons ui-2_settings-90\"></i>",
+        "butttonText": null
+    },
+
+    {
+        "buttonClasses":"btn btn-danger btn-icon btn-sm",
+        "buttonIcon":"<i class=\"now-ui-icons ui-1_simple-remove\"></i>",
+        "butttonText": null
+    }
+]

@@ -1,0 +1,3 @@
+{% assign cardHeader = include.cardHeaderTitle %}
+{% assign cardOtherContent = '<div id="'| append: include.cardMapID | append:'" class="'| append: include.cardMapClasses | append:'"></div>' %}
+{% include cards/card-basic.html %}

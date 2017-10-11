@@ -1,0 +1,11 @@
+{% assign cardCategory  = include.cardCategory %}
+{% assign cardClasses  = include.cardClasses %}
+{% assign iconClasses  = include.iconClasses %}
+{% assign cardIcon  = include.cardIcon %}
+{% assign cardBelowTitle  = include.cardBelowTitle %}
+{% assign cardOtherContent  = '<ul>
+                                    <li>'| append: include.cardContentFirst | append:'</li>
+                                    <li>'| append: include.cardContentSecond | append:'</li>
+                                </ul>' %}
+{% assign cardFooter = '<a href="#pablo" class="btn '| append: include.cardButton | append:'">'| append: include.cardButtonText | append:'</a>' %}
+{% include cards/card-pricing.html %}

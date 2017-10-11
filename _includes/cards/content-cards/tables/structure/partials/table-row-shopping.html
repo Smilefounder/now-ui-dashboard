@@ -1,0 +1,35 @@
+<tr>
+    <td>
+        <div class="img-container">
+            <img src="{{ include.productRow['imageSrc'] }}" alt="...">
+        </div>
+    </td>
+    <td class="td-name">
+        <a href="{{ include.productRow['Product']['a_tag']['href'] }}">{{ include.productRow['Product']['a_tag']['a_text'] }}</a>
+        <br /><small>{{ include.productRow['Product']['small_tag'] }}</small>
+    </td>
+    <td>
+        {{ include.productRow['Color'] }}
+    </td>
+    <td>
+        {{ include.productRow['Size'] }}
+    </td>
+    <td class="td-number">
+        <small>{{ include.productRow['Currency'] }}</small>{{ include.productRow['Price'] }}
+    </td>
+    <td class="td-number">
+        {{ include.productRow['Qty'] }}
+        <div class="btn-group">
+            <button class="{{ include.productRow['QtyClasses'] }}"> {{ include.productRow['QtyIconMinus'] }} </button>
+            <button class="{{ include.productRow['QtyClasses'] }}"> {{ include.productRow['QtyIconPlus'] }} </button>
+        </div>
+    </td>
+    <td class="td-number">
+        <small>{{ include.productRow['Currency'] }}</small>{{ include.productRow['Amount'] }}
+    </td>
+    <td class="td-actions">
+        <button type="button" rel="tooltip" data-placement="left" title="Remove item" class="{{ include.productRow['DeleteClasses'] }}">
+            {{ include.productRow['DeleteIcon'] }}
+        </button>
+    </td>
+</tr>

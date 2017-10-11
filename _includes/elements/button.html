@@ -1,0 +1,9 @@
+<button type="button" rel="tooltip" class="{{ include.btn['buttonClasses'] }} {% if include.btnExtendClass != null %}  {{include.btnExtendClass}}  {% endif %}">
+    {% if include.btn['buttonText'] != nill %}
+        {{ include.btn['buttonText'] }}
+    {% endif %}
+
+    {% if include.btn['buttonIcon'] != nill %}
+        {{ include.btn['buttonIcon'] }}
+    {% endif %}
+</button>

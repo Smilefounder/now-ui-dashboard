@@ -1,0 +1,63 @@
+<div class="card card-pricing {{include.cardClasses}}">
+    {% if cardCategory %}
+    <h6 class="card-category"> {{ include.cardCategory }}</h6>
+    {% endif %}
+
+    {% if cardImage %}
+    <img class="card-img" src="{{ include.cardImage }}" alt="Card image">
+    {% endif %}
+
+    <div class="{% if cardImage %}card-img-overlay{% else %}card-body{% endif %}">
+        {% if cardIcon %}
+        <div class="card-icon {{ include.iconClasses }} ">
+            <i class="{{ cardIcon }}"></i>
+        </div>
+        <h3 class="card-title">{{ include.cardBelowTitle }}</h3>
+        {% else %}
+        <h1 class="card-title">{{ include.cardTitle }}</h1>
+        {% endif %}
+
+        {% if cardTitle %}
+        <h4 class="card-title">{{ include.cardTitle }}</h4>
+        {% endif %}
+
+        {% if cardSubtitle %}
+        <h6 class="card-category">{{ include.cardSubtitle }}</h6>
+        {% endif %}
+
+        {% if cardContent %}
+        <p class="card-text">{{ include.cardContent }}</p>
+        {% endif %}
+
+        {% if cardOtherContent %}
+            {{ cardOtherContent }}
+        {% endif %}
+    </div>
+
+    {% if cardFooter %}
+    <div class="card-footer">
+        {{ cardFooter }}
+    </div>
+    {% endif %}
+</div>
+
+
+{% assign cardChart = nill %}
+{% assign cardBelowTitle = nill %}
+{% assign cardIcon = nill %}
+{% assign iconClasses = nill %}
+{% assign cardCategory = nill %}
+{% assign cardHeader = nill %}
+{% assign cardImage = nill %}
+{% assign cardImageTop = nill %}
+{% assign cardTitle = nill %}
+{% assign cardSubtitle = nill %}
+{% assign cardContent = nill %}
+{% assign cardOtherContent = nill %}
+{% assign cardImageBottom = nill %}
+{% assign cardFooter = nill %}
+{% assign cardClasses = nill %}
+{% assign headerClasses = nill %}
+{% assign cardImage = nill %}
+{% assign bodyClasses = nill %}
+{% assign footerClasses = nill %}

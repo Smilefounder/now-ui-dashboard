@@ -19,7 +19,8 @@ body{
 .navbar-collapse .navbar-nav .nav-link,
 .animation-transition-general,
 .tag,
-.tag [data-role="remove"]{
+.tag [data-role="remove"],
+.animation-transition-general{
     @include transition($general-transition-time, $transition-ease);
 }
 
@@ -31,7 +32,9 @@ body{
 }
 
 .dropdown-toggle[aria-expanded="true"]:after,
-a[data-toggle="collapse"][aria-expanded="true"] .caret{
+a[data-toggle="collapse"][aria-expanded="true"] .caret,
+.card-collapse .card a[data-toggle="collapse"][aria-expanded="true"] i,
+.card-collapse .card a[data-toggle="collapse"].expanded i{
     @include rotate-180();
 }
 

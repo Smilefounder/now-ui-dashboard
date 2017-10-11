@@ -92,12 +92,18 @@ p{
     color: $dark-gray;
     font-weight: $font-weight-light;
 }
-.category{
-    text-transform: uppercase;
+.category,
+.card-category{
+    text-transform: capitalize;
     font-weight: $font-weight-bold;
     color: $dark-gray;
     font-size: $font-size-mini;
 }
+
+.card-category{
+    font-size: $font-size-h6;
+}
+
 .text-primary {
   color: $brand-primary !important;
 }

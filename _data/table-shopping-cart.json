@@ -1,0 +1,86 @@
+[
+ {
+    "": "text-center",
+    "Product": null,
+    "Color": null,
+    "Size": null,
+    "Price": "text-right",
+    "Qty": "text-right",
+    "Amount": "text-right",
+
+
+ },
+ {
+   "imageSrc": "../../assets/img/saint-laurent.jpg",
+   "Product": {
+       "a_tag": {
+           "href": "#jacket",
+           "a_text": "Suede Biker Jacket"
+       },
+       "small_tag": "by Saint Laurent"
+   },
+   "Color": "Black",
+   "Size": "M",
+   "Currency": "€",
+   "Price": "3,390",
+   "Qty": 1,
+   "QtyClasses": "btn btn-info btn-sm",
+   "QtyIconMinus": "<i class=\"now-ui-icons ui-1_simple-delete\"></i>",
+   "QtyIconPlus": "<i class=\"now-ui-icons ui-1_simple-add\"></i>",
+   "Amount": "549",
+   "DeleteClasses": "btn btn-neutral",
+   "DeleteIcon": "<i class=\"now-ui-icons ui-1_simple-remove\"></i>"
+ },
+ {
+   "imageSrc": "../../assets/img/balmain.jpg",
+   "Product": {
+       "a_tag": {
+           "href": "#pants",
+           "a_text": "Jersey T-Shirt"
+       },
+       "small_tag": "by Balmain"
+   },
+   "Color": "Black",
+   "Size": "M",
+   "Currency": "€",
+   "Price": "499",
+   "Qty": 2,
+   "QtyClasses": "btn btn-info btn-sm",
+   "QtyIconMinus": "<i class=\"now-ui-icons ui-1_simple-delete\"></i>",
+   "QtyIconPlus": "<i class=\"now-ui-icons ui-1_simple-add\"></i>",
+   "Amount": "998",
+   "DeleteClasses": "btn btn-neutral",
+   "DeleteIcon": "<i class=\"now-ui-icons ui-1_simple-remove\"></i>"
+ },
+ {
+   "imageSrc": "../../assets/img/prada.jpg",
+   "Product": {
+       "a_tag": {
+           "href": "#nothing",
+           "a_text": "Slim-Fit Swim Short"
+       },
+       "small_tag": "by Prada"
+   },
+   "Color": "Red",
+   "Size": "M",
+   "Currency": "€",
+   "Price": "200",
+   "Qty": 1,
+   "QtyClasses": "btn btn-info btn-sm",
+   "QtyIconMinus": "<i class=\"now-ui-icons ui-1_simple-delete\"></i>",
+   "QtyIconPlus": "<i class=\"now-ui-icons ui-1_simple-add\"></i>",
+   "Amount": "799",
+   "DeleteClasses": "btn btn-neutral",
+   "DeleteIcon": "<i class=\"now-ui-icons ui-1_simple-remove\"></i>"
+ },
+ {
+    "Total": "Total",
+    "Currency": "€",
+    "Price": "2,346",
+    "Button": {
+       "buttonClasses": "btn btn-info btn-round",
+       "buttonText": "Complete Purchase",
+       "buttonIcon": "<i class=\"now-ui-icons arrows-1_minimal-right\"></i>"
+       }
+    }
+]

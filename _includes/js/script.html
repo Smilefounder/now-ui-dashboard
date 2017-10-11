@@ -84,14 +84,14 @@
         });
     </script>
 
-{% elsif page.class == "login-page" or page.class= "register-page" or page.class= "lock-page" %}
+{% elsif page.brand == "login-page" or page.class= "register-page" or page.class= "lock-page" %}
     <script>
         $(document).ready(function(){
             demo.checkFullPageBackgroundImage();
         });
     </script>
 
-{% elsif page.folder == "Dashboard" %}
+{% elsif page.brand == "Dashboard" %}
     <script type="text/javascript">
         $(document).ready(function(){
             // Javascript method's body can be found in assets/js/demos.js

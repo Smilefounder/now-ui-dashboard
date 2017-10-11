@@ -1,0 +1,7 @@
+{% for item in include.tableJson[0] %}
+<th {% if item[1] != nill %} class="{{ item[1] }}" {% endif %}>
+    {% if item[0] != "Checkbox" %}
+        {{ item[0] }}
+    {% endif %}
+</th>
+{% endfor %}

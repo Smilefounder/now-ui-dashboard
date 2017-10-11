@@ -1,0 +1,48 @@
+<div class="card card-profile{{ cardClasses }}">
+    {% if cardHeader %}
+    <div class="card-header{{ headerClasses }}">
+    {{ cardHeader }}
+    </div>
+    {% endif %}
+
+    <div class="card-body">
+        {% if cardAvatar %}
+        <img class="card-avatar" src="{{ cardImageAvatar }}" alt="Card image">
+        {% endif %}
+
+        {% if cardTitle %}
+        <h4 class="card-title">{{ cardTitle }}</h4>
+        {% endif %}
+
+        {% if cardCategory %}
+        <h6 class="card-category">{{ cardCategory }}</h6>
+        {% endif %}
+
+        {% if cardContent %}
+        <p class="card-text">{{ cardContent }}</p>
+        {% endif %}
+    </div>
+
+    {% if cardFooter %}
+    <div class="card-footer">
+        {{ cardFooter }}
+    </div>
+    {% endif %}
+</div>
+
+
+{% assign cardChart = nill %}
+{% assign cardHeader = nill %}
+{% assign cardImage = nill %}
+{% assign cardImageTop = nill %}
+{% assign cardTitle = nill %}
+{% assign cardSubtitle = nill %}
+{% assign cardContent = nill %}
+{% assign cardOtherContent = nill %}
+{% assign cardImageBottom = nill %}
+{% assign cardFooter = nill %}
+{% assign cardClasses = nill %}
+{% assign headerClasses = nill %}
+{% assign cardImage = nill %}
+{% assign bodyClasses = nill %}
+{% assign footerClasses = nill %}

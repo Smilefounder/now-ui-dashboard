@@ -6,20 +6,23 @@
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
 
     a{
-        color: $white-color;
         vertical-align: middle;
+
+        &:not(.btn):not(.dropdown-item){
+            color: $white-color;
+        }
+
+        &.dropdown-item{
+            color: $default-color;
+        }
     }
 
     p{
         display: inline-block;
         margin: 0;
-        line-height: 21px;
-    }
-
-    &.fixed-top{
-        & + .content{
-            margin-top: 62px;
-        }
+        line-height: 1.8em;
+        font-size: 1em;
+        font-weight: 400;
     }
 
     &.navbar-absolute{
@@ -73,23 +76,33 @@
             top: -4px;
         }
 
+        .nav-link.btn{
+            padding: $padding-btn-vertical $padding-btn-horizontal;
+            &.btn-lg{
+                padding: $padding-large-vertical $padding-large-horizontal;
+            }
+            &.btn-sm{
+                padding: $padding-small-vertical $padding-small-horizontal;
+            }
+        }
+
         .nav-link{
             text-transform: uppercase;
             font-size: $font-size-mini;
             padding: $padding-base-vertical $padding-base-horizontal;
             line-height: $line-height-nav-link;
-            margin-right: 5px;
+            margin-right: 3px;
 
             i.fa + p,
             i.now-ui-icons + p{
-                margin-left: 5px;
+                margin-left: 3px;
             }
 
             i.fa,
             i.now-ui-icons{
                 font-size: 18px;
                 position: relative;
-                top: 2px;
+                top: 3px;
                 text-align: center;
                 width: 21px;
             }
@@ -112,7 +125,10 @@
             }
         }
 
-        .nav-item.active .nav-link{
+        .nav-item.active .nav-link:not(.btn),
+        .nav-item .nav-link:not(.btn):focus,
+        .nav-item .nav-link:not(.btn):hover,
+        .nav-item .nav-link:not(.btn):active{
             background-color: $opacity-2;
             border-radius: $border-radius-small;
         }
@@ -164,7 +180,7 @@
     }
 
     &.bg-white:not(.navbar-transparent){
-        a{
+        a:not(.dropdown-item):not(.btn){
             color: $default-color;
 
             &.disabled{

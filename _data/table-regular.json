@@ -1,0 +1,54 @@
+[
+{
+    "Name": null,
+    "Country": null,
+    "City": null,
+    "Salary": "text-right",
+},
+ {
+   "Name": "Dakota Rice",
+   "Country": "Niger",
+   "City": "Oud-Turnhout",
+   "Salary": "$36,738",
+   "colorClass": "table-success"
+ },
+ {
+   "Name": "Minerva Hooper",
+   "Country": "Curaçao",
+   "City": "Sinaai-Waas",
+   "Salary": "$23,789"
+ },
+ {
+   "Name": "Sage Rodriguez",
+   "Country": "Netherlands",
+   "City": "Baileux",
+   "Salary": "$56,142",
+   "colorClass": "table-info"
+ },
+ {
+   "Name": "Philip Chaney",
+   "Country": "Korea, South",
+   "City": "Overland Park",
+   "Salary": "$38,735",
+ },
+ {
+   "Name": "Doris Greene",
+   "Country": "Malawi",
+   "City": "Feldkirchen in Kärnten",
+   "Salary": "$63,542",
+   "colorClass": "table-danger"
+ },
+ {
+   "Name": "Mason Porter",
+   "Country": "Chile",
+   "City": "Gloucester",
+   "Salary": "$78,615"
+ },
+ {
+   "Name": "Jon Porter",
+   "Country": "Portugal",
+   "City": "Gloucester",
+   "Salary": "$98,615",
+   "colorClass": "table-warning"
+ }
+]
