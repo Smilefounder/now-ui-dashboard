@@ -100,32 +100,26 @@
 
             <div class="main-panel">
                 <!-- Navbar -->
-<nav class="navbar navbar-toggleable-md bg-white">
+<nav class="navbar navbar-expand-lg bg-white">
 	<div class="container">
-		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+		
+
+		<div class="navbar-wrapper">
+			<div class="navbar-minimize">
+				<button type="button" class="navbar-toggler">
+					<span class="navbar-toggler-bar bar1"></span>
+					<span class="navbar-toggler-bar bar2"></span>
+					<span class="navbar-toggler-bar bar3"></span>
+				</button>
+			</div>
+			<a class="navbar-brand" href="#pablo">Notifications</a>
+		</div>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-bar navbar-kebab"></span>
 			<span class="navbar-toggler-bar navbar-kebab"></span>
 			<span class="navbar-toggler-bar navbar-kebab"></span>
 		</button>
-
-		
-		<div class="navbar-minimize">
-			<!-- <button type="button" class="btn btn-neutral btn-icon btn-icon-mini btn-round" id="sidebar-collapse">
-				<i class="now-ui-icons gestures_tap-01"></i>
-			</button> -->
-			<button type="button" class="navbar-toggler">
-				<span class="navbar-toggler-bar bar1"></span>
-				<span class="navbar-toggler-bar bar2"></span>
-				<span class="navbar-toggler-bar bar3"></span>
-			</button>
-		</div>
-
-		<a class="navbar-brand" href="#pablo"> Notifications </a>
-
-		
-		<!-- <div class="justify-content-end">
-
-		</div> -->
 
 	    <div class="collapse navbar-collapse justify-content-end" id="navigation">
 			
@@ -171,7 +165,7 @@
         <h5 class="title">Notifications</h5>
         <p class="category">Handcrafted by our friend <a target="_blank" href="https://github.com/mouse0270">Robert McIntosh</a>. Please checkout the <a href="http://bootstrap-notify.remabledesigns.com/" target="_blank">full documentation.</a></p>
     </div>
-    <div class="card-block">
+    <div class="card-body">
         <div class="row">
             <div class="col-md-6">
                 <h5>
@@ -349,75 +343,11 @@
 
             </div>
         </div>
-        <!--   -->
-        <!-- <div class="fixed-plugin">
-    <div class="dropdown show-dropdown">
-        <a href="#" data-toggle="dropdown">
-        <i class="fa fa-cog fa-2x"> </i>
-        </a>
-        <ul class="dropdown-menu">
-			<li class="header-title"> Sidebar Background</li>
-            <li class="adjustments-line">
-                <a href="javascript:void(0)" class="switch-trigger background-color">
-                    <div class="badge-colors text-center">
-						<span class="badge filter badge-yellow" data-color="yellow"></span>
-                        <span class="badge filter badge-blue" data-color="blue"></span>
-                        <span class="badge filter badge-green" data-color="green"></span>
-                        <span class="badge filter badge-orange active" data-color="orange"></span>
-                        <span class="badge filter badge-red" data-color="red"></span>
-                    </div>
-                    <div class="clearfix"></div>
-                </a>
-            </li>
-            <li class="adjustments-line">
-                <a href="javascript:void(0)" class="switch-trigger">
-                    <p>Sidebar Image</p>
-                    <div class="togglebutton switch-sidebar-image">
-                        <input type="checkbox" name="checkbox" class="bootstrap-switch"
-                          data-on-label="ON"
-                          data-off-label="OFF"
-                          />
-                    </div>
-                    <div class="clearfix"></div>
-                </a>
-            </li>
-
-            <li class="header-title">Images</li>
-            <li class="active">
-                <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/bg7.jpg" alt="" />
-                </a>
-            </li>
-            <li>
-                <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/blurred-image-1.jpg" alt="" />
-                </a>
-            </li>
-            <li>
-                <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/sidebar-3.jpg" alt="" />
-                </a>
-            </li>
-            <li>
-                <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/sidebar-4.jpg" alt="" />
-                </a>
-            </li>
-
-            <li class="button-container">
-                <div class="">
-                    <a href="http://www.creative-tim.com/product/material-dashboard" target="_blank" class="btn btn-primary btn-block btn-round">Get Free Demo</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
- -->
     </body>
 
     <!--   Core JS Files   -->
 <script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
-<script src="../assets/js/core/tether.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
 <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 
 
@@ -425,7 +355,7 @@
 <script src="../assets/js/plugins/bootstrap-switch.js"></script>
 
 <!--  Google Maps Plugin    -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
 
 <!--  Chartist Plugin  -->
 <script src="../assets/js/plugins/chartist.min.js"></script>

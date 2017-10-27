@@ -1,0 +1,31 @@
+<div class="card card-contact {{ cardClasses }}">
+    {% if cardHeader %}
+    <div class="card-header{{ headerClasses }}">
+    {{ cardHeader }}
+    </div>
+    {% eslif cardTitle %}
+    <h3 class="card-title text-center"> {{ cardTitle }}</h3>
+    {% endif %}
+    <div class="row">
+        <div class="col-md-5 {{ cardClasses }}">
+            <div class="card-block">
+                {% if cardInfoHorizontal %}
+                <div class="info info-horizontal">
+                    {{ cardInfoHorizontal }}
+                </div>
+                <div class="info info-horizontal">
+                    {{ cardInfoHorizontal }}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <form role="form" id="contact-form" method="post">
+                {% if cardInputs %}
+                <div class="card-block">
+                    {{ cardInputs }}
+                </div>
+                {% endif %}
+            </form>
+        </div>
+    </div>
+</div>

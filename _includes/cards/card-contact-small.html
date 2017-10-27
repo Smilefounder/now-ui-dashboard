@@ -1,0 +1,10 @@
+<div class="card card-contact {{ cardClasses }}">
+    {% if cardHeader %}
+    <div class="card-header{{ headerClasses }}">
+    {{ cardHeader }}
+    </div>
+    {% eslif cardTitle %}
+    <h3 class="card-title text-center"> {{ cardTitle }}</h3>
+    {% endif %}
+    {{ cardBodySmall }}
+</div>

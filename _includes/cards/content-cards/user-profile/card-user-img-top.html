@@ -1,0 +1,12 @@
+{% assign cardHeader = '  ' %}
+{% assign cardBody = '<div id='| append: include.chartId | append:' class="ct-chart ct-perfect-fourth"></div>' %}
+{% assign cardFooter = '<div class="legend">
+                            <i class="fa fa-circle text-gray"></i> Open
+                            <i class="fa fa-circle text-primary"></i> Bounce
+                            <i class="fa fa-circle text-warning"></i> Unsubscribe
+                        </div>
+                        <hr>
+                        <div class="stats">
+                            <i class="now-ui-icons ui-2_time-alarm"></i> Campaign sent 2 days ago
+                        </div>' %}
+{% include cards/card-profile.html%}

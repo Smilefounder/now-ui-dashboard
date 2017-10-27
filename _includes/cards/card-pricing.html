@@ -1,0 +1,27 @@
+<div class="card card-pricing{{ cardClasses }}"> // culoarea de bg vine prin card-classes
+    {% if cardCategory %}
+    <h6 class="card-category">{{ cardCategory }}</h6>
+    {% endif %}
+    {% if cardImage %}
+    <img class="card-img" src="{{ cardImage }}" alt="Card image">
+    {% endif %}
+
+    <div class="{{ if cardImage }}card-img-overlay{{ els }}card-body{{ endif}}">
+        {% if cardIcon %}
+        <div class="card-icon">
+           <i class="{{ cardIcon }}"></i>
+        </div>
+        <h3 class="card-title">{{ cardTitle }}</h3>
+        {% else %}
+        <h1 class="card-title">{{ cardTitle }}</h1>
+        {% endif %}
+        <h4 class="card-title">{{ cardTitle }}</h4>
+        <h6 class="card-category">{{ cardSubtitle }}</h6>
+        <p class="card-text">{{ cardContent }}</p>
+    </div>
+  {% if cardFooter %}
+  <div class="card-footer">
+    {{ cardButton }}
+  </div>
+  {% endif %}
+</div>

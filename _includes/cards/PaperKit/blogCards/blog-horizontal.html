@@ -1,0 +1,37 @@
+{% assign cardHeader = '<div class="filter{{ filterClasses }}">
+                            // o sa fie un for each cu butoanele si iconitele care vor aparea
+                            <button type="button" class="btn btn-neutral btn-round">
+                                <i class="fa fa-heart"></i> Recommend
+                            </button>
+                        </div>' %}
+
+{% assign cardCategory = '  <p class="card-category text-info">
+                                <i class="fa fa-trophy"></i> Best of
+                            </p>' %}
+
+{% assign cardCategoryIcon = '<i class="fa fa-trophy"></i> Best of' %}
+
+{% assign cardTitle = ' <a class="card-link" href="#">
+                            <h4 class="card-title"> Get Shit Done Kit PRO, the most wanted bootstrap kit is here  </h4>
+                        </a>' %}
+
+{% assign cardDescription = '   <a class="card-link" href="#">
+                                    <p class="card-description"> Edgerank completely fails to have the effect it was originally designed for nice product. This will be a really interesting post about Facebook's biggest mistake yet... </p>
+                                </a>' %}
+
+{% assign cardFooter = '<div class="stats">
+                            <a class="card-link" href="#">
+                               <i class="fa fa-male"></i> John Doe
+                            </a>
+                        </div>
+                        <div class="stats">
+                            <a class="card-link" href="#">
+                                <i class="fa fa-comments"></i> 23 Comments
+                            </a>
+                        </div>
+                        <div class="stats">
+                            <a class="card-link" href="#">
+                                <i class="fa fa-heart"></i> 231 Likes
+                           </a>
+                        </div>' %}
+{% include cards/card-full-background.html%}

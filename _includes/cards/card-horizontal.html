@@ -1,0 +1,35 @@
+<div class="card card-horizontal {{ cardClasses }}">
+    <div class="row">
+        <div class="col-md-5">
+            {% if cardHeader %}
+            <div class="card-header{{ headerClasses }}">
+            {{ cardHeader }}
+            </div>
+            {% endif %}
+        </div>
+        <div class="col-md-7">
+            <div class="card-body">
+               {% if cardCategory %}
+               {{ cardCategory }}
+                    {% if cardCategoryIcon %}
+                        {{ cardCategoryIcon}}
+                    {% endif %}
+                {% endif %}
+
+                {% if cardTitle %}
+                    {{ cardTitle }}
+                {% endif %}
+
+                {% if cardDescription %}
+                    {{ cardDescription }}
+                {% endif %}
+            </div>
+
+            {% if cardFooter %}
+            <div class="card-footer">
+                {{ cardFooter }}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

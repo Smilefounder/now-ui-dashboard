@@ -1,0 +1,21 @@
+{% assign cardHeader = '<h5 class="title">Users Behavior</h5>
+                        <p class="category">24 Hours performance</p>' %}
+{% assign cardChart = '<div class="statistics-container">
+                            <div class="statistics">
+                                <p class="description">NASDAQ: AAPL</p>
+                                <h3>127.33</h3>
+                                <h6>OCT 2:16 PM EDT</h6>
+                            </div>
+                            <div class="statistics-badge">
+                                <span class="badge badge-primary">
+                                    <i class="now-ui-icons media-2_sound-wave"></i>
+                                    1 Year
+                                </span>
+                            </div>
+                        </div>
+                        <div id='| append: include.chartId | append:' class="ct-chart"></div>' %}
+{% assign cardFooter = '<hr>
+                        <div class="stats">
+                            <i class="now-ui-icons loader_refresh spin"></i> Updated 3 minutes ago
+                        </div>' %}
+{% include cards/card-basic.html %}

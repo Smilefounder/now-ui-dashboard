@@ -1,0 +1,22 @@
+<div class="card card-background{{ cardClasses }}">
+    {% if cardHeader %}
+    <div class="card-header{{ headerClasses }}">
+    {{ cardHeader }}
+    </div>
+    {% endif %}
+    <div class="card-body {{ bodyClasses }}">
+        {% if cardCategory %}
+        <h6 class="card-category">{{ cardCategory }}</h6>
+        {% endif %}
+
+        {% if cardTitleLink %}
+        <a href="#">
+            <h4 class="card-title">{{ cardTitleText }} </h4>
+        </a>
+        {% endif %}
+
+      </div>
+    {% if cardFooter %}
+    <div class="card-footer"> {{ cardFooter }} </div>
+    {% endif %}
+</div>
