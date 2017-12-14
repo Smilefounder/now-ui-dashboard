@@ -11,3 +11,5 @@ dist/
 
 /node_modules
 /backstop_data
+
+package-lock.json
