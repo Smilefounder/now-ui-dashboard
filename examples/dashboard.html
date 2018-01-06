@@ -3,11 +3,11 @@ layout: now-ui-dashboard-layout
 brand: Dashboard
 ---
 <div class="row">
-    <div class="col-md-4">
-		{% include cards/content-cards/chart/card-chart-statistics.html chartId="chartPreferences" %}
+    <div class="col-md-6">
+		{% include cards/content-cards/frappe-chart/card-chart-statistics.html chartId="frappeChartPreferences" %}
     </div>
 
-    <div class="col-md-8">
+    <div class="col-md-6">
         {% include cards/content-cards/chart/card-chart-behavior.html chartId="chartHours" %}
     </div>
 </div>

@@ -49,6 +49,13 @@
 <!--  Chartist Plugin  -->
 <script src="{{ path-assets }}/assets/js/plugins/chartist.min.js"></script>
 
+<!-- Frappe Charts -->
+<script src="https://unpkg.com/frappe-charts@0.0.8/dist/frappe-charts.min.iife.js"></script>
+
+<!-- Chart JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+
 <!--  Notifications Plugin    -->
 <script src="{{ path-assets }}/assets/js/plugins/bootstrap-notify.js"></script>
 
@@ -98,6 +105,142 @@
             demo.initDashboardPageCharts();
 
         });
+        
+        let data = {
+            labels: ["12am-3am", "3am-6am", "6am-9am", "9am-12pm",
+              "12pm-3pm", "3pm-6pm", "6pm-9pm", "9pm-12am"],
+
+            datasets: [
+              {
+                title: "Some Data",
+                values: [25, 40, 30, 35, 40, 52, 47, 40]
+              }
+            ]
+          };
+
+          let chart = new Chart({
+            parent: "#frappeChartPreferences", // or a DOM element
+            title: "My Awesome Chart",
+            data: data,
+            
+            height: 250,
+
+            type: 'line',   // Line Chart specific properties:
+
+            show_dots: 1,   // Show data points on the line; default 1
+            heatline: 1,    // Show a value-wise line gradient; default 0
+            region_fill: 1, // Fill the area under the graph; default 0
+            
+            colors: ['orange'],
+            // hex-codes or these preset colors;
+            // defaults (in order):
+            // ['light-blue', 'blue', 'violet', 'red',
+            // 'orange', 'yellow', 'green', 'light-green',
+            // 'purple', 'magenta', 'grey', 'dark-grey']
+
+            format_tooltip_x: d => (d + '').toUpperCase(),
+            format_tooltip_y: d => d + ' pts'
+          });
+          
+          
+          
+          // Chart.js
+        chartColor = "#FFFFFF";
+        
+        var ctx = document.getElementById('myChart').getContext("2d")
+        var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
+        gradientStroke.addColorStop(0, '#80b6f4');
+        gradientStroke.addColorStop(1, chartColor);
+
+        var gradientFill = ctx.createLinearGradient(0, 160, 0, 50);
+        gradientFill.addColorStop(0, "rgba(128, 182, 244, 0)");
+        gradientFill.addColorStop(1, "rgba(255, 255, 255, 0.27)");
+
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+                datasets: [{
+                    label: "Data",
+                    borderColor: chartColor,
+                    pointBorderColor: chartColor,
+                    pointBackgroundColor: "#243B55",
+                    pointHoverBackgroundColor: "#243B55",
+                    pointHoverBorderColor: chartColor,
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 7,
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 5,
+                    fill: true,
+                    backgroundColor: gradientFill,
+                    borderWidth: 2,
+                    data: [50, 150, 100, 190, 130, 90, 150, 160, 120, 140, 190, 95]
+                }]
+            },
+            options: {
+                layout: {
+                    padding: {
+                        left: 20,
+                        right: 20,
+                        top: 0,
+                        bottom: 0
+                    }
+                },
+                maintainAspectRatio: false,
+                tooltips: {
+                    callbacks: {
+                        labelColor: function(tooltipItem, chart) {
+                            return {
+                                borderColor: 'rgb(255, 0, 0)',
+                                backgroundColor: 'rgb(255, 0, 0)'
+                            }
+                        },
+                        labelTextColor:function(tooltipItem, chart){
+                            return '#543453';
+                        }
+                    }
+                },
+                legend: {
+                    position: "bottom",
+                    fillStyle: "#FFF",
+                    display: false
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            fontColor: "rgba(255,255,255,0.4)",
+                            fontStyle: "bold",
+                            beginAtZero: true,
+                            maxTicksLimit: 5,
+                            padding: 10
+                        },
+                        gridLines: {
+                            drawTicks: true,
+                            drawBorder: false,
+                            display: true,
+                            color: "rgba(255,255,255,0.1)",
+                            zeroLineColor: "transparent",
+                            
+                        }
+
+                    }],
+                    xAxes: [{
+                        gridLines: {
+                            zeroLineColor: "transparent",
+                            display: false,
+                            
+                        },
+                        ticks: {
+                            padding: 10,
+                            fontColor: "rgba(255,255,255,0.4)",
+                            fontStyle: "bold"
+                        }
+                    }]
+                }
+            }
+        });
+ 
+          
     </script>
 
 {% elsif page.brand == "Full Screen Map" %}

@@ -6528,8 +6528,7 @@ body {
 .navbar.navbar-transparent {
   background-color: transparent !important;
   box-shadow: none;
-  color: #FFFFFF;
-  padding-top: 20px; }
+  color: #FFFFFF; }
 .navbar.bg-white:not(.navbar-transparent) a:not(.dropdown-item):not(.btn) {
   color: #888; }
 .navbar.bg-white:not(.navbar-transparent) a:not(.dropdown-item):not(.btn).disabled {
@@ -7836,6 +7835,7 @@ Created using IcoMoon - icomoon.io
   position: relative;
   float: right;
   width: calc(100% - 260px);
+  width: 100%;
   background-color: #fafafa;
   -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
@@ -7844,11 +7844,13 @@ Created using IcoMoon - icomoon.io
   transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1); }
 .main-panel > .content {
   padding: 30px 15px;
-  min-height: calc(100vh - 123px); }
+  min-height: calc(100vh - 123px);
+  padding-left: 275px; }
 .main-panel > .footer {
   border-top: 1px solid #e7e7e7; }
 .main-panel > .navbar {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-left: 275px; }
 .main-panel .header {
   margin-bottom: 50px; }
 
@@ -7922,6 +7924,19 @@ Created using IcoMoon - icomoon.io
     -ms-transform: translate3d(0px, 0, 0);
     transform: translate3d(0px, 0, 0);
     opacity: 1; } }
+.panel-header {
+  height: 380px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  padding-left: 260px;
+  background: #141E30;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #243B55, #141E30);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #243B55, #141E30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative; }
+
 .card {
   border: 0;
   border-radius: 0.1875rem;
