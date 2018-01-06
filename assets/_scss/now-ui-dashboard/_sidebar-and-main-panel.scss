@@ -190,7 +190,7 @@
             content: "";
             display: block;
             background: #FFFFFF;
-            opacity: .63;
+            opacity: 1;
         }
     }
 
@@ -272,7 +272,7 @@
     &:after{
         display: block;
         content: "";
-        opacity: .76;
+        opacity: 1;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -292,7 +292,7 @@
         @include icon-gradient($success-color);
     }
     &[data-color="orange"]:after{
-        @include icon-gradient($primary-color);
+        @include icon-gradient($primary-color, '#e03e0b');
     }
     &[data-color="red"]:after{
         @include icon-gradient($danger-color);
@@ -389,7 +389,7 @@
     float: right;
     width: $sidebar-width;
     width: 100%;
-    background-color: lighten(#f2f2f2, 3%);
+    background-color: $light-gray;
     @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 
     > .content{
@@ -545,4 +545,17 @@
     
     position: relative;
 
+}
+
+.sidebar{
+    
+    
+    box-shadow: 0 128px 128px 0 rgba(33, 33, 33,.2), 
+                0 4px 4px 0 rgba(33, 33, 33,.2), 
+                0 8px 8px 0 rgba(33, 33, 33,.2), 
+                0 16px 16px 0 rgba(33, 33, 33,.2), 
+                0 32px 32px 0 rgba(33, 33, 33,.2), 
+                0 64px 64px 0 rgba(33, 33, 33,.2);
+               
+    
 }

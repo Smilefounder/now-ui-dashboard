@@ -1,0 +1,12 @@
+{% assign cardHeader = '<h5 class="title">2014 Sales</h5>
+                        <p class="category">All products including Taxes</p>' %}
+{% assign cardChart = '<div id='| append: include.chartId | append:' class="ct-chart"></div>' %}
+{% assign cardFooter = '<div class="legend">
+                            <i class="fa fa-circle text-gray"></i> Tesla Model S
+                            <i class="fa fa-circle text-primary"></i> BMW 5 Series
+                        </div>
+                        <hr>
+                        <div class="stats">
+                            <i class="now-ui-icons ui-1_check"></i> Data information certified
+                        </div>' %}
+{% include cards/card-basic.html%}

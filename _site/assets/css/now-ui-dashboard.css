@@ -7676,7 +7676,7 @@ Created using IcoMoon - icomoon.io
   content: "";
   display: block;
   background: #FFFFFF;
-  opacity: .63; }
+  opacity: 1; }
 .sidebar .logo, .off-canvas-sidebar .logo {
   position: relative;
   padding: 0.5rem 0.7rem;
@@ -7736,7 +7736,7 @@ Created using IcoMoon - icomoon.io
 .sidebar:before, .sidebar:after, .off-canvas-sidebar:before, .off-canvas-sidebar:after {
   display: block;
   content: "";
-  opacity: .76;
+  opacity: 1;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -7763,10 +7763,10 @@ Created using IcoMoon - icomoon.io
   background: linear-gradient(#18ce0f 0%, #000 80%); }
 .sidebar[data-color="orange"]:after, .off-canvas-sidebar[data-color="orange"]:after {
   background: #f96332;
-  background: -webkit-linear-gradient(#f96332 0%, #000 80%);
-  background: -o-linear-gradient(#f96332 0%, #000 80%);
-  background: -moz-linear-gradient(#f96332 0%, #000 80%);
-  background: linear-gradient(#f96332 0%, #000 80%); }
+  background: -webkit-linear-gradient(#f96332 0%, "#e03e0b" 80%);
+  background: -o-linear-gradient(#f96332 0%, "#e03e0b" 80%);
+  background: -moz-linear-gradient(#f96332 0%, "#e03e0b" 80%);
+  background: linear-gradient(#f96332 0%, "#e03e0b" 80%); }
 .sidebar[data-color="red"]:after, .off-canvas-sidebar[data-color="red"]:after {
   background: #FF3636;
   background: -webkit-linear-gradient(#FF3636 0%, #000 80%);
@@ -7836,7 +7836,7 @@ Created using IcoMoon - icomoon.io
   float: right;
   width: calc(100% - 260px);
   width: 100%;
-  background-color: #fafafa;
+  background-color: #E3E3E3;
   -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
@@ -7936,6 +7936,9 @@ Created using IcoMoon - icomoon.io
   background: linear-gradient(to left, #243B55, #141E30);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   position: relative; }
+
+.sidebar {
+  box-shadow: 0 128px 128px 0 rgba(33, 33, 33, 0.2), 0 4px 4px 0 rgba(33, 33, 33, 0.2), 0 8px 8px 0 rgba(33, 33, 33, 0.2), 0 16px 16px 0 rgba(33, 33, 33, 0.2), 0 32px 32px 0 rgba(33, 33, 33, 0.2), 0 64px 64px 0 rgba(33, 33, 33, 0.2); }
 
 .card {
   border: 0;

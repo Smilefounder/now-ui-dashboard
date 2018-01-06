@@ -52,12 +52,12 @@
        transform: translate3d(0,$value,0) !important;
 }
 
-@mixin icon-gradient($color){
+@mixin icon-gradient($color, $bottomColor: #000){
     background: $color;
-    background: -webkit-linear-gradient($color 0%, #000 80%);
-    background: -o-linear-gradient($color 0%, #000 80%);
-    background: -moz-linear-gradient($color 0%, #000 80%);
-    background: linear-gradient($color 0%, #000 80%);
+    background: -webkit-linear-gradient($color 0%, $bottomColor 80%);
+    background: -o-linear-gradient($color 0%, $bottomColor 80%);
+    background: -moz-linear-gradient($color 0%, $bottomColor 80%);
+    background: linear-gradient($color 0%, $bottomColor 80%);
 }
 
 @mixin bar-animation($type){
