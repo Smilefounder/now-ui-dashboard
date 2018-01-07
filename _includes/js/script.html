@@ -105,7 +105,7 @@
             demo.initDashboardPageCharts();
 
         });
-        
+
         let data = {
             labels: ["12am-3am", "3am-6am", "6am-9am", "9am-12pm",
               "12pm-3pm", "3pm-6pm", "6pm-9pm", "9pm-12am"],
@@ -122,7 +122,7 @@
             parent: "#frappeChartPreferences", // or a DOM element
             title: "My Awesome Chart",
             data: data,
-            
+
             height: 250,
 
             type: 'line',   // Line Chart specific properties:
@@ -130,7 +130,7 @@
             show_dots: 1,   // Show data points on the line; default 1
             heatline: 1,    // Show a value-wise line gradient; default 0
             region_fill: 1, // Fill the area under the graph; default 0
-            
+
             colors: ['orange'],
             // hex-codes or these preset colors;
             // defaults (in order):
@@ -141,13 +141,14 @@
             format_tooltip_x: d => (d + '').toUpperCase(),
             format_tooltip_y: d => d + ' pts'
           });
-          
-          
-          
+
+
+
           // Chart.js
         chartColor = "#FFFFFF";
-        
-        var ctx = document.getElementById('myChart').getContext("2d")
+
+        var ctx = document.getElementById('myChart').getContext("2d");
+
         var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
         gradientStroke.addColorStop(0, '#80b6f4');
         gradientStroke.addColorStop(1, chartColor);
@@ -220,7 +221,7 @@
                             display: true,
                             color: "rgba(255,255,255,0.1)",
                             zeroLineColor: "transparent",
-                            
+
                         }
 
                     }],
@@ -228,7 +229,7 @@
                         gridLines: {
                             zeroLineColor: "transparent",
                             display: false,
-                            
+
                         },
                         ticks: {
                             padding: 10,
@@ -239,8 +240,8 @@
                 }
             }
         });
- 
-          
+
+
     </script>
 
 {% elsif page.brand == "Full Screen Map" %}

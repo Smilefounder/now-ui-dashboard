@@ -32,7 +32,7 @@
 
     </head>
 
-    <body>
+    <body class="sidebar-mini">
         <div class="wrapper">
             <div class="sidebar" data-color="orange">
     <!--
@@ -401,11 +401,112 @@
                         <!-- <div id="frappeChartPreferences"></div> -->
                         <canvas id="myChart"></canvas>
                     </div>
-                    
+
                     <div class="content">
-                        
+
                         <div class="container-fluid">
                             <div class="row">
+    <div class="col-md-12">
+        <div class="card card-stats card-raised">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="statistics">
+                            <div class="info info-hover">
+                                <div class="icon icon-success icon-circle">
+                                    <i class="now-ui-icons business_money-coins"></i>
+                                </div>
+                                <h3 class="info-title"><small>$</small>3,521</h3>
+                                <h6 class="stats-title">Today Revenue</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="statistics">
+                            <div class="info info-hover">
+                                <div class="icon icon-info icon-circle">
+                                    <i class="now-ui-icons users_single-02"></i>
+                                </div>
+                                <h3 class="info-title">562</h3>
+                                <h6 class="stats-title">Customers</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="statistics">
+                            <div class="info info-hover">
+                                <div class="icon icon-primary icon-circle">
+                                    <i class="now-ui-icons ui-2_chat-round"></i>
+                                </div>
+                                <h3 class="info-title">859</h3>
+                                <h6 class="stats-title">Messages</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="statistics">
+                            <div class="info info-hover">
+                                <div class="icon icon-danger icon-circle">
+                                    <i class="now-ui-icons objects_support-17"></i>
+                                </div>
+                                <h3 class="info-title">353</h3>
+                                <h6 class="stats-title">Support Requests</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card card-background card-raised" data-background-color="" style="background-image: url('../assets/img/stats1.jpg')">
+            <div class="info-area">
+                <div class="icon icon-white">
+                    <i class="now-ui-icons business_money-coins"></i>
+                </div>
+                <div class="description">
+                    <h4 class="info-title">Collaborate on ideas</h4>
+
+                    <a href="#pablo" class="ml-3">Find more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-background card-raised" data-background-color="" style="background-image: url('../assets/img/stats2.jpg')">
+            <div class="info-area">
+                <div class="icon icon-white">
+                    <i class="now-ui-icons business_badge"></i>
+                </div>
+                <div class="description">
+                    <h4 class="info-title">Pick your designer</h4>
+
+                    <a href="#pablo">Find more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-background card-raised" data-background-color="" style="background-image: url('../assets/img/stats3.jpg')">
+            <div class="info-area">
+                <div class="icon icon-white">
+                    <i class="now-ui-icons location_map-big"></i>
+                </div>
+                <div class="description">
+                    <h4 class="info-title">Visualize your room</h4>
+
+                    <a href="#pablo" class="ml-3">Find more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
     <div class="col-md-6">
 		
 
@@ -828,7 +929,7 @@
             demo.initDashboardPageCharts();
 
         });
-        
+
         let data = {
             labels: ["12am-3am", "3am-6am", "6am-9am", "9am-12pm",
               "12pm-3pm", "3pm-6pm", "6pm-9pm", "9pm-12am"],
@@ -845,7 +946,7 @@
             parent: "#frappeChartPreferences", // or a DOM element
             title: "My Awesome Chart",
             data: data,
-            
+
             height: 250,
 
             type: 'line',   // Line Chart specific properties:
@@ -853,7 +954,7 @@
             show_dots: 1,   // Show data points on the line; default 1
             heatline: 1,    // Show a value-wise line gradient; default 0
             region_fill: 1, // Fill the area under the graph; default 0
-            
+
             colors: ['orange'],
             // hex-codes or these preset colors;
             // defaults (in order):
@@ -864,13 +965,14 @@
             format_tooltip_x: d => (d + '').toUpperCase(),
             format_tooltip_y: d => d + ' pts'
           });
-          
-          
-          
+
+
+
           // Chart.js
         chartColor = "#FFFFFF";
-        
-        var ctx = document.getElementById('myChart').getContext("2d")
+
+        var ctx = document.getElementById('myChart').getContext("2d");
+
         var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
         gradientStroke.addColorStop(0, '#80b6f4');
         gradientStroke.addColorStop(1, chartColor);
@@ -943,7 +1045,7 @@
                             display: true,
                             color: "rgba(255,255,255,0.1)",
                             zeroLineColor: "transparent",
-                            
+
                         }
 
                     }],
@@ -951,7 +1053,7 @@
                         gridLines: {
                             zeroLineColor: "transparent",
                             display: false,
-                            
+
                         },
                         ticks: {
                             padding: 10,
@@ -962,8 +1064,8 @@
                 }
             }
         });
- 
-          
+
+
     </script>
 
 

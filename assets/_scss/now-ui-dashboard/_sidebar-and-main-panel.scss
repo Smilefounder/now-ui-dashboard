@@ -388,14 +388,14 @@
     position: relative;
     float: right;
     width: $sidebar-width;
-    width: 100%;
+    // width: 100%;
     background-color: $light-gray;
     @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 
     > .content{
-        padding: 30px 15px;
+        padding: 0 15px 30px;
         min-height: calc(100vh - 123px);
-        padding-left: 275px;
+        margin-top: -30px;
     }
 
     > .footer{
@@ -404,9 +404,8 @@
 
     > .navbar{
         margin-bottom: 0;
-        padding-left: 275px;
     }
-    
+
 
     .header{
         margin-bottom: 50px;
@@ -536,26 +535,23 @@
 .panel-header{
     height: 380px;
     padding-top: 80px;
-    padding-bottom: 60px;
-    padding-left: 260px;
-    
+    padding-bottom: 45px;
+
     background: #141E30;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+
     position: relative;
 
 }
 
 .sidebar{
-    
-    
-    box-shadow: 0 128px 128px 0 rgba(33, 33, 33,.2), 
-                0 4px 4px 0 rgba(33, 33, 33,.2), 
-                0 8px 8px 0 rgba(33, 33, 33,.2), 
-                0 16px 16px 0 rgba(33, 33, 33,.2), 
-                0 32px 32px 0 rgba(33, 33, 33,.2), 
+    box-shadow: 0 128px 128px 0 rgba(33, 33, 33,.2),
+                0 4px 4px 0 rgba(33, 33, 33,.2),
+                0 8px 8px 0 rgba(33, 33, 33,.2),
+                0 16px 16px 0 rgba(33, 33, 33,.2),
+                0 32px 32px 0 rgba(33, 33, 33,.2),
                 0 64px 64px 0 rgba(33, 33, 33,.2);
-               
-    
+
+
 }
