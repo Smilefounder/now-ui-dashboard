@@ -139,11 +139,14 @@
             }
 
             &.active > a{
-                color: $white-color;
-                background-color: $opacity-1;
+                background-color: $white-color;
+                box-shadow: $box-shadow;
+                color: $primary-color;
+
+
 
                 i{
-                    color: $white-color;
+                    color: $primary-color;
                 }
             }
         }
@@ -507,13 +510,13 @@
             }
         }
 
-        .sidebar:hover{
+        .sidebar:hover {
             width: 260px;
 
-            .logo{
-                a.logo-normal{
+            .logo {
+                a.logo-normal {
                     opacity: 1;
-                    @include transform-translate-x(0px);
+                    @include transform-translate-x(0);
                 }
             }
 
@@ -532,26 +535,24 @@
     }
 }
 
-.panel-header{
+.panel-header {
     height: 380px;
     padding-top: 80px;
     padding-bottom: 45px;
 
     background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-gradient(linear, left top, right top, from(#0c2646), color-stop(60%, #204065), to(#2a5788));
+    background: linear-gradient(to right, #0c2646 0%, #204065 60%, #2a5788 100%);
 
     position: relative;
 
 }
 
-.sidebar{
+.sidebar {
     box-shadow: 0 128px 128px 0 rgba(33, 33, 33,.2),
                 0 4px 4px 0 rgba(33, 33, 33,.2),
                 0 8px 8px 0 rgba(33, 33, 33,.2),
                 0 16px 16px 0 rgba(33, 33, 33,.2),
                 0 32px 32px 0 rgba(33, 33, 33,.2),
                 0 64px 64px 0 rgba(33, 33, 33,.2);
-
-
 }

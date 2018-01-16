@@ -19,14 +19,18 @@
 
                     <div class="panel-header">
                         <!-- <div id="frappeChartPreferences"></div> -->
+                        {% if page.brand == "Dashboard" %}
                         <canvas id="myChart"></canvas>
+                        {% elsif page.brand == "Sweet Alert" %}
+                        <div class="header text-center">
+                            <h3 class="title">{{ page.brand }}</h3>
+                            <p class="category">A beautiful plugin, that replace the classic alert, Handcrafted by our friend <a target="_blank" href="https://twitter.com/t4t5">Tristan Edwards</a>. Please check out the <a href="http://limonte.github.io/sweetalert2/" target="_blank">full documentation.</a></p>
+                        </div>
+                        {% endif %}
                     </div>
 
                     <div class="content">
-
-                        <div class="container-fluid">
-                            {{ content }}
-                        </div>
+                        {{ content }}
                     </div>
 
                     {% include footer.html %}

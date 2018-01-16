@@ -61,7 +61,16 @@ $(document).ready(function(){
             iconBase: "now-ui-icons",
             tickIcon: "ui-1_check"
         });
-    };
+    }
+
+  // On click navbar-collapse the menu will be white
+  $('.collapse').on('show.bs.collapse', function () {
+      $(this).closest('.navbar').removeClass('navbar-transparent').addClass('bg-white');
+      $(this).parent().find('.form-group').removeAttr('data-background-color');
+  }).on('hide.bs.collapse', function () {
+      $(this).closest('.navbar').addClass('navbar-transparent').removeClass('bg-white');
+      $(this).parent().find('.form-group').attr('data-background-color','');
+  });
 
     // check if there is an image set for the sidebar's background
     nowuiDashboard.checkSidebarImage();

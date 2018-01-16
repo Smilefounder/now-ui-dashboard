@@ -300,6 +300,15 @@
         }
     }
 
+  .card-stats [class*="col-"] .statistics::after {
+    display: none;
+  }
+
+  .main-panel .content {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
     .footer{
         nav{
             display: block;
