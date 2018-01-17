@@ -66,6 +66,7 @@
                     float: left;
                     display: inherit;
                     line-height: 24px;
+                    color: $opacity-5;
                 }
 
                 i{
@@ -366,6 +367,10 @@
     }
 }
 
+.sidebar{
+  box-shadow: $sidebar-box-shadow;
+}
+
 .visible-on-sidebar-regular{
     display: inline-block !important;
 }
@@ -458,101 +463,96 @@
 
     .sidebar-mini{
         .visible-on-sidebar-regular{
-            display: none !important;
+          display: none !important;
         }
         .visible-on-sidebar-mini{
-            display: inline-block !important;
+          display: inline-block !important;
         }
 
         .sidebar,
         .sidebar .sidebar-wrapper{
-            width: 80px;
+          width: 80px;
         }
 
         .main-panel{
-            width: $sidebar-mini-width;
+          width: $sidebar-mini-width;
         }
 
         .sidebar{
-            display: block;
-            z-index: 9999;
+          display: block;
+          z-index: 9999;
 
-            .logo{
-                a.logo-normal{
-                    opacity: 0;
-                    @include transform-translate-x(-25px);
-                }
+          .logo{
+              a.logo-normal{
+                  opacity: 0;
+                  @include transform-translate-x(-25px);
+              }
+              a.logo-mini{
+                  margin-left: 15px;
+              }
+          }
 
-                a.logo-mini{
-                    margin-left: 15px;
-                }
+          .nav a i,
+          .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini,
+          .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini{
+            margin-left: 0;
+            width: 35px;
+          }
+
+          .user .photo{
+            margin-left: 23px;
+          }
+
+          .sidebar-wrapper{
+            > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+            .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+            .user .info > a > span,
+            > .nav li > a p{
+                @include transform-translate-x(-25px);
+                opacity: 0;
             }
-
-            .nav a i,
-            .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini,
-            .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini{
-                margin-left: 0;
-                width: 35px;
-            }
-
-            .user .photo{
-                margin-left: 23px;
-            }
-
-            .sidebar-wrapper{
-                > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
-                .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
-                .user .info > a > span,
-                > .nav li > a p{
-                    @include transform-translate-x(-25px);
-                    opacity: 0;
-                }
-            }
+          }
         }
 
         .sidebar:hover {
+          width: 260px;
+
+          .logo {
+            a.logo-normal {
+                opacity: 1;
+                @include transform-translate-x(0);
+            }
+          }
+
+          .sidebar-wrapper{
             width: 260px;
 
-            .logo {
-                a.logo-normal {
-                    opacity: 1;
-                    @include transform-translate-x(0);
-                }
+            > .nav li > a p,
+            > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+            .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+            .user .info > a > span{
+              @include transform-translate-x(0px);
+                opacity: 1;
             }
-
-            .sidebar-wrapper{
-                width: 260px;
-
-                > .nav li > a p,
-                > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
-                .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
-                .user .info > a > span{
-                    @include transform-translate-x(0px);
-                    opacity: 1;
-                }
-            }
-        }
-    }
+          }
+      }
+  }
 }
 
 .panel-header {
-    height: 380px;
-    padding-top: 80px;
-    padding-bottom: 45px;
-
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-gradient(linear, left top, right top, from(#0c2646), color-stop(60%, #204065), to(#2a5788));
-    background: linear-gradient(to right, #0c2646 0%, #204065 60%, #2a5788 100%);
-
-    position: relative;
-
+  height: 260px;
+  padding-top: 80px;
+  padding-bottom: 45px;
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#0c2646), color-stop(60%, #204065), to(#2a5788));
+  background: linear-gradient(to right, #0c2646 0%, #204065 60%, #2a5788 100%);
+  position: relative;
 }
 
-.sidebar {
-    box-shadow: 0 128px 128px 0 rgba(33, 33, 33,.2),
-                0 4px 4px 0 rgba(33, 33, 33,.2),
-                0 8px 8px 0 rgba(33, 33, 33,.2),
-                0 16px 16px 0 rgba(33, 33, 33,.2),
-                0 32px 32px 0 rgba(33, 33, 33,.2),
-                0 64px 64px 0 rgba(33, 33, 33,.2);
+.panel-header-sm{
+  height: 135px;
+}
+
+.panel-header-lg{
+  height: 380px
 }

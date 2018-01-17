@@ -49,6 +49,12 @@
         <a href="http://www.creative-tim.com" class="simple-text logo-normal">
             Creative Tim
         </a>
+        <div class="navbar-minimize">
+          <button id="minimizeSidebar" class="btn btn-neutral btn-icon">
+              <i class="now-ui-icons arrows-1_minimal-left visible-on-sidebar-regular"></i>
+              <i class="now-ui-icons arrows-1_minimal-right visible-on-sidebar-mini"></i>
+          </button>
+  	    </div>
     </div>
 
     <div class="sidebar-wrapper">
@@ -345,20 +351,11 @@
 					<span class="navbar-toggler-bar bar3"></span>
 				</button>
 			</div>
-			<div class="navbar-minimize">
-	            <button id="minimizeSidebar" class="btn btn-neutral btn-icon">
-	                <i class="now-ui-icons arrows-1_minimal-left visible-on-sidebar-regular"></i>
-	                <i class="now-ui-icons arrows-1_minimal-right visible-on-sidebar-mini"></i>
-	            </button>
-	        </div>
 			<a class="navbar-brand" href="#pablo">Dashboard</a>
-      <form>
-          <div class="form-group" data-background-color>
-              <input type="text" value="" class="form-control" placeholder="Search...">
-          </div>
-      </form>
 		</div>
 		
+    
+    
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-bar navbar-kebab"></span>
 			<span class="navbar-toggler-bar navbar-kebab"></span>
@@ -367,6 +364,14 @@
 
 	    <div class="collapse navbar-collapse justify-content-end" id="navigation">
 			
+      
+    
+      <form>
+          <div class="form-group">
+              <input type="text" value="" class="form-control" placeholder="Search...">
+          </div>
+      </form>
+      
 			<ul class="navbar-nav">
 				<li class="nav-item">
 					<a class="nav-link" href="#pablo">
@@ -409,7 +414,7 @@
 
                 
 
-                    <div class="panel-header">
+                    <div class="panel-header panel-header-lg">
                         <!-- <div id="frappeChartPreferences"></div> -->
                         
                         <canvas id="myChart"></canvas>
@@ -424,30 +429,8 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="statistics">
-                            <div class="info info-hover">
-                                <div class="icon icon-success icon-circle">
-                                    <i class="now-ui-icons business_money-coins"></i>
-                                </div>
-                                <h3 class="info-title"><small>$</small>3,521</h3>
-                                <h6 class="stats-title">Today Revenue</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="statistics">
-                            <div class="info info-hover">
-                                <div class="icon icon-info icon-circle">
-                                    <i class="now-ui-icons users_single-02"></i>
-                                </div>
-                                <h3 class="info-title">562</h3>
-                                <h6 class="stats-title">Customers</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="statistics">
-                            <div class="info info-hover">
-                                <div class="icon icon-primary icon-circle">
+                            <div class="info">
+                                <div class="icon icon-primary">
                                     <i class="now-ui-icons ui-2_chat-round"></i>
                                 </div>
                                 <h3 class="info-title">859</h3>
@@ -457,8 +440,30 @@
                     </div>
                     <div class="col-md-3">
                         <div class="statistics">
-                            <div class="info info-hover">
-                                <div class="icon icon-danger icon-circle">
+                            <div class="info">
+                                <div class="icon icon-success">
+                                    <i class="now-ui-icons business_money-coins"></i>
+                                </div>
+                                <h3 class="info-title"><small>$</small>3,521</h3>
+                                <h6 class="stats-title">Today Revenue</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="statistics">
+                            <div class="info">
+                                <div class="icon icon-info">
+                                    <i class="now-ui-icons users_single-02"></i>
+                                </div>
+                                <h3 class="info-title">562</h3>
+                                <h6 class="stats-title">Customers</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="statistics">
+                            <div class="info">
+                                <div class="icon icon-danger">
                                     <i class="now-ui-icons objects_support-17"></i>
                                 </div>
                                 <h3 class="info-title">353</h3>
@@ -827,7 +832,7 @@
                     </div>
 
                     <footer class="footer" >
-    <div class="container">
+    <div class="container-fluid">
         <nav>
             <ul>
                 <li>
@@ -941,47 +946,7 @@
 
         });
 
-        let data = {
-            labels: ["12am-3am", "3am-6am", "6am-9am", "9am-12pm",
-              "12pm-3pm", "3pm-6pm", "6pm-9pm", "9pm-12am"],
-
-            datasets: [
-              {
-                title: "Some Data",
-                values: [25, 40, 30, 35, 40, 52, 47, 40]
-              }
-            ]
-          };
-
-          let chart = new Chart({
-            parent: "#frappeChartPreferences", // or a DOM element
-            title: "My Awesome Chart",
-            data: data,
-
-            height: 250,
-
-            type: 'line',   // Line Chart specific properties:
-
-            show_dots: 1,   // Show data points on the line; default 1
-            heatline: 1,    // Show a value-wise line gradient; default 0
-            region_fill: 1, // Fill the area under the graph; default 0
-
-
-
-            colors: ['orange'],
-            // hex-codes or these preset colors;
-            // defaults (in order):
-            // ['light-blue', 'blue', 'violet', 'red',
-            // 'orange', 'yellow', 'green', 'light-green',
-            // 'purple', 'magenta', 'grey', 'dark-grey']
-
-            format_tooltip_x: d => (d + '').toUpperCase(),
-            format_tooltip_y: d => d + ' pts'
-          });
-
-
-
-          // Chart.js
+       // Chart.js
         chartColor = "#FFFFFF";
 
         var ctx = document.getElementById('myChart').getContext("2d");
@@ -990,9 +955,9 @@
         gradientStroke.addColorStop(0, '#80b6f4');
         gradientStroke.addColorStop(1, chartColor);
 
-        var gradientFill = ctx.createLinearGradient(0, 160, 0, 50);
+        var gradientFill = ctx.createLinearGradient(0, 200, 0, 50);
         gradientFill.addColorStop(0, "rgba(128, 182, 244, 0)");
-        gradientFill.addColorStop(1, "rgba(255, 255, 255, 0.27)");
+        gradientFill.addColorStop(1, "rgba(255, 255, 255, 0.24)");
 
         var myChart = new Chart(ctx, {
             type: 'line',
@@ -1002,8 +967,8 @@
                     label: "Data",
                     borderColor: chartColor,
                     pointBorderColor: chartColor,
-                    pointBackgroundColor: "#243B55",
-                    pointHoverBackgroundColor: "#243B55",
+                    pointBackgroundColor: "#1e3d60",
+                    pointHoverBackgroundColor: "#1e3d60",
                     pointHoverBorderColor: chartColor,
                     pointBorderWidth: 1,
                     pointHoverRadius: 7,
@@ -1026,17 +991,11 @@
                 },
                 maintainAspectRatio: false,
                 tooltips: {
-                    callbacks: {
-                        labelColor: function(tooltipItem, chart) {
-                            return {
-                                borderColor: 'rgb(255, 0, 0)',
-                                backgroundColor: 'rgb(255, 0, 0)'
-                            }
-                        },
-                        labelTextColor:function(tooltipItem, chart){
-                            return '#543453';
-                        }
-                    }
+                  backgroundColor: '#fff',
+                  titleFontColor: '#333',
+                  bodyFontColor: '#666',
+                  bodySpacing: 4,
+                  xPadding: 12
                 },
                 legend: {
                     position: "bottom",
