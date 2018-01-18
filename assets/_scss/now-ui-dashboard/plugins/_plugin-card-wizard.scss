@@ -59,15 +59,19 @@
         -webkit-font-smoothing: subpixel-antialiased;
         top:-4px;
         left: 0px;
-        border-radius: 4px;
+        border-radius: 30px;
+        background-color: $white-color;
         box-shadow: $box-shadow;
-        color: $white-color;
+        color: $primary-color;
         cursor: pointer;
         font-weight: 500;
     }
 
     &[data-color="primary"]{
         @include set-wizard-color($brand-primary);
+    }
+    &[data-color="white"]{
+        @include set-wizard-color($white-color);
     }
 
     &[data-color="green"]{
@@ -202,7 +206,7 @@
     }
 
     .nav-pills{
-        background-color: $light-gray;
+        background-color: $orange-bg;
 
         > li + li {
             margin-left: 0;
@@ -217,7 +221,7 @@
             font-weight: 500;
             min-width: 100px;
             text-align: center;
-            color: #555555 !important;
+            color: #555555;
         }
 
         > li.active > a,

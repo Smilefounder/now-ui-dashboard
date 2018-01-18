@@ -1,8 +1,7 @@
 @mixin set-wizard-color($color) {
-
-    .moving-tab{
-        background-color: $color;
-    }
+      .moving-tab{
+          color: $color;
+      }
 
     .picture{
         &:hover{
