@@ -384,10 +384,6 @@
     }
 }
 
-.sidebar{
-  box-shadow: $sidebar-box-shadow;
-}
-
 .visible-on-sidebar-regular{
     display: inline-block !important;
 }
@@ -497,6 +493,7 @@
         .sidebar{
           display: block;
           z-index: 9999;
+          box-shadow: $sidebar-box-shadow;
 
           .logo{
               a.logo-normal{

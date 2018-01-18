@@ -5419,11 +5419,11 @@ be a descendant of the grid when it is being dragged.
 .has-danger.form-check .form-check-label {
   color: #FF3636; }
 
-.form-group.form-group-no-border.form-control-lg .input-group-addon, .input-group.form-group-no-border.form-control-lg .input-group-addon {
+.form-group.no-border.form-control-lg .input-group-addon, .input-group.no-border.form-control-lg .input-group-addon {
   padding: 15px 0 15px 19px; }
-.form-group.form-group-no-border.form-control-lg .form-control, .input-group.form-group-no-border.form-control-lg .form-control {
+.form-group.no-border.form-control-lg .form-control, .input-group.no-border.form-control-lg .form-control {
   padding: 15px 19px; }
-.form-group.form-group-no-border.form-control-lg .form-control + .input-group-addon, .input-group.form-group-no-border.form-control-lg .form-control + .input-group-addon {
+.form-group.no-border.form-control-lg .form-control + .input-group-addon, .input-group.no-border.form-control-lg .form-control + .input-group-addon {
   padding: 15px 19px 15px 0; }
 
 .form-group.form-control-lg .form-control, .input-group.form-control-lg .form-control {
@@ -5435,11 +5435,11 @@ be a descendant of the grid when it is being dragged.
 .form-group.form-control-lg .input-group-addon + .form-control, .input-group.form-control-lg .input-group-addon + .form-control {
   padding: 15px 18px 15px 16px; }
 
-.form-group.form-group-no-border .form-control, .input-group.form-group-no-border .form-control {
+.form-group.no-border .form-control, .input-group.no-border .form-control {
   padding: 11px 19px; }
-.form-group.form-group-no-border .form-control + .input-group-addon, .input-group.form-group-no-border .form-control + .input-group-addon {
+.form-group.no-border .form-control + .input-group-addon, .input-group.no-border .form-control + .input-group-addon {
   padding: 11px 19px 11px 0; }
-.form-group.form-group-no-border .input-group-addon, .input-group.form-group-no-border .input-group-addon {
+.form-group.no-border .input-group-addon, .input-group.no-border .input-group-addon {
   padding: 11px 0 11px 19px; }
 
 .form-group .form-control, .input-group .form-control {
@@ -5451,15 +5451,15 @@ be a descendant of the grid when it is being dragged.
 .form-group .input-group-addon + .form-control, .form-group .input-group-addon ~ .form-control, .input-group .input-group-addon + .form-control, .input-group .input-group-addon ~ .form-control {
   padding: 10px 19px 11px 16px; }
 
-.form-group.form-group-no-border .form-control, .form-group.form-group-no-border .form-control + .input-group-addon, .input-group.form-group-no-border .form-control, .input-group.form-group-no-border .form-control + .input-group-addon {
+.form-group.no-border .form-control, .form-group.no-border .form-control + .input-group-addon, .input-group.no-border .form-control, .input-group.no-border .form-control + .input-group-addon {
   background-color: rgba(222, 222, 222, 0.3);
   border: medium none; }
-.form-group.form-group-no-border .form-control:focus, .form-group.form-group-no-border .form-control:active, .form-group.form-group-no-border .form-control:active, .form-group.form-group-no-border .form-control + .input-group-addon:focus, .form-group.form-group-no-border .form-control + .input-group-addon:active, .form-group.form-group-no-border .form-control + .input-group-addon:active, .input-group.form-group-no-border .form-control:focus, .input-group.form-group-no-border .form-control:active, .input-group.form-group-no-border .form-control:active, .input-group.form-group-no-border .form-control + .input-group-addon:focus, .input-group.form-group-no-border .form-control + .input-group-addon:active, .input-group.form-group-no-border .form-control + .input-group-addon:active {
+.form-group.no-border .form-control:focus, .form-group.no-border .form-control:active, .form-group.no-border .form-control:active, .form-group.no-border .form-control + .input-group-addon:focus, .form-group.no-border .form-control + .input-group-addon:active, .form-group.no-border .form-control + .input-group-addon:active, .input-group.no-border .form-control:focus, .input-group.no-border .form-control:active, .input-group.no-border .form-control:active, .input-group.no-border .form-control + .input-group-addon:focus, .input-group.no-border .form-control + .input-group-addon:active, .input-group.no-border .form-control + .input-group-addon:active {
   border: medium none;
   background-color: rgba(222, 222, 222, 0.5); }
-.form-group.form-group-no-border .form-control:focus + .input-group-addon, .input-group.form-group-no-border .form-control:focus + .input-group-addon {
+.form-group.no-border .form-control:focus + .input-group-addon, .input-group.no-border .form-control:focus + .input-group-addon {
   background-color: rgba(222, 222, 222, 0.5); }
-.form-group.form-group-no-border .input-group-addon, .input-group.form-group-no-border .input-group-addon {
+.form-group.no-border .input-group-addon, .input-group.no-border .input-group-addon {
   background-color: rgba(222, 222, 222, 0.3);
   border: none; }
 
@@ -5497,7 +5497,7 @@ be a descendant of the grid when it is being dragged.
 .input-group-focus .input-group-addon {
   background-color: #FFFFFF;
   border-color: #f96332; }
-.input-group-focus.form-group-no-border .input-group-addon {
+.input-group-focus.no-border .input-group-addon {
   background-color: rgba(222, 222, 222, 0.5); }
 
 .input-group, .form-group {
@@ -5550,7 +5550,7 @@ textarea.form-control:focus, textarea.form-control:active {
   border-top: none;
   border-right: none; }
 
-.has-success.form-group .form-control, .has-success.form-group.form-group-no-border .form-control, .has-danger.form-group .form-control, .has-danger.form-group.form-group-no-border .form-control {
+.has-success.form-group .form-control, .has-success.form-group.no-border .form-control, .has-danger.form-group .form-control, .has-danger.form-group.no-border .form-control {
   padding-right: 40px; }
 
 .form.form-newsletter .form-group {
@@ -6288,10 +6288,11 @@ body {
 .navbar a.dropdown-item {
   color: #888; }
 .navbar .form-group, .navbar .input-group {
-  margin: 0; }
+  margin: 0;
+  margin-left: -3px; }
 .navbar .form-group .form-group-addon, .navbar .form-group .input-group-addon, .navbar .input-group .form-group-addon, .navbar .input-group .input-group-addon {
   color: #FFFFFF; }
-.navbar .form-group.form-group-no-border .form-control, .navbar .input-group.form-group-no-border .form-control {
+.navbar .form-group.no-border .form-control, .navbar .input-group.no-border .form-control {
   color: #FFFFFF; }
 .navbar p {
   display: inline-block;
@@ -7694,9 +7695,6 @@ Created using IcoMoon - icomoon.io
   top: 8px;
   right: 18px; }
 
-.sidebar {
-  box-shadow: 3px 16px 22px 0 rgba(0, 0, 0, 0.35), 0px 33px 38px 0 rgba(0, 0, 0, 0.6); }
-
 .visible-on-sidebar-regular {
   display: inline-block !important; }
 
@@ -7759,7 +7757,8 @@ Created using IcoMoon - icomoon.io
     width: calc(100% - 80px); }
   .sidebar-mini .sidebar {
     display: block;
-    z-index: 9999; }
+    z-index: 9999;
+    box-shadow: 3px 16px 22px 0 rgba(0, 0, 0, 0.35), 0px 33px 38px 0 rgba(0, 0, 0, 0.6); }
   .sidebar-mini .sidebar .logo a.logo-normal {
     opacity: 0;
     -webkit-transform: translate3d(-25px, 0, 0);
@@ -8096,6 +8095,30 @@ Created using IcoMoon - icomoon.io
   margin-bottom: 5px;
   color: #9A9A9A;
   font-weight: 400; }
+.card-stats .icon {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px; }
+.card-stats .icon .now-ui-icons {
+  font-size: 20px;
+  line-height: 2;
+  color: #f96332; }
+.card-stats .stats-information {
+  display: inline-block;
+  margin-bottom: 15px; }
+.card-stats .stats-information .stats-text {
+  font-size: 29px; }
+.card-stats .stats-information .stats-details {
+  display: block;
+  color: #888; }
+.card-stats .dots {
+  text-align: right; }
+.card-stats .dots .dot {
+  background-color: #2c2c2c;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  display: inline-block; }
 .card-stats [class*="col-"] .statistics::after {
   position: absolute;
   right: 0;
@@ -8529,28 +8552,28 @@ Created using IcoMoon - icomoon.io
   background-color: transparent;
   border-color: #FFFFFF;
   color: #FFFFFF; }
-.login-page .card-login.card-plain .form-group.form-group-no-border .form-control, .login-page .card-login.card-plain .input-group.form-group-no-border .form-control {
+.login-page .card-login.card-plain .form-group.no-border .form-control, .login-page .card-login.card-plain .input-group.no-border .form-control {
   background-color: rgba(255, 255, 255, 0.1);
   color: #FFFFFF; }
-.login-page .card-login.card-plain .form-group.form-group-no-border .form-control:focus, .login-page .card-login.card-plain .form-group.form-group-no-border .form-control:active, .login-page .card-login.card-plain .form-group.form-group-no-border .form-control:active, .login-page .card-login.card-plain .input-group.form-group-no-border .form-control:focus, .login-page .card-login.card-plain .input-group.form-group-no-border .form-control:active, .login-page .card-login.card-plain .input-group.form-group-no-border .form-control:active {
+.login-page .card-login.card-plain .form-group.no-border .form-control:focus, .login-page .card-login.card-plain .form-group.no-border .form-control:active, .login-page .card-login.card-plain .form-group.no-border .form-control:active, .login-page .card-login.card-plain .input-group.no-border .form-control:focus, .login-page .card-login.card-plain .input-group.no-border .form-control:active, .login-page .card-login.card-plain .input-group.no-border .form-control:active {
   background-color: rgba(255, 255, 255, 0.2);
   color: #FFFFFF; }
-.login-page .card-login.card-plain .form-group.form-group-no-border .form-control + .input-group-addon, .login-page .card-login.card-plain .input-group.form-group-no-border .form-control + .input-group-addon {
+.login-page .card-login.card-plain .form-group.no-border .form-control + .input-group-addon, .login-page .card-login.card-plain .input-group.no-border .form-control + .input-group-addon {
   background-color: rgba(255, 255, 255, 0.1); }
-.login-page .card-login.card-plain .form-group.form-group-no-border .form-control + .input-group-addon:focus, .login-page .card-login.card-plain .form-group.form-group-no-border .form-control + .input-group-addon:active, .login-page .card-login.card-plain .form-group.form-group-no-border .form-control + .input-group-addon:active, .login-page .card-login.card-plain .input-group.form-group-no-border .form-control + .input-group-addon:focus, .login-page .card-login.card-plain .input-group.form-group-no-border .form-control + .input-group-addon:active, .login-page .card-login.card-plain .input-group.form-group-no-border .form-control + .input-group-addon:active {
+.login-page .card-login.card-plain .form-group.no-border .form-control + .input-group-addon:focus, .login-page .card-login.card-plain .form-group.no-border .form-control + .input-group-addon:active, .login-page .card-login.card-plain .form-group.no-border .form-control + .input-group-addon:active, .login-page .card-login.card-plain .input-group.no-border .form-control + .input-group-addon:focus, .login-page .card-login.card-plain .input-group.no-border .form-control + .input-group-addon:active, .login-page .card-login.card-plain .input-group.no-border .form-control + .input-group-addon:active {
   background-color: rgba(255, 255, 255, 0.2);
   color: #FFFFFF; }
-.login-page .card-login.card-plain .form-group.form-group-no-border .form-control:focus + .input-group-addon, .login-page .card-login.card-plain .input-group.form-group-no-border .form-control:focus + .input-group-addon {
+.login-page .card-login.card-plain .form-group.no-border .form-control:focus + .input-group-addon, .login-page .card-login.card-plain .input-group.no-border .form-control:focus + .input-group-addon {
   background-color: rgba(255, 255, 255, 0.2);
   color: #FFFFFF; }
-.login-page .card-login.card-plain .form-group.form-group-no-border .input-group-addon, .login-page .card-login.card-plain .input-group.form-group-no-border .input-group-addon {
+.login-page .card-login.card-plain .form-group.no-border .input-group-addon, .login-page .card-login.card-plain .input-group.no-border .input-group-addon {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   color: #FFFFFF; }
-.login-page .card-login.card-plain .form-group.form-group-no-border.input-group-focus .input-group-addon, .login-page .card-login.card-plain .input-group.form-group-no-border.input-group-focus .input-group-addon {
+.login-page .card-login.card-plain .form-group.no-border.input-group-focus .input-group-addon, .login-page .card-login.card-plain .input-group.no-border.input-group-focus .input-group-addon {
   background-color: rgba(255, 255, 255, 0.2);
   color: #FFFFFF; }
-.login-page .card-login.card-plain .input-group-addon, .login-page .card-login.card-plain .form-group.form-group-no-border .input-group-addon, .login-page .card-login.card-plain .input-group.form-group-no-border .input-group-addon {
+.login-page .card-login.card-plain .input-group-addon, .login-page .card-login.card-plain .form-group.no-border .input-group-addon, .login-page .card-login.card-plain .input-group.no-border .input-group-addon {
   color: rgba(255, 255, 255, 0.8); }
 .login-page .link {
   font-size: 10px;
@@ -8955,28 +8978,28 @@ Created using IcoMoon - icomoon.io
   background-color: transparent;
   border-color: #FFFFFF;
   color: #FFFFFF; }
-[data-background-color]:not([data-background-color="gray"]) .form-group.form-group-no-border .form-control, [data-background-color]:not([data-background-color="gray"]) .input-group.form-group-no-border .form-control {
+[data-background-color]:not([data-background-color="gray"]) .form-group.no-border .form-control, [data-background-color]:not([data-background-color="gray"]) .input-group.no-border .form-control {
   background-color: rgba(255, 255, 255, 0.1);
   color: #FFFFFF; }
-[data-background-color]:not([data-background-color="gray"]) .form-group.form-group-no-border .form-control:focus, [data-background-color]:not([data-background-color="gray"]) .form-group.form-group-no-border .form-control:active, [data-background-color]:not([data-background-color="gray"]) .form-group.form-group-no-border .form-control:active, [data-background-color]:not([data-background-color="gray"]) .input-group.form-group-no-border .form-control:focus, [data-background-color]:not([data-background-color="gray"]) .input-group.form-group-no-border .form-control:active, [data-background-color]:not([data-background-color="gray"]) .input-group.form-group-no-border .form-control:active {
+[data-background-color]:not([data-background-color="gray"]) .form-group.no-border .form-control:focus, [data-background-color]:not([data-background-color="gray"]) .form-group.no-border .form-control:active, [data-background-color]:not([data-background-color="gray"]) .form-group.no-border .form-control:active, [data-background-color]:not([data-background-color="gray"]) .input-group.no-border .form-control:focus, [data-background-color]:not([data-background-color="gray"]) .input-group.no-border .form-control:active, [data-background-color]:not([data-background-color="gray"]) .input-group.no-border .form-control:active {
   background-color: rgba(255, 255, 255, 0.2);
   color: #FFFFFF; }
-[data-background-color]:not([data-background-color="gray"]) .form-group.form-group-no-border .form-control + .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .input-group.form-group-no-border .form-control + .input-group-addon {
+[data-background-color]:not([data-background-color="gray"]) .form-group.no-border .form-control + .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .input-group.no-border .form-control + .input-group-addon {
   background-color: rgba(255, 255, 255, 0.1); }
-[data-background-color]:not([data-background-color="gray"]) .form-group.form-group-no-border .form-control + .input-group-addon:focus, [data-background-color]:not([data-background-color="gray"]) .form-group.form-group-no-border .form-control + .input-group-addon:active, [data-background-color]:not([data-background-color="gray"]) .form-group.form-group-no-border .form-control + .input-group-addon:active, [data-background-color]:not([data-background-color="gray"]) .input-group.form-group-no-border .form-control + .input-group-addon:focus, [data-background-color]:not([data-background-color="gray"]) .input-group.form-group-no-border .form-control + .input-group-addon:active, [data-background-color]:not([data-background-color="gray"]) .input-group.form-group-no-border .form-control + .input-group-addon:active {
+[data-background-color]:not([data-background-color="gray"]) .form-group.no-border .form-control + .input-group-addon:focus, [data-background-color]:not([data-background-color="gray"]) .form-group.no-border .form-control + .input-group-addon:active, [data-background-color]:not([data-background-color="gray"]) .form-group.no-border .form-control + .input-group-addon:active, [data-background-color]:not([data-background-color="gray"]) .input-group.no-border .form-control + .input-group-addon:focus, [data-background-color]:not([data-background-color="gray"]) .input-group.no-border .form-control + .input-group-addon:active, [data-background-color]:not([data-background-color="gray"]) .input-group.no-border .form-control + .input-group-addon:active {
   background-color: rgba(255, 255, 255, 0.2);
   color: #FFFFFF; }
-[data-background-color]:not([data-background-color="gray"]) .form-group.form-group-no-border .form-control:focus + .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .input-group.form-group-no-border .form-control:focus + .input-group-addon {
+[data-background-color]:not([data-background-color="gray"]) .form-group.no-border .form-control:focus + .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .input-group.no-border .form-control:focus + .input-group-addon {
   background-color: rgba(255, 255, 255, 0.2);
   color: #FFFFFF; }
-[data-background-color]:not([data-background-color="gray"]) .form-group.form-group-no-border .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .input-group.form-group-no-border .input-group-addon {
+[data-background-color]:not([data-background-color="gray"]) .form-group.no-border .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .input-group.no-border .input-group-addon {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   color: #FFFFFF; }
-[data-background-color]:not([data-background-color="gray"]) .form-group.form-group-no-border.input-group-focus .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .input-group.form-group-no-border.input-group-focus .input-group-addon {
+[data-background-color]:not([data-background-color="gray"]) .form-group.no-border.input-group-focus .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .input-group.no-border.input-group-focus .input-group-addon {
   background-color: rgba(255, 255, 255, 0.2);
   color: #FFFFFF; }
-[data-background-color]:not([data-background-color="gray"]) .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .form-group.form-group-no-border .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .input-group.form-group-no-border .input-group-addon {
+[data-background-color]:not([data-background-color="gray"]) .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .form-group.no-border .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .input-group.no-border .input-group-addon {
   color: rgba(255, 255, 255, 0.8); }
 [data-background-color]:not([data-background-color="gray"]) .subscribe-line .form-control {
   background-color: transparent;
@@ -8984,7 +9007,7 @@ Created using IcoMoon - icomoon.io
   color: #2c2c2c; }
 [data-background-color]:not([data-background-color="gray"]) .subscribe-line .form-control:last-child {
   border-left: 0 none; }
-[data-background-color]:not([data-background-color="gray"]) .subscribe-line .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .subscribe-line .form-group.form-group-no-border .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .subscribe-line .input-group.form-group-no-border .input-group-addon {
+[data-background-color]:not([data-background-color="gray"]) .subscribe-line .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .subscribe-line .form-group.no-border .input-group-addon, [data-background-color]:not([data-background-color="gray"]) .subscribe-line .input-group.no-border .input-group-addon {
   color: #555555;
   border: 1px solid #E3E3E3; }
 [data-background-color]:not([data-background-color="gray"]) .btn.btn-simple {
@@ -9012,6 +9035,16 @@ Created using IcoMoon - icomoon.io
   .navbar .container-fluid {
     padding-right: 15px;
     padding-left: 15px; }
+  .navbar .navbar-collapse .input-group {
+    margin: 0;
+    margin-top: 5px; }
+  .navbar.bg-white .input-group .form-control {
+    color: #888; }
+  .navbar.bg-white .input-group-addon i {
+    color: #888;
+    opacity: .5; }
+  .navbar .navbar-nav .nav-item:first-child {
+    margin-top: 10px; }
   .navbar .navbar-nav .nav-item:not(:last-child) {
     margin-bottom: 10px; }
   .navbar .dropdown.show .dropdown-menu {

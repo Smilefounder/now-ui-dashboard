@@ -66,10 +66,8 @@ $(document).ready(function(){
   // On click navbar-collapse the menu will be white
   $('.collapse').on('show.bs.collapse', function () {
       $(this).closest('.navbar').removeClass('navbar-transparent').addClass('bg-white');
-      $(this).parent().find('.form-group').removeAttr('data-background-color');
   }).on('hide.bs.collapse', function () {
       $(this).closest('.navbar').addClass('navbar-transparent').removeClass('bg-white');
-      $(this).parent().find('.form-group').attr('data-background-color','');
   });
 
     // check if there is an image set for the sidebar's background
@@ -110,11 +108,11 @@ $(document).ready(function(){
 
         $(window).on('scroll', nowuiDashboardDemo.checkScrollForParallax);
     }
-    
+
     if($('.sidebar-mini').length != 0){
       sidebar_mini_active = true;
     }
-    
+
     console.log('sidebar mini',sidebar_mini_active);
 });
 
@@ -152,6 +150,14 @@ $(document).on('click', '.navbar-toggle', function(){
 $(window).resize(function(){
     // reset the seq for charts drawing animations
     seq = seq2 = 0;
+
+    $navbar = $('.navbar');
+    isExpanded = $('.navbar').find('[data-toggle="collapse"]').attr("aria-expanded");
+    if( $navbar.hasClass('bg-white') && $(window).width() > 991 ){
+      $navbar.removeClass('bg-white').addClass('navbar-transparent');
+    } else if( $navbar.hasClass('navbar-transparent') && $(window).width() < 991 && isExpanded != "false" ) {
+      $navbar.addClass('bg-white').removeClass('navbar-transparent');
+    }
 });
 
 nowuiDashboard = {
@@ -186,7 +192,7 @@ nowuiDashboard = {
     initMinimizeSidebar:function(){
         $('#minimizeSidebar').click(function(){
             var $btn = $(this);
-            
+
             if(sidebar_mini_active == true){
                 $('body').removeClass('sidebar-mini');
                 sidebar_mini_active = false;
@@ -272,8 +278,8 @@ nowuiDashboard = {
           });
       } catch (e) {
         console.log('Notify library is missing, please make sure you have the notifications library added.');
-      } 
-      
+      }
+
     }
 }
 

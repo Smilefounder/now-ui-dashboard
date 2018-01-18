@@ -17,7 +17,27 @@
             padding-left: 15px;
         }
 
+        .navbar-collapse{
+          .input-group{
+            margin: 0;
+            margin-top: 5px;
+          }
+        }
+
+        &.bg-white{
+          .input-group .form-control{
+            color: $default-color;
+          }
+          .input-group-addon i{
+            color: $default-color;
+            opacity: .5;
+          }
+        }
+
         .navbar-nav{
+            .nav-item:first-child{
+              margin-top: 10px;
+            }
             .nav-item:not(:last-child){
                 margin-bottom: 10px;
             }
@@ -238,6 +258,8 @@
 
         @include transform-translate-x(-260px);
     }
+
+
 
     .main-panel{
         width: 100%;

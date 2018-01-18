@@ -134,8 +134,8 @@
 @include form-control-lg-padding($padding-large-vertical, $padding-input-horizontal);
 @include input-base-padding($padding-input-vertical, $padding-input-horizontal);
 
-.form-group.form-group-no-border,
-.input-group.form-group-no-border{
+.form-group.no-border,
+.input-group.no-border{
     .form-control,
     .form-control + .input-group-addon{
         background-color: $opacity-gray-3;
@@ -213,7 +213,7 @@
         border-color: $primary-color;
     }
 
-    &.form-group-no-border{
+    &.no-border{
         .input-group-addon{
             background-color: $opacity-gray-5;
         }
@@ -293,7 +293,7 @@ textarea.form-control{
 .has-danger{
 
     &.form-group .form-control,
-    &.form-group.form-group-no-border .form-control{
+    &.form-group.no-border .form-control{
         padding-right: $padding-input-horizontal + 21;
     }
 }

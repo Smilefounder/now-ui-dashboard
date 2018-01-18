@@ -461,6 +461,44 @@
         }
     }
 
+    .icon{
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 15px;
+
+      .now-ui-icons{
+        font-size: 20px;
+        line-height: 2;
+        color: $primary-color;
+      }
+    }
+
+    .stats-information{
+      display: inline-block;
+      margin-bottom: 15px;
+
+      .stats-text{
+        font-size: 29px;
+      }
+
+      .stats-details{
+        display:block;
+        color: $default-color;
+      }
+    }
+
+    .dots{
+      text-align: right;
+
+      .dot{
+        background-color: $black-color;
+        height: 3px;
+        width: 3px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+    }
+
     [class*="col-"]{
         .statistics::after{
             position: absolute;
