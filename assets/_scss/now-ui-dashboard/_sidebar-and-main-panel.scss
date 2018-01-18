@@ -27,7 +27,7 @@
         z-index: 4;
 
         .dropdown .dropdown-backdrop{
-            display: none !important;
+          display: none !important;
         }
 
         .navbar-form{
@@ -36,65 +36,75 @@
 
         > .nav,
         .user .info{
-            [data-toggle="collapse"] ~ div > ul > li > a{
-                span{
-                    display: inline-block;
-                    @extend .animation-transition-general;
-                }
+          [data-toggle="collapse"] ~ div > ul > li > a{
+              span{
+                display: inline-block;
+                @extend .animation-transition-general;
+              }
+              
+              .sidebar-normal{
+                margin: 0;
+                position: relative;
+                transform: translateX(0px);
+                opacity: 1;
+                white-space: nowrap;
+                display: block;
+                line-height: 23px;
+              }
 
-                .sidebar-normal{
-                    margin: 0;
-                    position: relative;
-                    transform: translateX(0px);
-                    opacity: 1;
-                    white-space: nowrap;
-                    display: block;
-                    line-height: 23px;
+              .sidebar-mini-icon{
+                text-transform: uppercase;
+                width: 34px;
+                margin-right: 10px;
+                margin-left: 0px;
+                font-size: 14px;
+                text-align: center;
+                letter-spacing: 1px;
+                line-height: 25px;
+                position: relative;
+                float: left;
+                display: inherit;
+                line-height: 24px;
+                color: $opacity-5;
+              }
 
-                }
-
-                .sidebar-mini{
-                    text-transform: uppercase;
-                    width: 30px;
-                    margin-right: 12px;
-                    margin-left: 14px;
-                    font-size: 14px;
-                    text-align: center;
-                    letter-spacing: 1px;
-                    line-height: 25px;
-                    position: relative;
-                    float: left;
-                    display: inherit;
-                    line-height: 24px;
-                    color: $opacity-5;
-                }
-
-                i{
-                    font-size: 17px;
-                    line-height: 20px;
-                    width: 26px;
-                }
+              i{
+                font-size: 17px;
+                line-height: 20px;
+                width: 26px;
+              }
             }
         }
-
+        
+        [data-toggle="collapse"] ~ div > ul > li.active > a{
+          .sidebar-mini-icon{
+            color: $primary-color;
+          }
+        }  
     }
 
+    .navbar-minimize{
+      position: absolute;
+      right: 20px;
+      top: 2px;
+      opacity: 1;
+      
+      @extend .animation-transition-general;
+    }
     .logo-tim{
-        border-radius: 50%;
-        border: 1px solid #333;
-        display: block;
-        height: 61px;
-        width: 61px;
-        float: left;
-        overflow: hidden;
+      border-radius: 50%;
+      border: 1px solid #333;
+      display: block;
+      height: 61px;
+      width: 61px;
+      float: left;
+      overflow: hidden;
 
-        img{
-            width: 60px;
-            height: 60px;
-        }
+      img{
+          width: 60px;
+          height: 60px;
+      }
     }
-
-
 
     .nav{
         margin-top: 20px;
@@ -121,7 +131,7 @@
                 text-transform: uppercase;
                 cursor: pointer;
                 font-size: $font-size-mini;
-                padding: 0.6rem $padding-base-vertical;
+                padding: 10px 8px;
                 line-height: $line-height-nav-link;
             }
 
@@ -144,11 +154,19 @@
                 box-shadow: $box-shadow;
                 color: $primary-color;
 
-
-
                 i{
                     color: $primary-color;
                 }
+            }
+            
+            &.active > a[data-toggle="collapse"]{
+              background-color: $opacity-1;
+              box-shadow: none;
+              color: $white-color;
+              
+              i{
+                color: $white-color;
+              }
             }
         }
 
@@ -163,7 +181,7 @@
         }
 
         i{
-            font-size: 18px;
+            font-size: 20px;
             float: left;
             margin-right: 12px;
             margin-left: 14px;
@@ -211,10 +229,10 @@
         a.logo-mini{
             opacity: 1;
             float: left;
-            width: 30px;
+            width: 34px;
             text-align: center;
-            margin-left: 27px;
-            margin-right: 12px;
+            margin-left: 10px;
+            margin-right: 10px;
         }
 
         a.logo-normal{
@@ -256,7 +274,7 @@
             overflow: hidden;
         }
     }
-
+    
     .logo-tim{
         border-radius: 50%;
         border: 1px solid #333;
@@ -289,20 +307,20 @@
         z-index: 3;
     }
 
-    &[data-color="blue"]:after{
-        @include icon-gradient($info-color);
+    &[data-color="blue"]{
+      @include sidebar-color($info-color);
     }
-    &[data-color="green"]:after{
-        @include icon-gradient($success-color);
+    &[data-color="green"]{
+      @include sidebar-color($success-color);
     }
-    &[data-color="orange"]:after{
-        @include icon-gradient($primary-color, '#e03e0b');
+    &[data-color="orange"]{
+      @include sidebar-color($orange-color);
     }
-    &[data-color="red"]:after{
-        @include icon-gradient($danger-color);
+    &[data-color="red"]{
+      @include sidebar-color($danger-color);
     }
-    &[data-color="yellow"]:after{
-        @include icon-gradient($warning-color);
+    &[data-color="yellow"]{
+      @include sidebar-color($warning-color);
     }
 
     .user{
@@ -328,7 +346,7 @@
             z-index: 5;
             margin-right: 10px;
             border-radius: 50%;
-            margin-left: 35px;
+            margin-left: 23px;
             box-shadow: $box-shadow-raised;
             @extend .animation-transition-general;
 
@@ -460,7 +478,6 @@
         -webkit-overflow-scrolling: touch;
     }
 
-
     .sidebar-mini{
         .visible-on-sidebar-regular{
           display: none !important;
@@ -469,6 +486,10 @@
           display: inline-block !important;
         }
 
+        .navbar-minimize{
+          opacity: 0;
+        }
+        
         .sidebar,
         .sidebar .sidebar-wrapper{
           width: 80px;
@@ -493,16 +514,16 @@
           }
 
           .nav a i,
-          .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini,
-          .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini{
+          .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon,
+          .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon{
             margin-left: 0;
-            width: 35px;
+            width: 34px;
           }
 
           .user .photo{
             margin-left: 23px;
           }
-
+          
           .sidebar-wrapper{
             > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
             .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
@@ -523,7 +544,10 @@
                 @include transform-translate-x(0);
             }
           }
-
+          
+          .navbar-minimize{
+            opacity: 1;
+          }
           .sidebar-wrapper{
             width: 260px;
 
@@ -532,10 +556,10 @@
             .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
             .user .info > a > span{
               @include transform-translate-x(0px);
-                opacity: 1;
+              opacity: 1;
             }
           }
-      }
+        }
   }
 }
 

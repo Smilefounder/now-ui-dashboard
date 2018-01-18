@@ -5,7 +5,7 @@
  =========================================================
 
  * Product Page: https://www.creative-tim.com/product/now-ui-dashboard
- * Copyright 2017 Creative Tim (http://www.creative-tim.com)
+ * Copyright 2018 Creative Tim (http://www.creative-tim.com)
  * Licensed under MIT (https://github.com/creativetimofficial/now-ui-dashboard/blob/master/LICENSE.md)
 
  * Designed by www.invisionapp.com Coded by www.creative-tim.com
@@ -110,6 +110,12 @@ $(document).ready(function(){
 
         $(window).on('scroll', nowuiDashboardDemo.checkScrollForParallax);
     }
+    
+    if($('.sidebar-mini').length != 0){
+      sidebar_mini_active = true;
+    }
+    
+    console.log('sidebar mini',sidebar_mini_active);
 });
 
 $(document).on('click', '.navbar-toggle', function(){
@@ -180,15 +186,15 @@ nowuiDashboard = {
     initMinimizeSidebar:function(){
         $('#minimizeSidebar').click(function(){
             var $btn = $(this);
-
-
-
+            
             if(sidebar_mini_active == true){
                 $('body').removeClass('sidebar-mini');
                 sidebar_mini_active = false;
+                nowuiDashboard.showSidebarMessage('Sidebar mini deactivated...');
             }else{
                 $('body').addClass('sidebar-mini');
                 sidebar_mini_active = true;
+                nowuiDashboard.showSidebarMessage('Sidebar mini activated...');
             }
 
             // we simulate the window Resize so the charts will get updated in realtime.
@@ -250,6 +256,24 @@ nowuiDashboard = {
         });
 
         seq2 = 0;
+    },
+    showSidebarMessage: function(message){
+      try {
+        $.notify({
+            icon: "now-ui-icons ui-1_bell-53",
+            message: message
+          },{
+              type: 'info',
+              timer: 4000,
+              placement: {
+                  from: 'top',
+                  align: 'right'
+              }
+          });
+      } catch (e) {
+        console.log('Notify library is missing, please make sure you have the notifications library added.');
+      } 
+      
     }
 }
 
