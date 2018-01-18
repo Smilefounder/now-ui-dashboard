@@ -13,6 +13,12 @@
         <a href="http://www.creative-tim.com" class="simple-text logo-normal">
             Creative Tim
         </a>
+        <div class="navbar-minimize">
+          <button id="minimizeSidebar" class="btn btn-simple btn-icon btn-neutral btn-round">
+              <i class="now-ui-icons text_align-center visible-on-sidebar-regular"></i>
+              <i class="now-ui-icons design_bullet-list-67 visible-on-sidebar-mini"></i>
+          </button>
+  	    </div>
     </div>
 
     <div class="sidebar-wrapper">
@@ -32,19 +38,19 @@
                     <ul class="nav">
                         <li>
                             <a href="#">
-                                <span class="sidebar-mini">MP</span>
+                                <span class="sidebar-mini-icon">MP</span>
                                 <span class="sidebar-normal">My Profile</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="sidebar-mini">EP</span>
+                                <span class="sidebar-mini-icon">EP</span>
                                 <span class="sidebar-normal">Edit Profile</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="sidebar-mini">S</span>
+                                <span class="sidebar-mini-icon">S</span>
                                 <span class="sidebar-normal">Settings</span>
                             </a>
                         </li>
@@ -73,37 +79,37 @@
                     <ul class="nav">
                         <li{% if page.class == "pricing-page" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/pages/pricing.html">
-                                <span class="sidebar-mini">P</span>
+                                <span class="sidebar-mini-icon">P</span>
                                 <span class="sidebar-normal">Pricing</span>
                             </a>
                         </li>
                         <li{% if page.brand == "Timeline" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/pages/timeline.html">
-                                <span class="sidebar-mini">T</span>
+                                <span class="sidebar-mini-icon">T</span>
                                 <span class="sidebar-normal">Timeline</span>
                             </a>
                         </li>
                         <li{% if page.class == "login-page" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/pages/login.html">
-                                <span class="sidebar-mini">LP</span>
+                                <span class="sidebar-mini-icon">LP</span>
                                 <span class="sidebar-normal">Login Page</span>
                             </a>
                         </li>
                         <li{% if page.class == "register-page" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/pages/register.html">
-                                <span class="sidebar-mini">RP</span>
+                                <span class="sidebar-mini-icon">RP</span>
                                 <span class="sidebar-normal">Register Page</span>
                             </a>
                         </li>
                         <li{% if page.class == "lock-page" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/pages/lock.html">
-                                <span class="sidebar-mini">LSP</span>
+                                <span class="sidebar-mini-icon">LSP</span>
                                 <span class="sidebar-normal">Lock Screen Page</span>
                             </a>
                         </li>
                         <li{% if page.brand == "Profile" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/pages/user.html">
-                                <span class="sidebar-mini">UP</span>
+                                <span class="sidebar-mini-icon">UP</span>
                                 <span class="sidebar-normal">User Profile</span>
                             </a>
                         </li>
@@ -123,43 +129,43 @@
                     <ul class="nav">
                         <li{% if page.brand == "Buttons" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/components/buttons.html">
-                                <span class="sidebar-mini">B</span>
+                                <span class="sidebar-mini-icon">B</span>
                                 <span class="sidebar-normal">Buttons</span>
                             </a>
                         </li>
                         <li{% if page.brand == "Grid System" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/components/grid.html">
-                                <span class="sidebar-mini">GS</span>
+                                <span class="sidebar-mini-icon">GS</span>
                                 <span class="sidebar-normal">Grid System</span>
                             </a>
                         </li>
                         <li{% if page.brand == "Panels" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/components/panels.html">
-                                <span class="sidebar-mini">P</span>
+                                <span class="sidebar-mini-icon">P</span>
                                 <span class="sidebar-normal">Panels</span>
                             </a>
                         </li>
                         <li{% if page.brand == "Sweet Alert" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/components/sweet-alert.html">
-                                <span class="sidebar-mini">SA</span>
+                                <span class="sidebar-mini-icon">SA</span>
                                 <span class="sidebar-normal">Sweet Alert</span>
                             </a>
                         </li>
                         <li{% if page.brand == "Notifications" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/components/notifications.html">
-                                <span class="sidebar-mini">N</span>
+                                <span class="sidebar-mini-icon">N</span>
                                 <span class="sidebar-normal">Notifications</span>
                             </a>
                         </li>
                         <li{% if page.brand == "Icons" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/components/icons.html">
-                                <span class="sidebar-mini">I</span>
+                                <span class="sidebar-mini-icon">I</span>
                                 <span class="sidebar-normal">Icons</span>
                             </a>
                         </li>
                         <li{% if page.brand == "Typography" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/components/typography.html">
-                                <span class="sidebar-mini">T</span>
+                                <span class="sidebar-mini-icon">T</span>
                                 <span class="sidebar-normal">Typography</span>
                             </a>
                         </li>
@@ -179,25 +185,25 @@
                     <ul class="nav">
                         <li{% if page.brand == "Regular Forms" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/forms/regular.html">
-                                <span class="sidebar-mini">RF</span>
+                                <span class="sidebar-mini-icon">RF</span>
                                 <span class="sidebar-normal">Regular Forms</span>
                             </a>
                         </li>
                         <li{% if page.brand == "Extended Forms" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/forms/extended.html">
-                                <span class="sidebar-mini">EF</span>
+                                <span class="sidebar-mini-icon">EF</span>
                                 <span class="sidebar-normal">Extended Forms</span>
                             </a>
                         </li>
                         <li{% if page.brand == "Validation Forms" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/forms/validation.html">
-                                <span class="sidebar-mini">VF</span>
+                                <span class="sidebar-mini-icon">VF</span>
                                 <span class="sidebar-normal">Validation Forms</span>
                             </a>
                         </li>
                         <li{% if page.brand == "Wizard" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/forms/wizard.html">
-                                <span class="sidebar-mini">W</span>
+                                <span class="sidebar-mini-icon">W</span>
                                 <span class="sidebar-normal">Wizard</span>
                             </a>
                         </li>
@@ -217,19 +223,19 @@
                     <ul class="nav">
                         <li{% if page.brand == "Regular Tables" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/tables/regular.html">
-                                <span class="sidebar-mini">RT</span>
+                                <span class="sidebar-mini-icon">RT</span>
                                 <span class="sidebar-normal">Regular Tables</span>
                             </a>
                         </li>
                         <li{% if page.brand == "Extended Tables" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/tables/extended.html">
-                                <span class="sidebar-mini">ET</span>
+                                <span class="sidebar-mini-icon">ET</span>
                                 <span class="sidebar-normal">Extended Tables</span>
                             </a>
                         </li>
                         <li{% if page.brand == "DataTables.net" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/tables/datatables.net.html">
-                                <span class="sidebar-mini">DT</span>
+                                <span class="sidebar-mini-icon">DT</span>
                                 <span class="sidebar-normal">DataTables.net</span>
                             </a>
                         </li>
@@ -249,19 +255,19 @@
                     <ul class="nav">
                         <li{% if page.brand == "Google Maps" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/maps/google.html">
-                                <span class="sidebar-mini">GM</span>
+                                <span class="sidebar-mini-icon">GM</span>
                                 <span class="sidebar-normal">Google Maps</span>
                             </a>
                         </li>
                         <li{% if page.brand == "Full Screen Map" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/maps/fullscreen.html">
-                                <span class="sidebar-mini">FSM</span>
+                                <span class="sidebar-mini-icon">FSM</span>
                                 <span class="sidebar-normal">Full Screen Map</span>
                             </a>
                         </li>
                         <li{% if page.brand == "Vector Map" %} class="active"{% endif %}>
                             <a href="{{ path-pages }}/maps/vector.html">
-                                <span class="sidebar-mini">VM</span>
+                                <span class="sidebar-mini-icon">VM</span>
                                 <span class="sidebar-normal">Vector Map</span>
                             </a>
                         </li>

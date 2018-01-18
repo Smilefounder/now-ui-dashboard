@@ -5999,7 +5999,7 @@ body {
   background: #FFFFFF; }
 
 /* Animations */
-.nav-pills .nav-link, .navbar, .nav-tabs .nav-link, .sidebar .nav a, .sidebar .nav a i, .navbar-collapse .navbar-nav .nav-link, .animation-transition-general, .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a span, .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a span, .off-canvas-sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a span, .off-canvas-sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a span, .sidebar .nav p, .off-canvas-sidebar .nav p, .sidebar .logo a.logo-mini, .sidebar .logo a.logo-normal, .off-canvas-sidebar .logo a.logo-mini, .off-canvas-sidebar .logo a.logo-normal, .sidebar .user .photo, .off-canvas-sidebar .user .photo, .sidebar .user a, .off-canvas-sidebar .user a, .sidebar .user .info > a > span, .off-canvas-sidebar .user .info > a > span, .card-collapse .card .card-header a[data-toggle="collapse"] i, .tag, .tag [data-role="remove"], .animation-transition-general, .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a span, .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a span, .off-canvas-sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a span, .off-canvas-sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a span, .sidebar .nav p, .off-canvas-sidebar .nav p, .sidebar .logo a.logo-mini, .sidebar .logo a.logo-normal, .off-canvas-sidebar .logo a.logo-mini, .off-canvas-sidebar .logo a.logo-normal, .sidebar .user .photo, .off-canvas-sidebar .user .photo, .sidebar .user a, .off-canvas-sidebar .user a, .sidebar .user .info > a > span, .off-canvas-sidebar .user .info > a > span, .card-collapse .card .card-header a[data-toggle="collapse"] i {
+.nav-pills .nav-link, .navbar, .nav-tabs .nav-link, .sidebar .nav a, .sidebar .nav a i, .navbar-collapse .navbar-nav .nav-link, .animation-transition-general, .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a span, .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a span, .off-canvas-sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a span, .off-canvas-sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a span, .sidebar .navbar-minimize, .off-canvas-sidebar .navbar-minimize, .sidebar .nav p, .off-canvas-sidebar .nav p, .sidebar .logo a.logo-mini, .sidebar .logo a.logo-normal, .off-canvas-sidebar .logo a.logo-mini, .off-canvas-sidebar .logo a.logo-normal, .sidebar .user .photo, .off-canvas-sidebar .user .photo, .sidebar .user a, .off-canvas-sidebar .user a, .sidebar .user .info > a > span, .off-canvas-sidebar .user .info > a > span, .card-collapse .card .card-header a[data-toggle="collapse"] i, .tag, .tag [data-role="remove"], .animation-transition-general, .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a span, .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a span, .off-canvas-sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a span, .off-canvas-sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a span, .sidebar .navbar-minimize, .off-canvas-sidebar .navbar-minimize, .sidebar .nav p, .off-canvas-sidebar .nav p, .sidebar .logo a.logo-mini, .sidebar .logo a.logo-normal, .off-canvas-sidebar .logo a.logo-mini, .off-canvas-sidebar .logo a.logo-normal, .sidebar .user .photo, .off-canvas-sidebar .user .photo, .sidebar .user a, .off-canvas-sidebar .user a, .sidebar .user .info > a > span, .off-canvas-sidebar .user .info > a > span, .card-collapse .card .card-header a[data-toggle="collapse"] i {
   -webkit-transition: all 300ms ease 0s;
   -moz-transition: all 300ms ease 0s;
   -o-transition: all 300ms ease 0s;
@@ -6287,8 +6287,12 @@ body {
   color: #FFFFFF; }
 .navbar a.dropdown-item {
   color: #888; }
-.navbar .form-group {
+.navbar .form-group, .navbar .input-group {
   margin: 0; }
+.navbar .form-group .form-group-addon, .navbar .form-group .input-group-addon, .navbar .input-group .form-group-addon, .navbar .input-group .input-group-addon {
+  color: #FFFFFF; }
+.navbar .form-group.form-group-no-border .form-control, .navbar .input-group.form-group-no-border .form-control {
+  color: #FFFFFF; }
 .navbar p {
   display: inline-block;
   margin: 0;
@@ -7437,11 +7441,11 @@ Created using IcoMoon - icomoon.io
   white-space: nowrap;
   display: block;
   line-height: 23px; }
-.sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini, .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini, .off-canvas-sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini, .off-canvas-sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini {
+.sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon, .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon, .off-canvas-sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon, .off-canvas-sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon {
   text-transform: uppercase;
-  width: 30px;
-  margin-right: 12px;
-  margin-left: 14px;
+  width: 34px;
+  margin-right: 10px;
+  margin-left: 0px;
   font-size: 14px;
   text-align: center;
   letter-spacing: 1px;
@@ -7449,11 +7453,19 @@ Created using IcoMoon - icomoon.io
   position: relative;
   float: left;
   display: inherit;
-  line-height: 24px; }
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.5); }
 .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a i, .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a i, .off-canvas-sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a i, .off-canvas-sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a i {
   font-size: 17px;
   line-height: 20px;
   width: 26px; }
+.sidebar .sidebar-wrapper [data-toggle="collapse"] ~ div > ul > li.active > a .sidebar-mini-icon, .off-canvas-sidebar .sidebar-wrapper [data-toggle="collapse"] ~ div > ul > li.active > a .sidebar-mini-icon {
+  color: #f96332; }
+.sidebar .navbar-minimize, .off-canvas-sidebar .navbar-minimize {
+  position: absolute;
+  right: 20px;
+  top: 2px;
+  opacity: 1; }
 .sidebar .logo-tim, .off-canvas-sidebar .logo-tim {
   border-radius: 50%;
   border: 1px solid #333;
@@ -7484,7 +7496,7 @@ Created using IcoMoon - icomoon.io
   text-transform: uppercase;
   cursor: pointer;
   font-size: 0.7142em;
-  padding: 0.6rem 0.5rem;
+  padding: 10px 8px;
   line-height: 1.625rem; }
 .sidebar .nav li:first-child > a, .off-canvas-sidebar .nav li:first-child > a {
   margin: 0 15px; }
@@ -7498,6 +7510,12 @@ Created using IcoMoon - icomoon.io
   color: #f96332; }
 .sidebar .nav li.active > a i, .off-canvas-sidebar .nav li.active > a i {
   color: #f96332; }
+.sidebar .nav li.active > a[data-toggle="collapse"], .off-canvas-sidebar .nav li.active > a[data-toggle="collapse"] {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+  color: #FFFFFF; }
+.sidebar .nav li.active > a[data-toggle="collapse"] i, .off-canvas-sidebar .nav li.active > a[data-toggle="collapse"] i {
+  color: #FFFFFF; }
 .sidebar .nav p, .off-canvas-sidebar .nav p {
   margin: 0;
   line-height: 30px;
@@ -7506,7 +7524,7 @@ Created using IcoMoon - icomoon.io
   height: auto;
   white-space: nowrap; }
 .sidebar .nav i, .off-canvas-sidebar .nav i {
-  font-size: 18px;
+  font-size: 20px;
   float: left;
   margin-right: 12px;
   margin-left: 14px;
@@ -7541,10 +7559,10 @@ Created using IcoMoon - icomoon.io
 .sidebar .logo a.logo-mini, .off-canvas-sidebar .logo a.logo-mini {
   opacity: 1;
   float: left;
-  width: 30px;
+  width: 34px;
   text-align: center;
-  margin-left: 27px;
-  margin-right: 12px; }
+  margin-left: 10px;
+  margin-right: 10px; }
 .sidebar .logo a.logo-normal, .off-canvas-sidebar .logo a.logo-normal {
   display: block;
   opacity: 1;
@@ -7607,35 +7625,35 @@ Created using IcoMoon - icomoon.io
   background: linear-gradient(#888 0%, #000 80%);
   z-index: 3; }
 .sidebar[data-color="blue"]:after, .off-canvas-sidebar[data-color="blue"]:after {
-  background: #2CA8FF;
-  background: -webkit-linear-gradient(#2CA8FF 0%, #000 80%);
-  background: -o-linear-gradient(#2CA8FF 0%, #000 80%);
-  background: -moz-linear-gradient(#2CA8FF 0%, #000 80%);
-  background: linear-gradient(#2CA8FF 0%, #000 80%); }
+  background: #2CA8FF; }
+.sidebar[data-color="blue"] .nav li.active > a:not([data-toggle="collapse"]), .off-canvas-sidebar[data-color="blue"] .nav li.active > a:not([data-toggle="collapse"]) {
+  color: #2CA8FF; }
+.sidebar[data-color="blue"] .nav li.active > a:not([data-toggle="collapse"]) i, .off-canvas-sidebar[data-color="blue"] .nav li.active > a:not([data-toggle="collapse"]) i {
+  color: #2CA8FF; }
 .sidebar[data-color="green"]:after, .off-canvas-sidebar[data-color="green"]:after {
-  background: #18ce0f;
-  background: -webkit-linear-gradient(#18ce0f 0%, #000 80%);
-  background: -o-linear-gradient(#18ce0f 0%, #000 80%);
-  background: -moz-linear-gradient(#18ce0f 0%, #000 80%);
-  background: linear-gradient(#18ce0f 0%, #000 80%); }
+  background: #18ce0f; }
+.sidebar[data-color="green"] .nav li.active > a:not([data-toggle="collapse"]), .off-canvas-sidebar[data-color="green"] .nav li.active > a:not([data-toggle="collapse"]) {
+  color: #18ce0f; }
+.sidebar[data-color="green"] .nav li.active > a:not([data-toggle="collapse"]) i, .off-canvas-sidebar[data-color="green"] .nav li.active > a:not([data-toggle="collapse"]) i {
+  color: #18ce0f; }
 .sidebar[data-color="orange"]:after, .off-canvas-sidebar[data-color="orange"]:after {
-  background: #f96332;
-  background: -webkit-linear-gradient(#f96332 0%, "#e03e0b" 80%);
-  background: -o-linear-gradient(#f96332 0%, "#e03e0b" 80%);
-  background: -moz-linear-gradient(#f96332 0%, "#e03e0b" 80%);
-  background: linear-gradient(#f96332 0%, "#e03e0b" 80%); }
+  background: #f96332; }
+.sidebar[data-color="orange"] .nav li.active > a:not([data-toggle="collapse"]), .off-canvas-sidebar[data-color="orange"] .nav li.active > a:not([data-toggle="collapse"]) {
+  color: #f96332; }
+.sidebar[data-color="orange"] .nav li.active > a:not([data-toggle="collapse"]) i, .off-canvas-sidebar[data-color="orange"] .nav li.active > a:not([data-toggle="collapse"]) i {
+  color: #f96332; }
 .sidebar[data-color="red"]:after, .off-canvas-sidebar[data-color="red"]:after {
-  background: #FF3636;
-  background: -webkit-linear-gradient(#FF3636 0%, #000 80%);
-  background: -o-linear-gradient(#FF3636 0%, #000 80%);
-  background: -moz-linear-gradient(#FF3636 0%, #000 80%);
-  background: linear-gradient(#FF3636 0%, #000 80%); }
+  background: #FF3636; }
+.sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]), .off-canvas-sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]) {
+  color: #FF3636; }
+.sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]) i, .off-canvas-sidebar[data-color="red"] .nav li.active > a:not([data-toggle="collapse"]) i {
+  color: #FF3636; }
 .sidebar[data-color="yellow"]:after, .off-canvas-sidebar[data-color="yellow"]:after {
-  background: #FFB236;
-  background: -webkit-linear-gradient(#FFB236 0%, #000 80%);
-  background: -o-linear-gradient(#FFB236 0%, #000 80%);
-  background: -moz-linear-gradient(#FFB236 0%, #000 80%);
-  background: linear-gradient(#FFB236 0%, #000 80%); }
+  background: #FFB236; }
+.sidebar[data-color="yellow"] .nav li.active > a:not([data-toggle="collapse"]), .off-canvas-sidebar[data-color="yellow"] .nav li.active > a:not([data-toggle="collapse"]) {
+  color: #FFB236; }
+.sidebar[data-color="yellow"] .nav li.active > a:not([data-toggle="collapse"]) i, .off-canvas-sidebar[data-color="yellow"] .nav li.active > a:not([data-toggle="collapse"]) i {
+  color: #FFB236; }
 .sidebar .user, .off-canvas-sidebar .user {
   padding-bottom: 20px;
   margin: 20px auto 0;
@@ -7656,7 +7674,7 @@ Created using IcoMoon - icomoon.io
   z-index: 5;
   margin-right: 10px;
   border-radius: 50%;
-  margin-left: 35px;
+  margin-left: 23px;
   box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3); }
 .sidebar .user .photo img, .off-canvas-sidebar .user .photo img {
   width: 100%; }
@@ -7676,6 +7694,9 @@ Created using IcoMoon - icomoon.io
   position: absolute;
   top: 8px;
   right: 18px; }
+
+.sidebar {
+  box-shadow: 3px 16px 22px 0 rgba(0, 0, 0, 0.35), 0px 33px 38px 0 rgba(0, 0, 0, 0.6); }
 
 .visible-on-sidebar-regular {
   display: inline-block !important; }
@@ -7731,6 +7752,8 @@ Created using IcoMoon - icomoon.io
     display: none !important; }
   .sidebar-mini .visible-on-sidebar-mini {
     display: inline-block !important; }
+  .sidebar-mini .navbar-minimize {
+    opacity: 0; }
   .sidebar-mini .sidebar, .sidebar-mini .sidebar .sidebar-wrapper {
     width: 80px; }
   .sidebar-mini .main-panel {
@@ -7747,9 +7770,9 @@ Created using IcoMoon - icomoon.io
     transform: translate3d(-25px, 0, 0); }
   .sidebar-mini .sidebar .logo a.logo-mini {
     margin-left: 15px; }
-  .sidebar-mini .sidebar .nav a i, .sidebar-mini .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini, .sidebar-mini .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini {
+  .sidebar-mini .sidebar .nav a i, .sidebar-mini .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon, .sidebar-mini .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon {
     margin-left: 0;
-    width: 35px; }
+    width: 34px; }
   .sidebar-mini .sidebar .user .photo {
     margin-left: 23px; }
   .sidebar-mini .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal, .sidebar-mini .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal, .sidebar-mini .sidebar .sidebar-wrapper .user .info > a > span, .sidebar-mini .sidebar .sidebar-wrapper > .nav li > a p {
@@ -7768,6 +7791,8 @@ Created using IcoMoon - icomoon.io
     -o-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
+  .sidebar-mini .sidebar:hover .navbar-minimize {
+    opacity: 1; }
   .sidebar-mini .sidebar:hover .sidebar-wrapper {
     width: 260px; }
   .sidebar-mini .sidebar:hover .sidebar-wrapper > .nav li > a p, .sidebar-mini .sidebar:hover .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal, .sidebar-mini .sidebar:hover .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal, .sidebar-mini .sidebar:hover .sidebar-wrapper .user .info > a > span {
@@ -7778,7 +7803,7 @@ Created using IcoMoon - icomoon.io
     transform: translate3d(0px, 0, 0);
     opacity: 1; } }
 .panel-header {
-  height: 380px;
+  height: 260px;
   padding-top: 80px;
   padding-bottom: 45px;
   background: #141E30;
@@ -7787,8 +7812,11 @@ Created using IcoMoon - icomoon.io
   background: linear-gradient(to right, #0c2646 0%, #204065 60%, #2a5788 100%);
   position: relative; }
 
-.sidebar {
-  box-shadow: 0 128px 128px 0 rgba(33, 33, 33, 0.2), 0 4px 4px 0 rgba(33, 33, 33, 0.2), 0 8px 8px 0 rgba(33, 33, 33, 0.2), 0 16px 16px 0 rgba(33, 33, 33, 0.2), 0 32px 32px 0 rgba(33, 33, 33, 0.2), 0 64px 64px 0 rgba(33, 33, 33, 0.2); }
+.panel-header-sm {
+  height: 135px; }
+
+.panel-header-lg {
+  height: 380px; }
 
 .card {
   border: 0;

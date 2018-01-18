@@ -60,6 +60,20 @@
     background: linear-gradient($color 0%, $bottomColor 80%);
 }
 
+@mixin sidebar-color($color){
+  &:after{  
+    background: $color;
+  }
+  
+  .nav li.active > a:not([data-toggle="collapse"]){
+    color: $color;
+    
+    i{
+      color: $color;
+    }
+  }
+}
+
 @mixin bar-animation($type){
      -webkit-animation: $type 500ms linear 0s;
      -moz-animation: $type 500ms linear 0s;

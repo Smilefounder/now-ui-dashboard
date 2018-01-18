@@ -71,6 +71,8 @@ $danger-states-color:        lighten($danger-color, 6%) !default;
 $danger-color-opacity:       rgba(255, 54, 54, .3) !default;
 $danger-color-alert:         rgba(255, 54, 54, .8) !default;
 
+$orange-color:               #f96332 !default;
+
 /*     brand Colors              */
 $brand-primary:              $primary-color !default;
 $brand-info:                 $info-color !default;
@@ -175,9 +177,10 @@ $line-height-lg:             54px           !default;
 $border-radius-top:        10px 10px 0 0     !default;
 $border-radius-bottom:     0 0 10px 10px     !default;
 
-$dropdown-shadow:          1px 2px 3px rgba(0, 0, 0, 0.125);
+$dropdown-shadow:          1px 2px 3px 0px rgba(0, 0, 0, 0.125);
 $box-shadow-raised:        0px 10px 25px 0px rgba(0, 0, 0, 0.3);
 $box-shadow:               0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+$sidebar-box-shadow:       3px 16px 22px 0 rgba(0, 0, 0,.35), 0px 33px 38px 0 rgba(0, 0, 0,.6);
 
 $general-transition-time:  300ms             !default;
 
