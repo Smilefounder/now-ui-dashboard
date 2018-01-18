@@ -7527,9 +7527,8 @@ Created using IcoMoon - icomoon.io
   font-size: 20px;
   float: left;
   margin-right: 12px;
-  margin-left: 14px;
   line-height: 30px;
-  width: 30px;
+  width: 34px;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   position: relative; }
@@ -7562,7 +7561,7 @@ Created using IcoMoon - icomoon.io
   width: 34px;
   text-align: center;
   margin-left: 10px;
-  margin-right: 10px; }
+  margin-right: 12px; }
 .sidebar .logo a.logo-normal, .off-canvas-sidebar .logo a.logo-normal {
   display: block;
   opacity: 1;
@@ -7768,13 +7767,6 @@ Created using IcoMoon - icomoon.io
     -o-transform: translate3d(-25px, 0, 0);
     -ms-transform: translate3d(-25px, 0, 0);
     transform: translate3d(-25px, 0, 0); }
-  .sidebar-mini .sidebar .logo a.logo-mini {
-    margin-left: 15px; }
-  .sidebar-mini .sidebar .nav a i, .sidebar-mini .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon, .sidebar-mini .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon {
-    margin-left: 0;
-    width: 34px; }
-  .sidebar-mini .sidebar .user .photo {
-    margin-left: 23px; }
   .sidebar-mini .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal, .sidebar-mini .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal, .sidebar-mini .sidebar .sidebar-wrapper .user .info > a > span, .sidebar-mini .sidebar .sidebar-wrapper > .nav li > a p {
     -webkit-transform: translate3d(-25px, 0, 0);
     -moz-transform: translate3d(-25px, 0, 0);
@@ -7834,6 +7826,8 @@ Created using IcoMoon - icomoon.io
 .card .card-header {
   padding: 15px 15px 0;
   border: 0; }
+.card .card-header:not([data-background-color]) {
+  background-color: transparent; }
 .card .card-header .card-title {
   margin-top: 10px; }
 .card.card-wizard .card-header {
@@ -7914,6 +7908,7 @@ Created using IcoMoon - icomoon.io
 .card .ct-chart {
   margin: 30px 0 30px; }
 .card .card-footer {
+  background-color: transparent;
   border: 0; }
 .card .card-footer .stats i {
   margin-right: 5px;

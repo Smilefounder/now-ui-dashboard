@@ -41,7 +41,7 @@
                 display: inline-block;
                 @extend .animation-transition-general;
               }
-              
+
               .sidebar-normal{
                 margin: 0;
                 position: relative;
@@ -75,12 +75,12 @@
               }
             }
         }
-        
+
         [data-toggle="collapse"] ~ div > ul > li.active > a{
           .sidebar-mini-icon{
             color: $primary-color;
           }
-        }  
+        }
     }
 
     .navbar-minimize{
@@ -88,7 +88,7 @@
       right: 20px;
       top: 2px;
       opacity: 1;
-      
+
       @extend .animation-transition-general;
     }
     .logo-tim{
@@ -158,12 +158,12 @@
                     color: $primary-color;
                 }
             }
-            
+
             &.active > a[data-toggle="collapse"]{
               background-color: $opacity-1;
               box-shadow: none;
               color: $white-color;
-              
+
               i{
                 color: $white-color;
               }
@@ -184,9 +184,8 @@
             font-size: 20px;
             float: left;
             margin-right: 12px;
-            margin-left: 14px;
             line-height: 30px;
-            width: 30px;
+            width: 34px;
             text-align: center;
             color: $opacity-5;
             position: relative;
@@ -232,7 +231,7 @@
             width: 34px;
             text-align: center;
             margin-left: 10px;
-            margin-right: 10px;
+            margin-right: 12px;
         }
 
         a.logo-normal{
@@ -274,7 +273,7 @@
             overflow: hidden;
         }
     }
-    
+
     .logo-tim{
         border-radius: 50%;
         border: 1px solid #333;
@@ -485,7 +484,7 @@
         .navbar-minimize{
           opacity: 0;
         }
-        
+
         .sidebar,
         .sidebar .sidebar-wrapper{
           width: 80px;
@@ -504,22 +503,19 @@
                   opacity: 0;
                   @include transform-translate-x(-25px);
               }
-              a.logo-mini{
-                  margin-left: 15px;
-              }
           }
 
-          .nav a i,
-          .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon,
-          .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon{
-            margin-left: 0;
-            width: 34px;
-          }
+          // .nav a i,
+          // .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon,
+          // .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon{
+          //   margin-left: 0;
+          //   width: 34px;
+          // }
 
-          .user .photo{
-            margin-left: 23px;
-          }
-          
+          // .user .photo{
+          //   margin-left: 23px;
+          // }
+
           .sidebar-wrapper{
             > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
             .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
@@ -540,7 +536,7 @@
                 @include transform-translate-x(0);
             }
           }
-          
+
           .navbar-minimize{
             opacity: 1;
           }
