@@ -2,3 +2,57 @@
 layout: now-ui-dashboard-layout
 brand: Widgets
 ---
+
+<div class="row">
+  <div class="col-lg-3 col-sm-6">
+    {% include cards/content-cards/nud-widgets/card-stats.html
+      cardCircleColor = "icon-primary"
+      cardIconCircle = "ui-2_chat-round"
+      cardInfoTitle = "1058"
+      cardStatsTitle = "messages"
+      cardIconFooter = "arrows-1_refresh-69"
+      cardFooterText = "Update now"
+    %}
+  </div>
+  <div class="col-lg-3 col-sm-6">
+    {% include cards/content-cards/nud-widgets/card-stats.html
+      cardCircleColor = "icon-warning"
+      cardIconCircle = "business_bank"
+      cardInfoTitle = "<span>$</span>23,685"
+      cardStatsTitle = "Deposit"
+      cardIconFooter = "ui-1_calendar-60"
+      cardFooterText = "Last week"
+    %}
+  </div>
+  <div class="col-lg-3 col-sm-6">
+    {% include cards/content-cards/nud-widgets/card-stats.html
+      cardCircleColor = "icon-danger"
+      cardIconCircle = "sport_user-run"
+      cardInfoTitle = "364"
+      cardStatsTitle = "Players"
+      cardIconFooter = "ui-2_time-alarm"
+      cardFooterText = "In the last hour"
+    %}
+  </div>
+  <div class="col-lg-3 col-sm-6">
+    {% include cards/content-cards/nud-widgets/card-stats.html
+      cardCircleColor = "icon-info"
+      cardIconCircle = "ui-2_favourite-28"
+      cardInfoTitle = "+83K"
+      cardStatsTitle = "followers"
+      cardIconFooter = "arrows-1_refresh-69"
+      cardFooterText = "Update now"
+    %}
+  </div>
+
+  <div class="col-lg-6 col-md-12 text-center">
+    {% include cards/content-cards/nud-widgets/card-contributions.html
+      cardTitleText = "3,521"
+      cardSubtitleText = "Total Public Contributions"
+    %}
+  </div>
+
+  <!-- <div class="col-md-6">
+    {% include cards/content-cards/nud-widgets/card-timeline.html %}
+  </div> -->
+</div>

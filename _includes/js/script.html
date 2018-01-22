@@ -44,7 +44,11 @@
 <script src="{{ path-assets }}/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
 
 <!--  Google Maps Plugin    -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+{% if jekyll.environment == "production" %}
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Yno10-YTnLjjn_Vtk0V8cdcY5lC4plU"></script>
+{% else %}
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+{% endif %}
 
 <!--  Chartist Plugin  -->
 <script src="{{ path-assets }}/assets/js/plugins/chartist.min.js"></script>
@@ -60,12 +64,32 @@
 <script src="{{ path-assets }}/assets/js/plugins/bootstrap-notify.js"></script>
 
 <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="{{ path-assets }}/assets/js/now-ui-dashboard.js" type="text/javascript"></script>
+{% if jekyll.environment == "production" %}
+<script src="{{ path-assets }}/assets/js/now-ui-dashboard.min.js?v=1.0.0" type="text/javascript"></script>
+{% else %}
+<script src="{{ path-assets }}/assets/js/now-ui-dashboard.js?v=1.0.0" type="text/javascript"></script>
+{% endif %}
 
 <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
-<script src="{{ path-assets }}/assets/js/demo.js"></script>
+<script src="{{ path-assets }}/assets/assets-for-demo/js/demo.js"></script>
 
+{% if page.layout == "docs" %}
+<script src="{{ path-assets }}/assets/assets-for-demo/js/docs.min.js"></script>
+<script src="{{ path-assets }}/assets/assets-for-demo/js/vendor/anchor.min.js"></script>
+<script src="{{ path-assets }}/assets/assets-for-demo/js/vendor/clipboard.min.js"></script>
+<script src="{{ path-assets }}/assets/assets-for-demo/js/vendor/holder.min.js"></script>
+<script src="{{ path-assets }}/assets/assets-for-demo/js/src/application.js"></script>
 
+<script>
+Holder.addTheme('gray', {
+  bg: '#777',
+  fg: 'rgba(255,255,255,.75)',
+  font: 'Helvetica',
+  fontweight: 'normal'
+})
+</script>
+
+{% endif %}
 
 
 {% if page.brand == "Maps" %}

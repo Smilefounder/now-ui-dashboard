@@ -13,34 +13,37 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
+title: Now UI Dashboard PRO
+description: Now UI Dashboard PRO by Creative Tim
+twitter: CreativeTim
+authors: Creative Tim
 email: your-email@domain.com
+encoding:         UTF-8
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/jekyll-now-ui-dashboard" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+destination:      ./_gh_pages
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.creative-tim.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+plugins_dir:
+  - jekyll-toc
+
+product_name: Now UI Dashboard PRO
+product_slug: now-ui-dashboard-pro
+
 # Build settings
 markdown: kramdown
-theme: minima
 
-sass:
-    sass_dir: assets/_scss
-    style: uncompressed
+exclude: [.git, .github, assets/scss/, assets/main.css, build, js, node_modules, nuget, scss, vendor, bower.json, composer.json, Gemfile, Gemfile.lock, Gruntfile.js, package.js, package.json, package-lock.json, sache.json, dist, CONTRIBUTING.md, deploy.sh, HACKING.md, ISSUE_TEMPLATE.md, LICENSE.md, rollup.config.js, yarn.lock, about, gulpfile.js, gulp_archive ]
 
-exclude:
-    - Gemfile
-    - Gemfile.lock
-    - node_modules/
-    - Gruntfile.js
-    - package.json
-    - feed.xml
-    - feed.xslt.xml
-    - build-product
-    - gulpfile.js
-    - backstop_data
-    - dist/
+current_version:  1.0.0
+docs_version:     1.0
+repo:             https://github.com/creativetimofficial/now-ui-dashboard-pro
+
+download:
+  source:         https://github.com/creativetimofficial/now-ui-dashboard-pro
+  dist:           https://github.com/creativetimofficial/now-ui-dashboard-pro/archive/v1.0.0.zip

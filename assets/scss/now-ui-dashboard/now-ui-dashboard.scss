@@ -1,0 +1,73 @@
+/*!
+
+ =========================================================
+ * Now Ui Dashboard - v1.0.0
+ =========================================================
+
+ * Product Page: http://www.creative-tim.com/product/now-ui-dashboard
+ * Copyright 2017 Creative Tim (http://www.creative-tim.com)
+ * Licensed under MIT (https://github.com/creativetimofficial/now-ui-dashboard/blob/master/LICENSE.md)
+
+ * Designed by www.invisionapp.com Coded by www.creative-tim.com
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+
+@import 'variables';
+@import 'mixins';
+
+// Plugins CSS
+@import "plugins/plugin-bootstrap-switch";
+@import "plugins/plugin-nouislider";
+@import "plugins/plugin-chartist";
+@import "plugins/plugin-animate-bootstrap-notify";
+@import "plugins/plugin-perfect-scrollbar";
+@import "plugins/plugin-sweetalert2";
+@import "plugins/plugin-card-wizard";
+@import "plugins/plugin-datetimepicker";
+@import "plugins/plugin-bootstrap-select";
+@import "plugins/plugin-jasny-fileupload";
+@import "plugins/plugin-tagsinput";
+@import "plugins/plugin-datatables.net";
+@import "plugins/plugin-jquery.jvectormap";
+@import "plugins/plugin-fullcalendar";
+
+// Core CSS
+@import "buttons";
+@import "inputs";
+@import "checkboxes-radio";
+@import "progress";
+@import "badges";
+@import "pagination";
+@import "typography";
+@import "misc";
+@import "info-areas";
+@import "pills";
+
+// components
+@import "social-buttons";
+@import "tabs";
+@import "navbar";
+@import "dropdown";
+@import "alerts";
+@import "images";
+@import "popups";
+@import "nucleo-outline";
+@import "modals";
+@import "carousel";
+@import "tables";
+@import "sidebar-and-main-panel";
+@import "cards";
+@import "footers";
+@import "timeline";
+@import "fixed-plugin";
+
+// example pages and sections
+@import "example-pages";
+@import "sections";
+
+
+@import "responsive";

@@ -1,0 +1,21 @@
+{% assign cardClasses = 'card-contributions' %}
+{% assign cardOtherContent = '<h1 class="card-title">'| append: include.cardTitleText | append:'</h1>
+                              <h3 class="card-category">'| append: include.cardSubtitleText | append:'</h3>
+                              <p class="card-description">After a very successful two-year run, we’re going to be changing the way that contributions work.</p>'
+                              %}
+{% assign cardFooter = '<div class="row">
+                          <div class="col-6">
+                            <div class="card-stats justify-content-center">
+                              <input type="checkbox" name="checkbox" class="bootstrap-switch" data-on-label="ON" data-off-label="OFF" checked>
+                              <span>All public contributions</span>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="card-stats justify-content-center">
+                              <input type="checkbox" name="checkbox" class="bootstrap-switch" data-on-label="ON" data-off-label="OFF">
+                              <span>Past week contributions</span>
+                            </div>
+                          </div>
+                        </div>'%}
+{% assign cardHorizontalLine = '<hr>' %}
+{% include cards/card-basic.html %}

@@ -1,0 +1,21 @@
+{% assign cardClasses = 'card-stats' %}
+{% assign cardOtherContent = '  <div class="statistics statistics-horizontal">
+                                    <div class="info info-horizontal">
+                                        <div class="row">
+                                          <div class="col-5">
+                                            <div class="icon '| append: include.cardCircleColor | append:' icon-circle">
+                                                <i class="now-ui-icons '| append: include.cardIconCircle | append:'"></i>
+                                            </div>
+                                          </div>
+                                          <div class="col-7 text-right">
+                                            <h3 class="info-title">'| append: include.cardInfoTitle | append:'</h3>
+                                            <h6 class="stats-title">'| append: include.cardStatsTitle | append:'</h6>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>' %}
+{% assign cardFooter = '  <div class="stats">
+                              <i class="now-ui-icons '| append: include.cardIconFooter | append:'"></i> '| append: include.cardFooterText | append:'
+                          </div>' %}
+{% assign cardHorizontalLine = '<hr>' %}
+{% include cards/card-basic.html %}
