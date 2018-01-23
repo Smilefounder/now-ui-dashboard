@@ -30,7 +30,24 @@
     }
 
     .wizard-navigation{
-        position: relative;
+      position: relative;
+
+      .nav-link{
+        display: flex;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+    }
+
+    .wizard-navigation .nav-link i,
+    .moving-tab i{
+      display: inline-block;
+      font-size: 19px;
+      line-height: initial;
+      margin-right: 6px;
+      padding: 0;
+      vertical-align: bottom;
     }
 
     .picture{

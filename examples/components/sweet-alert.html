@@ -2,33 +2,42 @@
 layout: now-ui-dashboard-layout
 brand: Sweet Alert
 folder: components
+title: Sweet Alert
+description: A beautiful plugin, that replace the classic alert, Handcrafted by our friend <a target="_blank" href="https://twitter.com/t4t5">Tristan Edwards</a>. Please check out the <a href="http://limonte.github.io/sweetalert2/" target="_blank">full documentation.</a>
 ---
 
 <div class="places-sweet-alerts">
-    <div class="row">
-        <div class="col-md-3">
-            {% include cards/content-cards/sweet-alert/card-basic-example.html showSwalBasic = "demo.showSwal('basic')" %}
-        </div>
-        <div class="col-md-3">
-            {% include cards/content-cards/sweet-alert/card-title-with-text.html showSwalTitleAndText = "demo.showSwal('title-and-text')" %}
-        </div>
-        <div class="col-md-3">
-            {% include cards/content-cards/sweet-alert/card-success-message.html showSwalSuccess = "demo.showSwal('success-message')" %}
-        </div>
-        <div class="col-md-3">
-            {% include cards/content-cards/sweet-alert/card-html-description.html showSwalHtml = "demo.showSwal('custom-html')" %}
-        </div>
-        <div class="col-md-3">
-            {% include cards/content-cards/sweet-alert/card-warning-message.html showSwalWarning = "demo.showSwal('warning-message-and-confirmation')" %}
-        </div>
-        <div class="col-md-3">
-            {% include cards/content-cards/sweet-alert/card-passing-parameter.html showSwalParameter = "demo.showSwal('warning-message-and-cancel')" %}
-        </div>
-        <div class="col-md-3">
-            {% include cards/content-cards/sweet-alert/card-auto-closer.html showSwalAutoCloser = "demo.showSwal('auto-close')" %}
-        </div>
-        <div class="col-md-3">
-            {% include cards/content-cards/sweet-alert/card-modal-input.html showSwalModal = "demo.showSwal('input-field')" %}
-        </div>
+  <div class="row">
+    <div class="col-md-3 ml-auto">
+        {% include cards/content-cards/sweet-alert/card-basic-example.html showSwalBasic = "demo.showSwal('basic')" %}
     </div>
+    <div class="col-md-3 mr-auto">
+        {% include cards/content-cards/sweet-alert/card-success-message.html showSwalSuccess = "demo.showSwal('success-message')" %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 ml-auto">
+        {% include cards/content-cards/sweet-alert/card-html-description.html showSwalHtml = "demo.showSwal('custom-html')" %}
+    </div>
+    <div class="col-md-3 mr-auto">
+        {% include cards/content-cards/sweet-alert/card-warning-message.html showSwalWarning = "demo.showSwal('warning-message-and-confirmation')" %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 ml-auto">
+        {% include cards/content-cards/sweet-alert/card-modal-input.html showSwalModal = "demo.showSwal('input-field')" %}
+    </div>
+    <div class="col-md-3 mr-auto">
+        {% include cards/content-cards/sweet-alert/card-title-with-text.html showSwalTitleAndText = "demo.showSwal('title-and-text')" %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 ml-auto">
+        {% include cards/content-cards/sweet-alert/card-auto-closer.html showSwalAutoCloser = "demo.showSwal('auto-close')" %}
+    </div>
+
+    <div class="col-md-3 mr-auto">
+        {% include cards/content-cards/sweet-alert/card-passing-parameter.html showSwalParameter = "demo.showSwal('warning-message-and-cancel')" %}
+    </div>
+  </div>
 </div>

@@ -560,6 +560,22 @@
   background: -webkit-gradient(linear, left top, right top, from(#0c2646), color-stop(60%, #204065), to(#2a5788));
   background: linear-gradient(to right, #0c2646 0%, #204065 60%, #2a5788 100%);
   position: relative;
+
+  .header{
+    .title{
+      color: $white-color;
+    }
+    .category{
+      max-width: 600px;
+      color: $opacity-5;
+      margin: 0 auto;
+      font-size: 13px;
+
+      a{
+        color: $white-color;
+      }
+    }
+  }
 }
 
 .panel-header-sm{

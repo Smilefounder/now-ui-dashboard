@@ -46,7 +46,8 @@
 
             &:hover,
             &:focus,
-            &:active{
+            &:active,
+            &:active:focus{
                 color: $danger-states-color;
             }
         }
@@ -56,7 +57,8 @@
 
             &:hover,
             &:focus,
-            &:active{
+            &:active,
+            &:active:focus{
                 color: $info-states-color;
             }
         }
@@ -66,7 +68,8 @@
 
             &:hover,
             &:focus,
-            &:active{
+            &:active,
+            &:active:focus{
                 color: $warning-states-color;
             }
         }
@@ -76,7 +79,8 @@
 
             &:hover,
             &:focus,
-            &:active{
+            &:active,
+            &:active:focus{
                 color: $success-states-color;
             }
         }
@@ -86,7 +90,8 @@
 
             &:hover,
             &:focus,
-            &:active{
+            &:active,
+            &:active:focus{
                 color: $default-states-color;
             }
         }

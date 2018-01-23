@@ -2665,6 +2665,23 @@ body.swal2-iosfix {
   position: relative;
 }
 
+.card-wizard .wizard-navigation .nav-link {
+  display: flex;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.card-wizard .wizard-navigation .nav-link i,
+.card-wizard .moving-tab i {
+  display: inline-block;
+  font-size: 19px;
+  line-height: initial;
+  margin-right: 6px;
+  padding: 0;
+  vertical-align: bottom;
+}
+
 .card-wizard .picture {
   width: 106px;
   height: 106px;
@@ -7334,7 +7351,7 @@ fieldset[disabled] .btn-neutral.active {
   color: #FF3636;
 }
 
-.btn-neutral.btn-danger:hover, .btn-neutral.btn-danger:focus, .btn-neutral.btn-danger:active {
+.btn-neutral.btn-danger:hover, .btn-neutral.btn-danger:focus, .btn-neutral.btn-danger:active, .btn-neutral.btn-danger:active:focus {
   color: #ff5555;
 }
 
@@ -7342,7 +7359,7 @@ fieldset[disabled] .btn-neutral.active {
   color: #2CA8FF;
 }
 
-.btn-neutral.btn-info:hover, .btn-neutral.btn-info:focus, .btn-neutral.btn-info:active {
+.btn-neutral.btn-info:hover, .btn-neutral.btn-info:focus, .btn-neutral.btn-info:active, .btn-neutral.btn-info:active:focus {
   color: #4bb5ff;
 }
 
@@ -7350,7 +7367,7 @@ fieldset[disabled] .btn-neutral.active {
   color: #FFB236;
 }
 
-.btn-neutral.btn-warning:hover, .btn-neutral.btn-warning:focus, .btn-neutral.btn-warning:active {
+.btn-neutral.btn-warning:hover, .btn-neutral.btn-warning:focus, .btn-neutral.btn-warning:active, .btn-neutral.btn-warning:active:focus {
   color: #ffbe55;
 }
 
@@ -7358,7 +7375,7 @@ fieldset[disabled] .btn-neutral.active {
   color: #18ce0f;
 }
 
-.btn-neutral.btn-success:hover, .btn-neutral.btn-success:focus, .btn-neutral.btn-success:active {
+.btn-neutral.btn-success:hover, .btn-neutral.btn-success:focus, .btn-neutral.btn-success:active, .btn-neutral.btn-success:active:focus {
   color: #1beb11;
 }
 
@@ -7366,7 +7383,7 @@ fieldset[disabled] .btn-neutral.active {
   color: #888;
 }
 
-.btn-neutral.btn-default:hover, .btn-neutral.btn-default:focus, .btn-neutral.btn-default:active {
+.btn-neutral.btn-default:hover, .btn-neutral.btn-default:focus, .btn-neutral.btn-default:active, .btn-neutral.btn-default:active:focus {
   color: #979797;
 }
 
@@ -7413,16 +7430,6 @@ fieldset[disabled] .btn-neutral.active {
 .btn:disabled, .btn[disabled], .btn.disabled {
   opacity: 0.5;
   filter: alpha(opacity=50);
-}
-
-.btn-round {
-  border-width: 1px;
-  border-radius: 30px;
-  padding: 11px 23px;
-}
-
-.btn-round.btn-simple {
-  padding: 10px 22px;
 }
 
 .btn-simple {
@@ -7515,6 +7522,16 @@ fieldset[disabled]
   top: 50%;
   margin-top: -1px;
   right: 8px;
+}
+
+.btn-round {
+  border-width: 1px;
+  border-radius: 30px;
+  padding: 11px 23px;
+}
+
+.btn-round.btn-simple {
+  padding: 10px 22px;
 }
 
 .form-control::-moz-placeholder {
@@ -9055,6 +9072,16 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   color: #888;
 }
 
+.navbar.bg-white .input-group .form-control,
+.navbar.bg-white .input-group.no-border .form-control {
+  color: #888;
+}
+
+.navbar.bg-white .input-group-addon i {
+  color: #888;
+  opacity: .5;
+}
+
 .navbar .form-group,
 .navbar .input-group {
   margin: 0;
@@ -9519,16 +9546,16 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 .dropdown .dropdown-menu,
 .dropup:not(.bootstrap-select) .dropdown-menu,
 .bootstrap-select .dropdown-menu:not(.inner), .dropdown-menu.bootstrap-datetimepicker-widget.top, .dropdown-menu.bootstrap-datetimepicker-widget.bottom {
-  -webkit-transform: translate3d(0, 20px, 0) !important;
-  -moz-transform: translate3d(0, 20px, 0) !important;
-  -o-transform: translate3d(0, 20px, 0) !important;
-  -ms-transform: translate3d(0, 20px, 0) !important;
-  transform: translate3d(0, 20px, 0) !important;
+  -webkit-transform: translate3d(0, -20px, 0) !important;
+  -moz-transform: translate3d(0, -20px, 0) !important;
+  -o-transform: translate3d(0, -20px, 0) !important;
+  -ms-transform: translate3d(0, -20px, 0) !important;
+  transform: translate3d(0, -20px, 0) !important;
   visibility: hidden;
   display: block;
   opacity: 0;
   filter: alpha(opacity=0);
-  top: 0;
+  top: 100% !important;
 }
 
 .dropdown-menu.bootstrap-datetimepicker-widget.top, .dropdown-menu.bootstrap-datetimepicker-widget.bottom {
@@ -9548,24 +9575,27 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 }
 
 .dropup:not(.bootstrap-select) .dropdown-menu {
-  -webkit-transform: translate3d(0, -154px, 0) !important;
-  -moz-transform: translate3d(0, -154px, 0) !important;
-  -o-transform: translate3d(0, -154px, 0) !important;
-  -ms-transform: translate3d(0, -154px, 0) !important;
-  transform: translate3d(0, -154px, 0) !important;
+  -webkit-transform: translate3d(0, 20px, 0) !important;
+  -moz-transform: translate3d(0, 20px, 0) !important;
+  -o-transform: translate3d(0, 20px, 0) !important;
+  -ms-transform: translate3d(0, 20px, 0) !important;
+  transform: translate3d(0, 20px, 0) !important;
+  top: auto !important;
+  bottom: 100%;
 }
 
 .dropdown.show .dropdown-menu,
 .bootstrap-select.show .dropdown-menu:not(.inner), .dropdown-menu.bootstrap-datetimepicker-widget.top.open, .dropdown-menu.bootstrap-datetimepicker-widget.bottom.open,
-.dropup.show:not(.bootstrap-select) .dropdown-menu {
+.dropup.show:not(.bootstrap-select) .dropdown-menu,
+.navbar .dropdown.show .dropdown-menu {
   opacity: 1;
   filter: alpha(opacity=100);
   visibility: visible;
-  -webkit-transform: translate3d(0, 38px, 0) !important;
-  -moz-transform: translate3d(0, 38px, 0) !important;
-  -o-transform: translate3d(0, 38px, 0) !important;
-  -ms-transform: translate3d(0, 38px, 0) !important;
-  transform: translate3d(0, 38px, 0) !important;
+  -webkit-transform: translate3d(0, 1px, 0) !important;
+  -moz-transform: translate3d(0, 1px, 0) !important;
+  -o-transform: translate3d(0, 1px, 0) !important;
+  -ms-transform: translate3d(0, 1px, 0) !important;
+  transform: translate3d(0, 1px, 0) !important;
 }
 
 .dropdown-menu.bootstrap-datetimepicker-widget.top.open, .dropdown-menu.bootstrap-datetimepicker-widget.bottom.open {
@@ -9577,19 +9607,11 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 }
 
 .dropup.show:not(.bootstrap-select) .dropdown-menu {
-  -webkit-transform: translate3d(0, -168px, 0) !important;
-  -moz-transform: translate3d(0, -168px, 0) !important;
-  -o-transform: translate3d(0, -168px, 0) !important;
-  -ms-transform: translate3d(0, -168px, 0) !important;
-  transform: translate3d(0, -168px, 0) !important;
-}
-
-.navbar .dropdown.show .dropdown-menu {
-  -webkit-transform: translate3d(0, 43px, 0) !important;
-  -moz-transform: translate3d(0, 43px, 0) !important;
-  -o-transform: translate3d(0, 43px, 0) !important;
-  -ms-transform: translate3d(0, 43px, 0) !important;
-  transform: translate3d(0, 43px, 0) !important;
+  -webkit-transform: translate3d(0, -2px, 0) !important;
+  -moz-transform: translate3d(0, -2px, 0) !important;
+  -o-transform: translate3d(0, -2px, 0) !important;
+  -ms-transform: translate3d(0, -2px, 0) !important;
+  transform: translate3d(0, -2px, 0) !important;
 }
 
 .button-dropdown {
@@ -11391,6 +11413,21 @@ Created using IcoMoon - icomoon.io
   position: relative;
 }
 
+.panel-header .header .title {
+  color: #FFFFFF;
+}
+
+.panel-header .header .category {
+  max-width: 600px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+  font-size: 13px;
+}
+
+.panel-header .header .category a {
+  color: #FFFFFF;
+}
+
 .panel-header-sm {
   height: 135px;
 }
@@ -11939,6 +11976,8 @@ Created using IcoMoon - icomoon.io
 
 .card-contributions span {
   padding-left: 15px;
+  text-align: left;
+  max-width: 125px;
 }
 
 .card-background {
@@ -12060,9 +12099,13 @@ Created using IcoMoon - icomoon.io
   position: absolute;
   content: " ";
   width: 3px;
-  background-color: #9A9A9A;
+  background-color: #dbdbdb;
   left: 50%;
   margin-left: -1.5px;
+}
+
+.card-timeline .timeline .timeline-footer .btn {
+  margin: 0;
 }
 
 .card-timeline .timeline h6 {
@@ -12073,7 +12116,6 @@ Created using IcoMoon - icomoon.io
 
 .card-timeline .timeline.timeline-simple:before {
   left: 5%;
-  background-color: #E3E3E3;
 }
 
 .card-timeline .timeline.timeline-simple > li > .timeline-panel {
@@ -13410,13 +13452,6 @@ Created using IcoMoon - icomoon.io
     margin: 0;
     margin-top: 5px;
   }
-  .navbar.bg-white .input-group .form-control {
-    color: #888;
-  }
-  .navbar.bg-white .input-group-addon i {
-    color: #888;
-    opacity: .5;
-  }
   .navbar .navbar-nav .nav-item:first-child {
     margin-top: 10px;
   }
@@ -13437,8 +13472,8 @@ Created using IcoMoon - icomoon.io
     -webkit-box-shadow: none;
     box-shadow: none;
     width: auto;
-    margin: 37px 1rem;
-    margin-top: -37px;
+    margin: 0px 1rem;
+    margin-top: 0px;
   }
   .navbar .dropdown.show .dropdown-menu:before,
   .navbar .dropdown .dropdown-menu:before {

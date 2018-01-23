@@ -591,9 +591,12 @@ demo = {
                 var $total = navigation.find('li').length;
                 var $wizard = navigation.closest('.card-wizard');
 
-                $first_li = navigation.find('li:first-child a').html();
-                $moving_div = $('<div class="moving-tab">' + $first_li + '</div>');
+                first_li = navigation.find('li:first-child a').html();
+                $moving_div = $("<div class='moving-tab'></div>");
+                $moving_div.append(first_li);
                 $('.card-wizard .wizard-navigation').append($moving_div);
+
+
 
                 refreshAnimation($wizard, index);
 
@@ -628,7 +631,7 @@ demo = {
                 button_text = navigation.find('li:nth-child(' + $current + ') a').html();
 
                 setTimeout(function(){
-                    $('.moving-tab').text(button_text);
+                    $('.moving-tab').html(button_text);
                 }, 150);
 
                 var checkbox = $('.footer-checkbox');
@@ -726,11 +729,11 @@ demo = {
 
             $current = index + 1;
 
-            if($current == 1 || (mobile_device == true && (index % 2 == 0) )){
-                move_distance -= 8;
-            } else if($current == total_steps || (mobile_device == true && (index % 2 == 1))){
-                move_distance += 8;
-            }
+            // if($current == 1 || (mobile_device == true && (index % 2 == 0) )){
+            //     move_distance -= 8;
+            // } else if($current == total_steps || (mobile_device == true && (index % 2 == 1))){
+            //     move_distance += 8;
+            // }
 
             if(mobile_device){
                 vertical_level = parseInt(index / 2);

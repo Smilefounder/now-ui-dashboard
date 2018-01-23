@@ -24,16 +24,6 @@
           }
         }
 
-        &.bg-white{
-          .input-group .form-control{
-            color: $default-color;
-          }
-          .input-group-addon i{
-            color: $default-color;
-            opacity: .5;
-          }
-        }
-
         .navbar-nav{
             .nav-item:first-child{
               margin-top: 10px;
@@ -59,8 +49,8 @@
             -webkit-box-shadow: none;
             box-shadow: none;
             width: auto;
-            margin: 37px 1rem;
-            margin-top: -37px;
+            margin: 0px 1rem;
+            margin-top: 0px;
 
             &:before{
                 display: none;

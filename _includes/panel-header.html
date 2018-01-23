@@ -1,0 +1,11 @@
+<div class="panel-header{% if page.panel-header-size %} {{ page.panel-header-size }}{% endif %}">
+  {% if page.brand == "Dashboard" %}
+  <canvas id="myChart"></canvas>
+  {% endif %}
+  {% if page.title %}
+  <div class="header text-center">
+      <h2 class="title">{{ page.title }}</h2>
+      <p class="category">{{ page.description }}</p>
+  </div>
+  {% endif %}
+</div>

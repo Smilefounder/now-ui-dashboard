@@ -134,15 +134,6 @@
         @include opacity(.5);
     }
 }
-.btn-round{
-    border-width: $border-thin;
-    border-radius: $btn-round-radius;
-    padding: $padding-btn-vertical  $padding-round-horizontal;
-
-    &.btn-simple{
-        padding: $padding-btn-vertical - 1  $padding-round-horizontal - 1;
-    }
-}
 .btn-simple{
     border: $border;
     border-color: $default-color;
@@ -194,4 +185,14 @@
     top: 50%;
     margin-top: -1px;
     right: 8px;
+}
+
+.btn-round{
+    border-width: $border-thin;
+    border-radius: $btn-round-radius;
+    padding: $padding-btn-vertical  $padding-round-horizontal;
+
+    &.btn-simple{
+        padding: $padding-btn-vertical - 1  $padding-round-horizontal - 1;
+    }
 }
