@@ -453,13 +453,10 @@
     .statistics{
         position: relative;
         text-align: center;
-        padding: 25px 0;
+        padding: 15px 0;
 
         .title{
             margin-bottom: 0;
-        }
-        .icon{
-            margin-bottom: 15px;
         }
         .stats-title{
             margin-bottom: 5px;
@@ -577,6 +574,10 @@
         padding-top: 60px;
         padding-bottom: 60px;;
     }
+    .card-footer{
+      position: relative;
+      z-index: 2;
+    }
 
     &.card-background-product .card-body{
         max-width: 400px;
@@ -602,16 +603,16 @@
         color: $opacity-8;
     }
 
-    .card-title{
+    .card-title {
         color: $white-color;
         margin-top: 130px;
     }
 
-    &:not(.card-pricing) .btn{
+    &:not(.card-pricing) .btn {
         margin-bottom: 0;
     }
 
-    &:after{
+    &::after {
         position: absolute;
         z-index: 1;
         width: 100%;
@@ -623,4 +624,96 @@
         background-color: rgba(0,0,0,.63);
         border-radius: $border-radius-large;
     }
+}
+
+.card-stats-mini {
+  &.card-background::after {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    opacity: .94;
+  }
+
+  .card-body {
+    &::after {
+      clear: both;
+      content: '';
+      display: block;
+    }
+  }
+
+  .card-footer {
+    border-top: 1px solid $opacity-2;
+    margin: 0 15px;
+  }
+
+  &.card-background {
+    .card-body {
+      min-height: auto;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .card-title {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .info-area {
+    text-align: left;
+    width: 40%;
+    float: left;
+    padding: 15px 0;
+
+    .icon > i {
+      font-size: 2em;
+    }
+  }
+
+  .chart-area {
+    float: left;
+    width: 60%;
+  }
+
+  .stats {
+    text-align: left;
+    color: $white-color;
+  }
+}
+
+.card-chart {
+  .card-header{
+    .card-title{
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+    .card-category{
+      margin-bottom: 5px;
+    }
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .chart-area {
+    height: 180px;
+    width: 100%;
+  }
+  .card-footer {
+    margin-top: 15px;
+
+    .stats{
+      color: $dark-gray;
+    }
+  }
+
+  .dropdown{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    .btn{
+      margin: 0;
+    }
+  }
 }

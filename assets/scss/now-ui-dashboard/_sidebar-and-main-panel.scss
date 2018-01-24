@@ -411,6 +411,8 @@
     width: $sidebar-width;
     // width: 100%;
     background-color: $light-gray;
+    background-color: #ebecf1;
+    
     @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 
     > .content{

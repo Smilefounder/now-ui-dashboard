@@ -1739,7 +1739,7 @@ body.swal2-iosfix {
   box-sizing: border-box;
   text-align: center;
   margin: auto;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
   overflow-x: hidden;
   overflow-y: auto;
   display: none;
@@ -2627,7 +2627,7 @@ body.swal2-iosfix {
 
 .card-wizard {
   min-height: 410px;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
   opacity: 0;
   -webkit-transition: all 300ms linear;
   -moz-transition: all 300ms linear;
@@ -2710,7 +2710,7 @@ body.swal2-iosfix {
   left: 0px;
   border-radius: 30px;
   background-color: #FFFFFF;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
   color: #f96332;
   cursor: pointer;
   font-weight: 500;
@@ -3933,7 +3933,7 @@ select.selectpicker {
   text-align: center;
   vertical-align: middle;
   max-width: 250px;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
 }
 
 .fileinput .thumbnail.img-circle {
@@ -7534,6 +7534,10 @@ fieldset[disabled]
   padding: 10px 22px;
 }
 
+.no-caret.dropdown-toggle::after {
+  display: none;
+}
+
 .form-control::-moz-placeholder {
   color: #DDDDDD;
   opacity: 1;
@@ -8329,7 +8333,7 @@ textarea.form-control:focus, textarea.form-control:active {
 
 .pagination .page-item.active > .page-link {
   color: #FFFFFF;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
 }
 
 .pagination .page-item.active > .page-link, .pagination .page-item.active > .page-link:focus, .pagination .page-item.active > .page-link:hover {
@@ -8484,7 +8488,7 @@ p.description {
 .category,
 .card-category {
   text-transform: capitalize;
-  font-weight: 700;
+  font-weight: 400;
   color: #9A9A9A;
   font-size: 0.7142em;
 }
@@ -8734,7 +8738,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 }
 
 .info .icon > i {
-  font-size: 2.8em;
+  font-size: 2.3em;
 }
 
 .info .icon.icon-circle {
@@ -8937,7 +8941,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   background-color: #FFFFFF;
   padding-left: 15px;
   padding-right: 15px;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
 }
 
 .nav-align-center {
@@ -9883,7 +9887,7 @@ img {
   background-color: #FFFFFF;
   font-size: 14px;
   color: inherit;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
 }
 
 /* --------------------------------
@@ -10950,7 +10954,7 @@ Created using IcoMoon - icomoon.io
 .sidebar .nav li.active > a,
 .off-canvas-sidebar .nav li.active > a {
   background-color: #FFFFFF;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
   color: #f96332;
 }
 
@@ -11282,6 +11286,7 @@ Created using IcoMoon - icomoon.io
   float: right;
   width: calc(100% - 260px);
   background-color: #E3E3E3;
+  background-color: #ebecf1;
   -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
@@ -11351,7 +11356,7 @@ Created using IcoMoon - icomoon.io
   .sidebar-mini .sidebar {
     display: block;
     z-index: 9999;
-    box-shadow: 3px 16px 22px 0 rgba(0, 0, 0, 0.35), 0px 33px 38px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 2px 22px 0 rgba(0, 0, 0, 0.2), 0px 2px 30px 0 rgba(0, 0, 0, 0.35);
   }
   .sidebar-mini .sidebar .logo a.logo-normal {
     opacity: 0;
@@ -11443,7 +11448,7 @@ Created using IcoMoon - icomoon.io
   position: relative;
   width: 100%;
   margin-bottom: 20px;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
 }
 
 .card .card-body {
@@ -11807,7 +11812,7 @@ Created using IcoMoon - icomoon.io
   height: 120px;
   border-radius: 50%;
   margin-top: -60px;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
 }
 
 .card-signup .header {
@@ -11876,15 +11881,11 @@ Created using IcoMoon - icomoon.io
 .card-stats .statistics {
   position: relative;
   text-align: center;
-  padding: 25px 0;
+  padding: 15px 0;
 }
 
 .card-stats .statistics .title {
   margin-bottom: 0;
-}
-
-.card-stats .statistics .icon {
-  margin-bottom: 15px;
 }
 
 .card-stats .statistics .stats-title {
@@ -11996,6 +11997,11 @@ Created using IcoMoon - icomoon.io
   padding-bottom: 60px;
 }
 
+.card-background .card-footer {
+  position: relative;
+  z-index: 2;
+}
+
 .card-background.card-background-product .card-body {
   max-width: 400px;
 }
@@ -12028,7 +12034,7 @@ Created using IcoMoon - icomoon.io
   margin-bottom: 0;
 }
 
-.card-background:after {
+.card-background::after {
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -12039,6 +12045,90 @@ Created using IcoMoon - icomoon.io
   content: "";
   background-color: rgba(0, 0, 0, 0.63);
   border-radius: 0.25rem;
+}
+
+.card-stats-mini.card-background::after {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  opacity: .94;
+}
+
+.card-stats-mini .card-body::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.card-stats-mini .card-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 15px;
+}
+
+.card-stats-mini.card-background .card-body {
+  min-height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.card-stats-mini .card-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.card-stats-mini .info-area {
+  text-align: left;
+  width: 40%;
+  float: left;
+  padding: 15px 0;
+}
+
+.card-stats-mini .info-area .icon > i {
+  font-size: 2em;
+}
+
+.card-stats-mini .chart-area {
+  float: left;
+  width: 60%;
+}
+
+.card-stats-mini .stats {
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.card-chart .card-header .card-title {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.card-chart .card-header .card-category {
+  margin-bottom: 5px;
+}
+
+.card-chart .card-body {
+  padding: 0;
+}
+
+.card-chart .chart-area {
+  height: 180px;
+  width: 100%;
+}
+
+.card-chart .card-footer {
+  margin-top: 15px;
+}
+
+.card-chart .card-footer .stats {
+  color: #9A9A9A;
+}
+
+.card-chart .dropdown {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.card-chart .dropdown .btn {
+  margin: 0;
 }
 
 .footer {

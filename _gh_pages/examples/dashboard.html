@@ -486,107 +486,177 @@
 
 <div class="row">
     <div class="col-md-4">
-        <div class="card card-background card-raised" data-background-color="" style="background-image: url('../assets/img/stats1.jpg')">
-            <div class="info-area">
-                <div class="icon icon-white">
-                    <i class="now-ui-icons business_money-coins"></i>
-                </div>
-                <div class="description">
-                    <h4 class="info-title">Collaborate on ideas</h4>
-
-                    <a href="#pablo" class="ml-3">Find more...</a>
-                </div>
+        <div class="card card-chart">
+          <div class="card-header">
+            <h5 class="card-category">Website Views</h5>
+            <h2 class="card-title">34,252</h2>
+            <div class="dropdown">
+	            <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
+	            		<i class="now-ui-icons design_bullet-list-67"></i>
+	            </button>
+            	<div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item text-danger" href="#">Remove Data</a>
+            	</div>
+			      </div>
+          </div>
+          <div class="card-body">
+            <div class="chart-area">
+              <canvas id="activeUsers"></canvas>
             </div>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+                  <i class="fa fa-dashboard"></i> Just Updated
+              </div>
+          </div>
         </div>
     </div>
     <div class="col-md-4">
-        <div class="card card-background card-raised" data-background-color="" style="background-image: url('../assets/img/stats2.jpg')">
+      <div class="card card-chart">
+          <div class="card-body">
             <div class="info-area">
-                <div class="icon icon-white">
-                    <i class="now-ui-icons business_badge"></i>
-                </div>
                 <div class="description">
-                    <h4 class="info-title">Pick your designer</h4>
-
-                    <a href="#pablo">Find more...</a>
+                    <h5 class="card-category">Live Users</h5>
+                    <h2 class="card-title">352</h2>
                 </div>
             </div>
-        </div>
+            <div class="chart-area">
+              <canvas id="websiteViews"></canvas>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+                  <i class="fa fa-dashboard"></i> Just Updated
+              </div>
+          </div>
+      </div>
     </div>
     <div class="col-md-4">
-        <div class="card card-background card-raised" data-background-color="" style="background-image: url('../assets/img/stats3.jpg')">
+      <div class="card card-chart">
+          <div class="card-body">
             <div class="info-area">
-                <div class="icon icon-white">
-                    <i class="now-ui-icons location_map-big"></i>
-                </div>
                 <div class="description">
-                    <h4 class="info-title">Visualize your room</h4>
-
-                    <a href="#pablo" class="ml-3">Find more...</a>
+                    <h5 class="card-category">New Orders</h5>
+                    <h2 class="card-title">252</h2>
                 </div>
             </div>
-        </div>
+            <canvas id="chartSupportRequests"></canvas>
+          </div>
+      </div>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-md-3">
-		
 
+  <div class="col-md-12">
+		<div class="card">
+			<div class="card-header card-header-icon" data-background-color="green">
+				<i class="material-icons">language</i>
+			</div>
+			<div class="card-content">
+				<h4 class="card-title">Global Sales by Top Locations</h4>
+				<div class="row">
+					<div class="col-md-5">
+						<div class="table-responsive table-sales">
+              <table class="table">
+                  <tbody>
+                      <tr>
+                          <td>
+                              <div class="flag">
+                                  <img src="../assets/img/flags/US.png">
+                          </div></td>
+                          <td>USA</td>
+                          <td class="text-right">
+                              2.920
+                          </td>
+                          <td class="text-right">
+                              53.23%
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div class="flag">
+                                  <img src="../assets/img/flags/DE.png">
+                          </div></td>
+                          <td>Germany</td>
+                          <td class="text-right">
+                              1.300
+                          </td>
+                          <td class="text-right">
+                              20.43%
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div class="flag">
+                                  <img src="../assets/img/flags/AU.png">
+                          </div></td>
+                          <td>Australia</td>
+                          <td class="text-right">
+                              760
+                          </td>
+                          <td class="text-right">
+                              10.35%
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div class="flag">
+                                  <img src="../assets/img/flags/GB.png">
+                          </div></td>
+                          <td>United Kingdom</td>
+                          <td class="text-right">
+                              690
+                          </td>
+                          <td class="text-right">
+                              7.87%
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div class="flag">
+                                  <img src="../assets/img/flags/RO.png">
+                          </div></td>
+                          <td>Romania</td>
+                          <td class="text-right">
+                              600
+                          </td>
+                          <td class="text-right">
+                              5.94%
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div class="flag">
+                                  <img src="../assets/img/flags/BR.png">
+                          </div></td>
+                          <td>Brasil</td>
+                          <td class="text-right">
+                              550
+                          </td>
+                          <td class="text-right">
+                              4.34%
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+					</div>
+					<div class="col-md-6 col-md-offset-1">
+						<div id="worldMap" class="map"></div>
+					</div>
 
-<div class="card card-stats">
-    
-    <div class="card-header ">
-    <div class="dots">
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                        </div>
-    </div>
-    
-    <div class="card-body ">
-        
+				</div>
+			</div>
+		</div>
+	</div>
 
-        
-
-        
-
-        
-            <div class="icon">
-                                <i class="now-ui-icons ui-1_send"></i>
-                              </div>
-                              <div class="stats-information">
-                                <span class="stats-text">12</span>
-                                <span class="stats-details">New Contracts</span>
-                              </div>
-        
-
-        
-    </div>
-    
-    
-    
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
+<div class="row">
 
     <div class="col-md-6">
         <!-- 
@@ -962,6 +1032,7 @@
             // Javascript method's body can be found in assets/js/demos.js
             demo.initDashboardPageCharts();
 
+            demo.initVectorMap();
         });
 
        // Chart.js
@@ -1013,7 +1084,10 @@
                   titleFontColor: '#333',
                   bodyFontColor: '#666',
                   bodySpacing: 4,
-                  xPadding: 12
+                  xPadding: 12,
+                  mode: "nearest",
+                  intersect: !1,
+                  position: "nearest"
                 },
                 legend: {
                     position: "bottom",
@@ -1053,6 +1127,189 @@
                 }
             }
         });
+
+        var cardStatsMiniLineColor = "#fff",
+            cardStatsMiniDotColor = "#fff";
+
+        var ctx = document.getElementById('activeUsers').getContext("2d");
+
+        var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
+        gradientStroke.addColorStop(0, '#80b6f4');
+        gradientStroke.addColorStop(1, chartColor);
+
+        var gradientFill = ctx.createLinearGradient(0, 170, 0, 70);
+        gradientFill.addColorStop(0, "rgba(128, 182, 244, 0)");
+        gradientFill.addColorStop(1, "rgba(249, 99, 59, 0.34)");
+
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"],
+                datasets: [{
+                    label: "Data",
+                    borderColor: "#f96332",
+                    pointBorderColor: "#FFF",
+                    pointBackgroundColor: "#f96332",
+                    pointBorderWidth: 2,
+                    pointHoverRadius: 4,
+                    pointHoverBorderWidth: 1,
+                    pointRadius: 4,
+                    fill: true,
+                    backgroundColor: gradientFill,
+                    borderWidth: 2,
+                    data: [542, 443, 380, 580, 553, 453, 326, 434, 568, 610, 756, 630]
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                legend: {
+                    display: false
+                },
+                tooltips: {
+                  backgroundColor: '#fff',
+                  titleFontColor: '#333',
+                  bodyFontColor: '#666',
+                  bodySpacing: 4,
+                  xPadding: 12
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            display: false
+                        },
+                        gridLines: {
+                            zeroLineColor: "transparent",
+                            drawTicks: false,
+                            display: false
+                        }
+                      }],
+                    xAxes: [{
+                        gridLines: {
+                            zeroLineColor: "transparent",
+                            drawTicks: false,
+                            display: false
+                          },
+                        ticks: {
+                            display: false,
+                        }
+                    }]
+                }
+            }
+        });
+
+        var e = document.getElementById("websiteViews").getContext("2d");
+        t = e.createLinearGradient(0,0,0,240);
+        t.addColorStop(0,Chart.helpers.color("#d1f1ec").alpha(1).rgbString());
+        t.addColorStop(1,Chart.helpers.color("#d1f1ec").alpha(.3).rgbString());
+
+        var a =  { type : "line",
+        data : { labels : ["January","February","March","April","May","June","July","August","September","October"],
+          datasets: [{
+            label: "Bandwidth Stats",
+            backgroundColor:t,
+            borderColor:'#00FF00',
+            pointBackgroundColor : Chart.helpers.color("#000000").alpha(0).rgbString(), pointBorderColor:Chart.helpers.color("#000000").alpha(0).rgbString(),
+            pointHoverBackgroundColor:'#FF0000', pointHoverBorderColor:Chart.helpers.color("#000000").alpha(.1).rgbString(),
+            data: [10,14,12,16,9,11,13,9,13,15]
+          }]
+        },
+        options: { title: {display:!1},
+          tooltips:{
+            mode:"nearest",
+            intersect:!1,
+            position:"nearest",
+            xPadding:10, yPadding:10,
+            caretPadding:10},
+
+            legend:{display:!1},
+
+            responsive:!0,
+            maintainAspectRatio:!1,
+            scales:{
+              xAxes:[{
+                display:!1,
+                gridLines:!1,
+                scaleLabel:{
+                  display:!0,
+                  labelString:"Month"
+                }
+              }],
+              yAxes:[{
+                display:!1,
+                gridLines:!1,
+                scaleLabel:{
+                  display:!0,
+                  labelString:"Value"
+                },
+                ticks:{
+                  beginAtZero:!0
+                }}
+              ]},
+              elements:{
+                line:{tension:1e-7},
+                point:{radius:4,borderWidth:12}
+              },
+              layout:{
+                padding:{left:0,right:0,top:10,bottom:0}
+              }
+            }
+          };
+
+          var viewsChart = new Chart(e,a);
+
+
+
+          // Bar Charts
+
+          var e = $("#chartSupportRequests");
+
+            if(0!=e.length) {
+                var t= {
+                    labels:["Label 1",
+                    "Label 2",
+                    "Label 3",
+                    "Label 4",
+                    "Label 5",
+                    "Label 6",
+                    "Label 7",
+                    "Label 8",
+                    "Label 9",
+                    "Label 10",
+                    "Label 11",
+                    "Label 12",
+                    "Label 13",
+                    "Label 14",
+                    "Label 15",
+                    "Label 16"],
+                    datasets:[ {
+                        backgroundColor: "#18ce0f", data: [15, 20, 25, 30, 25, 20, 15, 20, 25, 30, 25, 20, 15, 10, 15, 20]
+                    }
+                    ,
+                    {
+                        backgroundColor: "#f3f3fb", data: [15, 20, 25, 30, 25, 20, 15, 20, 25, 30, 25, 20, 15, 10, 15, 20]
+                    }
+                    ]
+                };
+                var chartSupportRequests = new Chart(e, {
+                    type:"bar", data:t, options: {
+                        title: {
+                            display: !1
+                        }
+                        , tooltips: {
+                            intersect: !1, mode: "nearest", xPadding: 10, yPadding: 10, caretPadding: 10
+                        }
+                        , legend: {
+                            display: !1
+                        }
+                        , layout: {
+                            padding: {
+                                left: 0, right: 0, top: 0, bottom: 0
+                            }
+                        }
+                    }
+                }
+                )
+            }
 
 
     </script>
